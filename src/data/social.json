@@ -1,0 +1,51 @@
+{
+  "_README": "Social posting configuration. Platform limits are enforced by scripts/generate-social.mjs so a post can never be generated that the API would reject. `enabled` controls what the generator emits; set a platform false to stop producing content for it.",
+  "platforms": {
+    "facebook": {
+      "enabled": true,
+      "caption_max": 2000,
+      "hashtag_max": 5,
+      "needs_media": false,
+      "api": "Meta Graph API - Page feed. NOTE: Facebook GROUPS cannot be posted to by any third-party app; Meta removed that permission in 2020. Group posting is manual, permanently.",
+      "scopes": ["pages_manage_posts", "pages_read_engagement"]
+    },
+    "instagram": {
+      "enabled": true,
+      "caption_max": 2200,
+      "hashtag_max": 15,
+      "needs_media": true,
+      "api": "Instagram Content Publishing API. Requires an Instagram Business/Creator account linked to a Facebook Page, and app review for instagram_content_publish. Media must be reachable at a public URL - the API fetches it, you cannot upload bytes directly.",
+      "scopes": ["instagram_basic", "instagram_content_publish", "pages_show_list"]
+    },
+    "tiktok": {
+      "enabled": true,
+      "caption_max": 2200,
+      "hashtag_max": 8,
+      "needs_media": true,
+      "media_kind": "video",
+      "api": "TikTok Content Posting API. Un-audited apps can only push to drafts (inbox); publishing directly needs the audited video.publish scope.",
+      "scopes": ["video.upload", "video.publish"]
+    },
+    "whatsapp": {
+      "enabled": false,
+      "caption_max": 1000,
+      "hashtag_max": 0,
+      "needs_media": false,
+      "api": "DISABLED. WhatsApp Status has no API. The WhatsApp Business Platform sends template messages to contacts who opted in - that is re-engagement of existing leads, not broadcast reach, and marketing templates require category approval plus prior opt-in. Do not treat this as a distribution channel."
+    }
+  },
+  "hashtags": {
+    "base_es": ["#SegurosEnEspañol", "#NuevaJersey"],
+    "base_en": ["#NJInsurance", "#Bilingual"],
+    "by_service": {
+      "contractor-insurance": { "es": ["#Contratistas", "#SeguroDeContratista", "#COI"], "en": ["#Contractors", "#GeneralLiability", "#COI"] },
+      "cheap-auto-insurance": { "es": ["#SeguroDeAuto", "#Aseguranza", "#AutoBarato"], "en": ["#AutoInsurance", "#CarInsurance"] },
+      "renters-insurance": { "es": ["#SeguroDeInquilinos", "#Renta"], "en": ["#RentersInsurance", "#Tenants"] },
+      "workers-comp": { "es": ["#CompensacionLaboral", "#WorkersComp", "#Negocios"], "en": ["#WorkersComp", "#SmallBusiness"] }
+    }
+  },
+  "compliance_footer": {
+    "es": "No somos agencia con licencia. Te conectamos con agentes con licencia en NJ/NY. Info educativa, no asesoría.",
+    "en": "Not a licensed agency. We connect you with licensed NJ/NY agents. Educational info, not advice."
+  }
+}

@@ -20,9 +20,13 @@ constraint is enforced in code, not just in copy — see [Compliance](#complianc
 | Compliance lint | ✅ gates `npm run build` |
 | Similarity checker | ✅ `npm run similarity` |
 | Content queue | ✅ `CONTENT_QUEUE.md`, 30 towns ranked |
-| Remaining 92 town × service pages | ⏸ awaiting sign-off on the reference pages |
-| `scripts/generate-town-pages.mjs` | ⏸ intentionally deferred — see note below |
+| All 96 town × service pages | ✅ generated, 611–1086 words, no pair above 0.70 similarity |
+| `scripts/generate-town-pages.mjs` | ✅ deterministic, refuses to overwrite reference pages |
+| Home, hubs, legal, thank-you, about | ✅ 142 pages total, 0 broken internal links |
+| Social content generator | ✅ 510 posts, all compliance-checked |
+| Social API publisher | ⚠️ written, **unverified against live APIs** — see below |
 | 4 pillar guides (ES + EN) | ⏸ not started |
+| Blog / noticias collection | ⏸ not started |
 | Hub pages, home, about, legal pages | ⏸ not started |
 | OG image generation (Satori) | ⏸ not started |
 
@@ -261,3 +265,81 @@ renders identically. Hand-tuning a page later is just editing its MDX.
 When it lands it should, per the brief, flag any two pages above 0.70 shingle
 similarity — `npm run similarity` already does exactly that check, so the
 generator only needs to emit files and let the existing gate judge them.
+
+
+---
+
+## Social content
+
+`npm run social` generates post copy from the same data that drives the site, so
+a change in `legal_facts.json` updates the posts too. Output lands in `social/`:
+
+- `queue.json` — the working queue. **Edit this**, not the CSV.
+- `posts.csv` — the same rows, for review in a spreadsheet.
+
+Currently 510 posts: 288 local (town × service, built on each town's angle), 120
+FAQ, 102 legal-fact, across Facebook, Instagram and TikTok in both languages.
+
+**Every caption runs through the same compliance rules as the site.** Social
+posts are marketing by an unlicensed entity, so a caption that recommends
+coverage or quotes a premium fails the run and nothing is written.
+
+Regenerating preserves anything you filled in by hand — `media_url`, `status`
+and `scheduled_for` all carry over, so rewriting copy never wipes your schedule.
+
+### Publishing
+
+```bash
+npm run social:publish                    # dry run — shows what would post
+npm run social:publish -- --live          # actually post
+npm run social:publish -- --live --platform facebook --max 3
+```
+
+A post publishes when `status` is `approved`, `scheduled_for` has passed, and it
+has a `media_url` if the platform needs one. Dry run is the default.
+
+**The adapters have not been run against live credentials.** Publishing requires
+Meta Business verification and TikTok's audit, which are not in place. They are
+written to the documented API shapes, but treat the first live run as a test:
+use `--max 1` and read the response.
+
+### What each platform will and won't do
+
+| Platform | Reality |
+|---|---|
+| **Facebook Page** | Works via API once you have a Page token. |
+| **Facebook groups** | **Cannot be automated by anyone.** Meta removed third-party Groups publishing in 2020. Since groups are where this audience actually is, this channel stays manual — permanently. |
+| **Instagram** | Needs a Business/Creator account linked to a Page, plus app review for `instagram_content_publish`. Media must sit at a public URL; the API fetches it. |
+| **TikTok** | Needs app registration and audit. Un-audited apps can only push to drafts, not publish. |
+| **WhatsApp Status** | **No API exists.** Disabled in `social.json`. The WhatsApp Business Platform sends templates to contacts who opted in — re-engagement of existing leads, not reach. Don't plan around it. |
+
+The generator produces `media_brief` for every post that needs an image and a
+`video_script` (hook / body / close) for every TikTok item. It does not produce
+the media itself.
+
+---
+
+## Launch checklist
+
+Everything below is on you, not the code. The build will pass without it, and
+the site will be wrong.
+
+1. **Replace every `PLACEHOLDER` in `src/data/site.json`** — brand name, legal
+   name, phone, WhatsApp number, email, address, calendar URL.
+2. **Set `brand.domain` to the real domain.** It feeds canonical URLs, hreflang,
+   the sitemap and every social link. Getting this wrong after launch means
+   re-indexing.
+3. **Update the `Sitemap:` line in `public/robots.txt`** to match.
+4. **Set `CRM_WEBHOOK_URL` and `IP_HASH_SALT`** in Cloudflare Pages. Without the
+   webhook the form returns a 500 and leads are lost.
+5. **Create the KV namespace** and uncomment the binding in `wrangler.toml`, so
+   consent records survive a CRM outage.
+6. **Replace the PLACEHOLDER affiliate URLs** in `site.json`, or leave them —
+   nothing renders affiliate links yet, and the lint will require the disclosure
+   the moment they do.
+7. **Have a licensed NJ agent or an insurance attorney read** the disclaimer, the
+   TCPA consent text, the privacy policy and two or three town pages. The lint
+   catches phrasing it knows about. It cannot catch a bad legal posture.
+8. **Re-verify the figures with a 2026 `verify_by` date** in
+   `src/data/legal_facts.json` — notably the NJ auto minimum change and the 2025
+   HIC requirements.

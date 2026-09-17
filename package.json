@@ -14,7 +14,9 @@
     "similarity": "node scripts/similarity.mjs",
     "queue": "node scripts/content-queue.mjs",
     "generate:towns": "node scripts/generate-town-pages.mjs",
-    "lint:links": "node scripts/check-links.mjs"
+    "lint:links": "node scripts/check-links.mjs",
+    "social": "node scripts/generate-social.mjs",
+    "social:publish": "node scripts/publish-social.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.2.4",
