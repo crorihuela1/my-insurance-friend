@@ -25,9 +25,9 @@ constraint is enforced in code, not just in copy — see [Compliance](#complianc
 | Home, hubs, legal, thank-you, about | ✅ 142 pages total, 0 broken internal links |
 | Social content generator | ✅ 510 posts, all compliance-checked |
 | Social API publisher | ⚠️ written, **unverified against live APIs** — see below |
-| 4 pillar guides (ES + EN) | ⏸ not started |
+| 4 pillar guides (ES + EN) | ✅ 8 guides, 1,500–2,500 words, length gated in the lint |
 | Blog / noticias collection | ⏸ not started |
-| Hub pages, home, about, legal pages | ⏸ not started |
+
 | OG image generation (Satori) | ⏸ not started |
 
 `PLACEHOLDER` appears throughout `src/data/site.json` and `.env.example`.

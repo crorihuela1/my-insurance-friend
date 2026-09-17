@@ -115,7 +115,18 @@ for (const file of files) {
     }
   }
 
-  // 5. Title and description length
+  // 5. Pillar guides carry a length spec (1,500-2,500 words). Under-length is a
+  //    ranking problem, over-length usually means it should be two guides.
+  if (html.includes('data-page-type="guide"')) {
+    const m = html.match(/<div class="prose-body[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<section/);
+    const words = visibleText(m ? m[1] : '')
+      .split(' ')
+      .filter((w) => /[a-zA-Z\u00C0-\u017F]/.test(w)).length;
+    if (words < 1500) warnings.push(`${rel}: guide is ${words} words (spec: 1,500-2,500).`);
+    else if (words > 2500) warnings.push(`${rel}: guide is ${words} words, over the 2,500 spec - consider splitting.`);
+  }
+
+  // 6. Title and description length
   const title = attr(html, /<title>([\s\S]*?)<\/title>/i);
   if (title && title.length > 60) {
     warnings.push(`${rel}: <title> is ${title.length} chars (max 60): ${title}`);

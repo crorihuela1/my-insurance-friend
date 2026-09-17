@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import WhatsAppCta from '../../../components/WhatsAppCta.astro';
+import { t } from '../../../lib/i18n';
+import { homePath } from '../../../lib/urls';
+
+const lang = 'en' as const;
+const path = '/en/guides';
+const guides = (await getCollection('guides', (g) => g.data.lang === 'en')).sort(
+  (a, b) => +new Date(a.data.published) - +new Date(b.data.published),
+);
+---
+
+<BaseLayout
+  lang={lang}
+  title="NJ & NY insurance guides, plainly explained"
+  description="Full guides on contractor insurance, COIs, workers' comp cost and auto insurance for immigrants in New Jersey. Every legal figure cited."
+  path={path}
+  altPath="/es/guias"
+  ctaContext="the guides"
+>
+  <div class="mx-auto max-w-2xl px-4 py-6">
+    <Breadcrumbs items={[{ name: t(lang, 'breadcrumb_home'), path: homePath(lang) }, { name: 'Guides', path }]} />
+    <h1 class="mt-3 text-3xl font-extrabold text-brand-900 sm:text-4xl">Guides</h1>
+    <p class="mt-3 text-lg leading-relaxed text-slate-700">
+      The things people normally charge you to explain, explained free. Every guide cites New Jersey
+      law with its official source.
+    </p>
+
+    <ul class="mt-8 grid gap-3">
+      {
+        guides.map((g) => (
+          <li>
+            <a
+              href={`/en/guides/${g.data.slug_en}`}
+              class="flex h-full flex-col rounded-lg border border-slate-200 p-4 transition-colors hover:border-brand-600 hover:bg-brand-50"
+            >
+              <span class="font-semibold text-brand-800">{g.data.h1}</span>
+              <span class="mt-1 text-sm leading-relaxed text-slate-600">{g.data.lede}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mt-10">
+      <WhatsAppCta lang={lang} context="the guides" slug={path} />
+    </div>
+  </div>
+</BaseLayout>

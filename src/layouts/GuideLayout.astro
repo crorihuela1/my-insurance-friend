@@ -1,0 +1,139 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import LeadForm from '../components/LeadForm.astro';
+import WhatsAppCta from '../components/WhatsAppCta.astro';
+import { countyName, getService, towns, townName } from '../lib/data';
+import { t } from '../lib/i18n';
+import { absolute, homePath, townServicePath } from '../lib/urls';
+import { articleSchema, breadcrumbs } from '../lib/schema';
+import type { Lang, Town } from '../lib/types';
+
+/**
+ * Pillar guide template. The town-link block at the bottom is the point of a
+ * pillar page: it passes authority down to every town page for that service,
+ * grouped by county so a 12-item list reads as a map.
+ */
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  path: string;
+  altPath: string;
+  h1: string;
+  lede: string;
+  service?: string;
+  published: Date;
+  updated: Date;
+}
+
+const p = (Astro.props as Props & { frontmatter?: Props }).frontmatter ?? Astro.props;
+const { lang, title, description, path, altPath, h1, lede, service, published, updated } = p;
+
+const guidesIndex = lang === 'es' ? '/es/guias' : '/en/guides';
+const crumbs = [
+  { name: t(lang, 'breadcrumb_home'), path: homePath(lang) },
+  { name: t(lang, 'nav_guides'), path: guidesIndex },
+  { name: h1, path },
+];
+
+const svc = service ? getService(service) : null;
+
+/** Towns grouped by county, for the internal-link block. */
+const byCounty = new Map<string, Town[]>();
+if (svc) {
+  for (const town of towns) {
+    const key = `${town.county}|${town.state}`;
+    if (!byCounty.has(key)) byCounty.set(key, []);
+    byCounty.get(key)!.push(town);
+  }
+}
+
+const fmtDate = (d: Date) =>
+  d.toLocaleDateString(lang === 'es' ? 'es-US' : 'en-US', { year: 'numeric', month: 'long' });
+
+const schema = [
+  breadcrumbs(crumbs),
+  articleSchema({
+    headline: h1,
+    description,
+    url: absolute(path),
+    datePublished: new Date(published).toISOString(),
+    dateModified: new Date(updated).toISOString(),
+    lang,
+  }),
+];
+
+const ctaContext = lang === 'es' ? 'esta guía' : 'this guide';
+---
+
+<BaseLayout
+  lang={lang}
+  title={title}
+  description={description}
+  path={path}
+  altPath={altPath}
+  schema={schema}
+  ctaContext={ctaContext}
+>
+  <article class="mx-auto max-w-2xl px-4 py-6" data-page-type="guide">
+    <Breadcrumbs items={crumbs} />
+    <h1 class="mt-3 text-3xl font-extrabold leading-tight text-brand-900 sm:text-4xl">{h1}</h1>
+    <p class="mt-3 text-lg leading-relaxed text-slate-700">{lede}</p>
+    <p class="mt-2 text-xs text-slate-500">
+      {t(lang, 'last_updated')} {fmtDate(new Date(updated))}
+    </p>
+
+    <div class="mt-5">
+      <WhatsAppCta lang={lang} context={ctaContext} slug={path} />
+    </div>
+
+    <div class="prose-body mt-8 text-[1.0625rem] text-slate-800">
+      <slot />
+    </div>
+
+    {
+      svc && (
+        <section class="mt-12">
+          <h2 class="text-2xl font-bold text-brand-900">
+            {lang === 'es'
+              ? `${svc.name_es} por ciudad`
+              : `${svc.name_en} by city`}
+          </h2>
+          <p class="mt-1 text-sm text-slate-600">
+            {lang === 'es'
+              ? 'Cada ciudad tiene su propia página con lo que aplica ahí.'
+              : 'Every city has its own page covering what applies there.'}
+          </p>
+          {[...byCounty.entries()].map(([key, group]) => (
+            <div class="mt-5">
+              <h3 class="text-sm font-bold uppercase tracking-wide text-slate-500">
+                {countyName(group[0], lang)}, {key.split('|')[1]}
+              </h3>
+              <ul class="mt-2 flex flex-wrap gap-2">
+                {group.map((town) => (
+                  <li>
+                    <a
+                      href={townServicePath(svc, town, lang)}
+                      class="inline-block rounded-full border border-slate-300 px-3.5 py-1.5 text-sm text-slate-700 hover:border-brand-600 hover:text-brand-700"
+                    >
+                      {townName(town, lang)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      )
+    }
+
+    <section class="mt-12 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:p-6">
+      <LeadForm lang={lang} slug={path} heading={t(lang, 'h_form')} />
+    </section>
+
+    <div class="mt-8">
+      <WhatsAppCta lang={lang} context={ctaContext} slug={path} />
+    </div>
+  </article>
+</BaseLayout>

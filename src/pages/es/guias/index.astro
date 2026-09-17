@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import WhatsAppCta from '../../../components/WhatsAppCta.astro';
+import { t } from '../../../lib/i18n';
+import { homePath } from '../../../lib/urls';
+
+const lang = 'es' as const;
+const path = '/es/guias';
+const guides = (await getCollection('guides', (g) => g.data.lang === 'es')).sort(
+  (a, b) => +new Date(a.data.published) - +new Date(b.data.published),
+);
+---
+
+<BaseLayout
+  lang={lang}
+  title="Guías de seguros para NJ y NY, en español"
+  description="Guías completas sobre seguro de contratistas, COI, workers' comp y seguro de auto para inmigrantes en Nueva Jersey. Con la ley citada."
+  path={path}
+  altPath="/en/guides"
+  ctaContext="las guías"
+>
+  <div class="mx-auto max-w-2xl px-4 py-6">
+    <Breadcrumbs items={[{ name: t(lang, 'breadcrumb_home'), path: homePath(lang) }, { name: 'Guías', path }]} />
+    <h1 class="mt-3 text-3xl font-extrabold text-brand-900 sm:text-4xl">Guías</h1>
+    <p class="mt-3 text-lg leading-relaxed text-slate-700">
+      Lo que normalmente te cobran por explicarte, explicado gratis y en español. Cada guía cita la
+      ley de Nueva Jersey con su fuente oficial.
+    </p>
+
+    <ul class="mt-8 grid gap-3">
+      {
+        guides.map((g) => (
+          <li>
+            <a
+              href={`/es/guias/${g.data.slug_es}`}
+              class="flex h-full flex-col rounded-lg border border-slate-200 p-4 transition-colors hover:border-brand-600 hover:bg-brand-50"
+            >
+              <span class="font-semibold text-brand-800">{g.data.h1}</span>
+              <span class="mt-1 text-sm leading-relaxed text-slate-600">{g.data.lede}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="mt-10">
+      <WhatsAppCta lang={lang} context="las guías" slug={path} />
+    </div>
+  </div>
+</BaseLayout>

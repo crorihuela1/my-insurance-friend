@@ -33,6 +33,14 @@ const year = new Date().getFullYear();
       <nav aria-label={t(lang, 'nav_services')}>
         <p class="text-sm font-semibold text-white">{t(lang, 'nav_services')}</p>
         <ul class="mt-2 space-y-1.5 text-sm">
+          <li>
+            <a
+              href={lang === 'es' ? '/es/guias' : '/en/guides'}
+              class="text-slate-300 hover:text-white hover:underline"
+            >
+              {t(lang, 'nav_guides')}
+            </a>
+          </li>
           {
             services.map((s) => (
               <li>
