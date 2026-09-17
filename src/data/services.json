@@ -9,15 +9,29 @@
       "name_en": "Contractor Insurance",
       "name_es": "Seguro para Contratistas",
       "search_term_es": "aseguranza para contratistas",
-      "lines": ["gl", "wc", "commercial_auto", "tools"],
+      "lines": [
+        "gl",
+        "wc",
+        "commercial_auto",
+        "tools"
+      ],
       "lines_label_es": "Responsabilidad civil general (GL), compensación laboral, auto comercial y cobertura de herramienta",
       "lines_label_en": "General liability (GL), workers' comp, commercial auto and tools coverage",
       "audience_es": "contratistas, remodeladores, plomeros, electricistas, techadores, pintores y cuadrillas pequeñas",
       "audience_en": "contractors, remodelers, plumbers, electricians, roofers, painters and small crews",
-      "legal_facts": ["nj_hic_cgl", "nj_hic_2025_additions", "nj_hic_renewal", "nj_wc_mandatory", "nyc_dob_gl"],
+      "legal_facts": [
+        "nj_hic_cgl",
+        "nj_hic_2025_additions",
+        "nj_hic_renewal",
+        "nj_wc_mandatory",
+        "nyc_dob_gl"
+      ],
       "cost_range_es": "Para una cuadrilla pequeña en NJ, las pólizas de GL para contratistas suelen publicarse en rangos de aproximadamente $900 a $3,000 al año, y el workers' comp se calcula aparte sobre la nómina. El rango depende del oficio, la nómina, los años de experiencia y el historial de reclamos.",
       "cost_range_en": "For a small NJ crew, contractor GL policies are commonly published in ranges of roughly $900 to $3,000 per year, with workers' comp calculated separately on payroll. The range depends on trade, payroll, years of experience and claims history.",
-      "affiliate_partners": ["Thimble", "NEXT"],
+      "affiliate_partners": [
+        "Thimble",
+        "NEXT"
+      ],
       "faq": [
         {
           "q_es": "¿Cuánta aseguranza de responsabilidad civil necesito para registrarme como contratista en NJ?",
@@ -59,12 +73,23 @@
       "name_en": "Cheap Auto Insurance",
       "name_es": "Seguro de Auto Barato",
       "search_term_es": "aseguranza de carro barata",
-      "lines": ["auto"],
+      "lines": [
+        "auto"
+      ],
       "lines_label_es": "Responsabilidad civil, PIP, colisión, comprehensive y conductor sin seguro",
       "lines_label_en": "Liability, PIP, collision, comprehensive and uninsured motorist",
       "audience_es": "conductores que buscan el precio más bajo sin quedarse sin protección",
       "audience_en": "drivers looking for the lowest price without leaving themselves unprotected",
-      "legal_facts": ["nj_auto_minimums_2023", "nj_auto_minimums_2026", "nj_auto_no_fault_pip", "nj_auto_premium_range"],
+      "legal_facts": [
+        "nj_auto_minimums_2023",
+        "nj_auto_minimums_2026",
+        "nj_auto_no_fault_pip",
+        "nj_auto_premium_range",
+        "ny_auto_minimums",
+        "ny_auto_no_fault_pip",
+        "ny_auto_uninsured",
+        "ny_auto_premium_range"
+      ],
       "cost_range_es": "Según rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify, la prima promedio anual en NJ va de aproximadamente $1,400–$1,600 por cobertura mínima a aproximadamente $3,100–$3,800 por cobertura completa. Son promedios estatales, no una cotización para ti.",
       "cost_range_en": "Per ranges published by U.S. News, Bankrate, NerdWallet and Insurify, average annual NJ premiums run roughly $1,400–$1,600 for minimum coverage and roughly $3,100–$3,800 for full coverage. Those are statewide averages, not a quote for you.",
       "affiliate_partners": [],
@@ -109,7 +134,9 @@
       "name_en": "Renters Insurance",
       "name_es": "Seguro de Inquilinos",
       "search_term_es": "aseguranza para inquilinos",
-      "lines": ["renters"],
+      "lines": [
+        "renters"
+      ],
       "lines_label_es": "Contenidos, responsabilidad personal y gastos de vivienda temporal",
       "lines_label_en": "Contents, personal liability and additional living expenses",
       "audience_es": "inquilinos de apartamentos, casas multifamiliares y cuartos rentados",
@@ -117,7 +144,10 @@
       "legal_facts": [],
       "cost_range_es": "Las pólizas de inquilino en NJ y NY comúnmente se publican en rangos de aproximadamente $12 a $30 al mes, según el límite de contenidos, el deducible y el edificio. No cubre inundación, que es una póliza aparte.",
       "cost_range_en": "Renters policies in NJ and NY are commonly published in ranges of roughly $12 to $30 per month, depending on contents limit, deductible and building. It does not cover flood, which is a separate policy.",
-      "affiliate_partners": ["Lemonade", "Hippo"],
+      "affiliate_partners": [
+        "Lemonade",
+        "Hippo"
+      ],
       "faq": [
         {
           "q_es": "¿La aseguranza del dueño del edificio cubre mis cosas?",
@@ -159,15 +189,26 @@
       "name_en": "Workers' Compensation",
       "name_es": "Compensación Laboral",
       "search_term_es": "aseguranza de compensación laboral",
-      "lines": ["wc"],
+      "lines": [
+        "wc"
+      ],
       "lines_label_es": "Gastos médicos por lesión de trabajo, salarios perdidos y responsabilidad del patrón",
       "lines_label_en": "Medical costs for work injuries, lost wages and employer liability",
       "audience_es": "dueños de negocio con empleados, cuadrillas de construcción, restaurantes, limpieza y paisajismo",
       "audience_en": "business owners with employees, construction crews, restaurants, cleaning and landscaping",
-      "legal_facts": ["nj_wc_mandatory", "nj_wc_njcrib", "nj_hic_2025_additions", "ny_wc_mandatory", "ny_dbl_pfl"],
+      "legal_facts": [
+        "nj_wc_mandatory",
+        "nj_wc_njcrib",
+        "nj_hic_2025_additions",
+        "ny_wc_mandatory",
+        "ny_dbl_pfl",
+        "ny_wc_penalties"
+      ],
       "cost_range_es": "En NJ la prima de workers' comp se calcula por cada $100 de nómina, multiplicado por la tarifa del código de clasificación del NJCRIB y por tu experience mod. Para oficios de construcción las tarifas publicadas son mucho más altas que para trabajo de oficina, así que el mismo sueldo cuesta muy distinto según el oficio.",
       "cost_range_en": "In NJ, workers' comp premium is calculated per $100 of payroll, multiplied by the NJCRIB class code rate and your experience mod. Published rates for construction trades run far above clerical work, so the same wage costs very differently by trade.",
-      "affiliate_partners": ["NEXT"],
+      "affiliate_partners": [
+        "NEXT"
+      ],
       "faq": [
         {
           "q_es": "¿Desde cuántos empleados es obligatoria la compensación laboral en NJ?",

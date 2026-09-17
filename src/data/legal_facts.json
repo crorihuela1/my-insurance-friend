@@ -4,7 +4,9 @@
     {
       "id": "nj_hic_cgl",
       "jurisdiction": "NJ",
-      "lines": ["gl"],
+      "lines": [
+        "gl"
+      ],
       "citation": "N.J.A.C. 13:45A-17.6",
       "source_url": "https://www.njconsumeraffairs.gov/hic",
       "effective": "2006-01-01",
@@ -15,7 +17,10 @@
     {
       "id": "nj_hic_2025_additions",
       "jurisdiction": "NJ",
-      "lines": ["gl", "wc"],
+      "lines": [
+        "gl",
+        "wc"
+      ],
       "citation": "N.J.S.A. 56:8-136 et seq. (as amended, effective 2025)",
       "source_url": "https://www.njconsumeraffairs.gov/hic",
       "effective": "2025-01-01",
@@ -26,7 +31,9 @@
     {
       "id": "nj_hic_renewal",
       "jurisdiction": "NJ",
-      "lines": ["gl"],
+      "lines": [
+        "gl"
+      ],
       "citation": "NJ Division of Consumer Affairs, HIC registration renewal",
       "source_url": "https://www.njconsumeraffairs.gov/hic",
       "effective": "2006-01-01",
@@ -37,7 +44,9 @@
     {
       "id": "nj_wc_mandatory",
       "jurisdiction": "NJ",
-      "lines": ["wc"],
+      "lines": [
+        "wc"
+      ],
       "citation": "N.J.S.A. 34:15-1 et seq.",
       "source_url": "https://www.nj.gov/labor/wc/",
       "effective": "1911-01-01",
@@ -48,7 +57,9 @@
     {
       "id": "nj_wc_njcrib",
       "jurisdiction": "NJ",
-      "lines": ["wc"],
+      "lines": [
+        "wc"
+      ],
       "citation": "New Jersey Compensation Rating & Inspection Bureau (NJCRIB)",
       "source_url": "https://www.njcrib.com/",
       "effective": "1935-01-01",
@@ -59,7 +70,9 @@
     {
       "id": "nj_auto_minimums_2023",
       "jurisdiction": "NJ",
-      "lines": ["auto"],
+      "lines": [
+        "auto"
+      ],
       "citation": "N.J.S.A. 39:6B-1 (2023 limits)",
       "source_url": "https://www.nj.gov/dobi/division_consumers/insurance/auto.htm",
       "effective": "2023-01-01",
@@ -70,7 +83,9 @@
     {
       "id": "nj_auto_minimums_2026",
       "jurisdiction": "NJ",
-      "lines": ["auto"],
+      "lines": [
+        "auto"
+      ],
       "citation": "NJ DOBI Bulletin 25-06",
       "source_url": "https://www.nj.gov/dobi/bulletins/",
       "effective": "2026-01-01",
@@ -81,7 +96,9 @@
     {
       "id": "nj_auto_no_fault_pip",
       "jurisdiction": "NJ",
-      "lines": ["auto"],
+      "lines": [
+        "auto"
+      ],
       "citation": "N.J.S.A. 39:6A-1 et seq.",
       "source_url": "https://www.nj.gov/dobi/division_consumers/insurance/pip.htm",
       "effective": "1972-01-01",
@@ -92,7 +109,9 @@
     {
       "id": "nj_auto_premium_range",
       "jurisdiction": "NJ",
-      "lines": ["auto"],
+      "lines": [
+        "auto"
+      ],
       "citation": "Rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify (2024–2025)",
       "source_url": "https://www.bankrate.com/insurance/car/new-jersey/",
       "effective": "2025-01-01",
@@ -103,7 +122,9 @@
     {
       "id": "ny_wc_mandatory",
       "jurisdiction": "NY",
-      "lines": ["wc"],
+      "lines": [
+        "wc"
+      ],
       "citation": "NY Workers' Compensation Law § 10",
       "source_url": "https://www.wcb.ny.gov/",
       "effective": "1914-01-01",
@@ -114,7 +135,9 @@
     {
       "id": "ny_dbl_pfl",
       "jurisdiction": "NY",
-      "lines": ["wc"],
+      "lines": [
+        "wc"
+      ],
       "citation": "NY WCL Article 9 (DBL) y NY Paid Family Leave",
       "source_url": "https://paidfamilyleave.ny.gov/",
       "effective": "2018-01-01",
@@ -125,13 +148,80 @@
     {
       "id": "nyc_dob_gl",
       "jurisdiction": "NY",
-      "lines": ["gl"],
+      "lines": [
+        "gl"
+      ],
       "citation": "NYC Department of Buildings licensing requirements",
       "source_url": "https://www.nyc.gov/site/buildings/industry/licensing.page",
       "effective": "2020-01-01",
       "verify_by": "2027-01-01",
       "text_es": "En la ciudad de Nueva York, los contratistas necesitan responsabilidad civil general (GL) para obtener y mantener su licencia con el Department of Buildings (DOB).",
       "text_en": "In New York City, contractors need commercial general liability (GL) to obtain and keep their Department of Buildings (DOB) license."
+    },
+    {
+      "id": "ny_auto_minimums",
+      "jurisdiction": "NY",
+      "lines": [
+        "auto"
+      ],
+      "citation": "NY Vehicle & Traffic Law § 311; NY Insurance Law § 3420",
+      "source_url": "https://dmv.ny.gov/insurance/insurance-requirements",
+      "effective": "2000-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "Los mínimos de responsabilidad en Nueva York son $25,000 por persona y $50,000 por accidente por lesiones corporales, $50,000 y $100,000 si hay fallecimiento, y $10,000 por daños a la propiedad. Son distintos a los de Nueva Jersey.",
+      "text_en": "New York's minimum liability limits are $25,000 per person and $50,000 per accident for bodily injury, $50,000 and $100,000 in the event of death, and $10,000 for property damage. They are different from New Jersey's."
+    },
+    {
+      "id": "ny_auto_no_fault_pip",
+      "jurisdiction": "NY",
+      "lines": [
+        "auto"
+      ],
+      "citation": "NY Insurance Law Article 51 (No-Fault)",
+      "source_url": "https://www.dfs.ny.gov/consumers/auto_insurance",
+      "effective": "1974-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "Nueva York también es un estado no-fault: se exige un mínimo de $50,000 en beneficios de PIP, que pagan gastos médicos y parte del salario perdido sin importar quién causó el accidente.",
+      "text_en": "New York is also a no-fault state: a minimum of $50,000 in PIP benefits is required, covering medical costs and part of lost wages regardless of who caused the crash."
+    },
+    {
+      "id": "ny_auto_uninsured",
+      "jurisdiction": "NY",
+      "lines": [
+        "auto"
+      ],
+      "citation": "NY Insurance Law § 3420(f)",
+      "source_url": "https://www.dfs.ny.gov/consumers/auto_insurance",
+      "effective": "2000-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "En Nueva York la cobertura contra conductores sin seguro (uninsured motorist) es obligatoria, no opcional, con límites mínimos de $25,000 por persona y $50,000 por accidente.",
+      "text_en": "In New York, uninsured motorist coverage is mandatory rather than optional, with minimum limits of $25,000 per person and $50,000 per accident."
+    },
+    {
+      "id": "ny_auto_premium_range",
+      "jurisdiction": "NY",
+      "lines": [
+        "auto"
+      ],
+      "citation": "Rangos publicados por Bankrate, NerdWallet, Insurify y ValuePenguin (2024–2025)",
+      "source_url": "https://www.bankrate.com/insurance/car/new-york/",
+      "effective": "2025-01-01",
+      "verify_by": "2026-12-31",
+      "text_es": "Según rangos publicados por Bankrate, NerdWallet, Insurify y ValuePenguin, la prima anual promedio en Nueva York va de aproximadamente $1,700–$2,200 por cobertura mínima a aproximadamente $3,300–$4,200 por cobertura completa, y los cinco condados de la ciudad cotizan por encima del promedio estatal. Son promedios, no una cotización.",
+      "text_en": "Per ranges published by Bankrate, NerdWallet, Insurify and ValuePenguin, average annual New York premiums run roughly $1,700–$2,200 for minimum coverage and roughly $3,300–$4,200 for full coverage, with the five boroughs pricing above the statewide average. These are averages, not a quote."
+    },
+    {
+      "id": "ny_wc_penalties",
+      "jurisdiction": "NY",
+      "lines": [
+        "wc"
+      ],
+      "citation": "NY Workers' Compensation Law § 52",
+      "source_url": "https://www.wcb.ny.gov/content/main/Employers/employers.jsp",
+      "effective": "2007-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "En Nueva York, operar sin compensación laboral teniendo empleados puede traer multas por cada período de diez días sin cobertura, además de responsabilidad directa del patrón por los costos del trabajador lesionado.",
+      "text_en": "In New York, operating without workers' compensation while having employees can bring penalties for each ten-day period without coverage, plus direct employer liability for the injured worker's costs."
     }
   ]
 }

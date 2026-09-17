@@ -12,7 +12,8 @@
     "astro": "astro",
     "lint:compliance": "node scripts/lint-compliance.mjs",
     "similarity": "node scripts/similarity.mjs",
-    "queue": "node scripts/content-queue.mjs"
+    "queue": "node scripts/content-queue.mjs",
+    "generate:towns": "node scripts/generate-town-pages.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.2.4",

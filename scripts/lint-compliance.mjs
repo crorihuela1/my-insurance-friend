@@ -49,7 +49,19 @@ function visibleText(html) {
 
 function attr(html, re) {
   const m = html.match(re);
-  return m ? m[1] : null;
+  return m ? decodeEntities(m[1]) : null;
+}
+
+/** Titles are measured as a reader sees them, so "&#39;" counts as one char. */
+function decodeEntities(s) {
+  return s
+    .replace(/&#(\d+);/g, (_, d) => String.fromCharCode(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16)))
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&nbsp;/g, ' ');
 }
 
 const files = await htmlFiles(DIST);
