@@ -82,6 +82,16 @@ p { text-wrap: pretty; }
 .prose-body h2:first-child,
 .prose-body h3:first-child { margin-block-start: 0; }
 
+/* Legal-fact lists: the <Fact> item carries its own left rule, so the list must
+   not also draw bullets or the two stack up. */
+.prose-body .fact-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-block: 1.25rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
 .prose-body ol {
   margin-block: 1rem;
   padding-inline-start: 1.25rem;
