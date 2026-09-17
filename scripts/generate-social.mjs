@@ -136,7 +136,15 @@ for (const service of services) {
 }
 
 // --- fact --------------------------------------------------------------------
-for (const fact of facts) {
+// Only facts an active service references. A fact orphaned by a discontinued
+// service line stays in legal_facts.json (recoverable) but must not generate
+// marketing for a product we no longer refer.
+const activeFactIds = new Set(services.flatMap((s) => s.legal_facts));
+const marketableFacts = facts.filter((f) => activeFactIds.has(f.id));
+const orphaned = facts.length - marketableFacts.length;
+if (orphaned) console.log(`skipping ${orphaned} fact(s) not referenced by any active service`);
+
+for (const fact of marketableFacts) {
   for (const lang of ['es', 'en']) {
     const text = lang === 'es' ? fact.text_es : fact.text_en;
     const svc = services.find((s) => s.legal_facts.includes(fact.id));

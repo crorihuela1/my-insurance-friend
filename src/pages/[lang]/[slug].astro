@@ -115,8 +115,8 @@ if (props.kind === 'town-hub') {
     altPath: townHubPath(town, other),
     title: lang === 'es' ? `Seguros en ${name} ${town.state} | Cotiza en español` : `Insurance in ${name}, ${town.state} | Free Quotes`,
     description: lang === 'es'
-      ? `Seguro de auto, de contratista, de inquilinos y compensación laboral en ${name}, ${county}. Te conectamos con agentes con licencia. En español.`
-      : `Auto, contractor, renters and workers' comp insurance in ${name}, ${county}. We connect you with licensed agents. Bilingual.`,
+      ? `Seguro de auto, de contratista y de inquilinos en ${name}, ${county}. Te conectamos con agentes con licencia. En español.`
+      : `Auto, contractor and renters insurance in ${name}, ${county}. We connect you with licensed agents. Bilingual.`,
     h1: lang === 'es' ? `Seguros en ${name}, ${town.state}` : `Insurance in ${name}, ${town.state}`,
     lede: lang === 'es' ? town.local_notes_es : town.local_notes_en,
     crumbs: [
@@ -172,8 +172,8 @@ if (props.kind === 'state-hub') {
     altPath: stateHubPath(other),
     title: lang === 'es' ? 'Seguros en NJ y NY | Cotiza gratis en español' : 'Insurance in NJ & NY | Free bilingual quotes',
     description: lang === 'es'
-      ? 'Seguro de contratistas, auto, inquilinos y compensación laboral en Nueva Jersey y Nueva York. Te conectamos gratis con agentes con licencia.'
-      : "Contractor, auto, renters and workers' comp insurance in New Jersey and New York. We connect you with licensed agents, free.",
+      ? 'Seguro de contratistas, auto e inquilinos en Nueva Jersey y Nueva York. Te conectamos gratis con agentes con licencia.'
+      : "Contractor, auto and renters insurance in New Jersey and New York. We connect you with licensed agents, free.",
     h1: lang === 'es' ? 'Seguros en Nueva Jersey y Nueva York' : 'Insurance in New Jersey and New York',
     lede: lang === 'es'
       ? 'Elige el seguro que necesitas o tu ciudad. Cada página explica qué exige la ley del estado, qué rangos de precio se publican y cómo funciona el proceso.'

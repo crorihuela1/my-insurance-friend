@@ -7,7 +7,10 @@
       "hashtag_max": 5,
       "needs_media": false,
       "api": "Meta Graph API - Page feed. NOTE: Facebook GROUPS cannot be posted to by any third-party app; Meta removed that permission in 2020. Group posting is manual, permanently.",
-      "scopes": ["pages_manage_posts", "pages_read_engagement"]
+      "scopes": [
+        "pages_manage_posts",
+        "pages_read_engagement"
+      ]
     },
     "instagram": {
       "enabled": true,
@@ -15,7 +18,11 @@
       "hashtag_max": 15,
       "needs_media": true,
       "api": "Instagram Content Publishing API. Requires an Instagram Business/Creator account linked to a Facebook Page, and app review for instagram_content_publish. Media must be reachable at a public URL - the API fetches it, you cannot upload bytes directly.",
-      "scopes": ["instagram_basic", "instagram_content_publish", "pages_show_list"]
+      "scopes": [
+        "instagram_basic",
+        "instagram_content_publish",
+        "pages_show_list"
+      ]
     },
     "tiktok": {
       "enabled": true,
@@ -24,7 +31,10 @@
       "needs_media": true,
       "media_kind": "video",
       "api": "TikTok Content Posting API. Un-audited apps can only push to drafts (inbox); publishing directly needs the audited video.publish scope.",
-      "scopes": ["video.upload", "video.publish"]
+      "scopes": [
+        "video.upload",
+        "video.publish"
+      ]
     },
     "whatsapp": {
       "enabled": false,
@@ -35,13 +45,48 @@
     }
   },
   "hashtags": {
-    "base_es": ["#SegurosEnEspañol", "#NuevaJersey"],
-    "base_en": ["#NJInsurance", "#Bilingual"],
+    "base_es": [
+      "#SegurosEnEspañol",
+      "#NuevaJersey"
+    ],
+    "base_en": [
+      "#NJInsurance",
+      "#Bilingual"
+    ],
     "by_service": {
-      "contractor-insurance": { "es": ["#Contratistas", "#SeguroDeContratista", "#COI"], "en": ["#Contractors", "#GeneralLiability", "#COI"] },
-      "cheap-auto-insurance": { "es": ["#SeguroDeAuto", "#Aseguranza", "#AutoBarato"], "en": ["#AutoInsurance", "#CarInsurance"] },
-      "renters-insurance": { "es": ["#SeguroDeInquilinos", "#Renta"], "en": ["#RentersInsurance", "#Tenants"] },
-      "workers-comp": { "es": ["#CompensacionLaboral", "#WorkersComp", "#Negocios"], "en": ["#WorkersComp", "#SmallBusiness"] }
+      "contractor-insurance": {
+        "es": [
+          "#Contratistas",
+          "#SeguroDeContratista",
+          "#COI"
+        ],
+        "en": [
+          "#Contractors",
+          "#GeneralLiability",
+          "#COI"
+        ]
+      },
+      "cheap-auto-insurance": {
+        "es": [
+          "#SeguroDeAuto",
+          "#Aseguranza",
+          "#AutoBarato"
+        ],
+        "en": [
+          "#AutoInsurance",
+          "#CarInsurance"
+        ]
+      },
+      "renters-insurance": {
+        "es": [
+          "#SeguroDeInquilinos",
+          "#Renta"
+        ],
+        "en": [
+          "#RentersInsurance",
+          "#Tenants"
+        ]
+      }
     }
   },
   "compliance_footer": {

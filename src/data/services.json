@@ -11,12 +11,11 @@
       "search_term_es": "aseguranza para contratistas",
       "lines": [
         "gl",
-        "wc",
         "commercial_auto",
         "tools"
       ],
-      "lines_label_es": "Responsabilidad civil general (GL), compensación laboral, auto comercial y cobertura de herramienta",
-      "lines_label_en": "General liability (GL), workers' comp, commercial auto and tools coverage",
+      "lines_label_es": "Responsabilidad civil general (GL), auto comercial y cobertura de herramienta",
+      "lines_label_en": "General liability (GL), commercial auto and tools coverage",
       "audience_es": "contratistas, remodeladores, plomeros, electricistas, techadores, pintores y cuadrillas pequeñas",
       "audience_en": "contractors, remodelers, plumbers, electricians, roofers, painters and small crews",
       "legal_facts": [
@@ -26,8 +25,8 @@
         "nj_wc_mandatory",
         "nyc_dob_gl"
       ],
-      "cost_range_es": "Para una cuadrilla pequeña en NJ, las pólizas de GL para contratistas suelen publicarse en rangos de aproximadamente $900 a $3,000 al año, y el workers' comp se calcula aparte sobre la nómina. El rango depende del oficio, la nómina, los años de experiencia y el historial de reclamos.",
-      "cost_range_en": "For a small NJ crew, contractor GL policies are commonly published in ranges of roughly $900 to $3,000 per year, with workers' comp calculated separately on payroll. The range depends on trade, payroll, years of experience and claims history.",
+      "cost_range_es": "Para una cuadrilla pequeña en NJ, las pólizas de GL para contratistas suelen publicarse en rangos de aproximadamente $900 a $3,000 al año. El rango depende del oficio, los años de experiencia, los límites que pidas y el historial de reclamos.",
+      "cost_range_en": "For a small NJ crew, contractor GL policies are commonly published in ranges of roughly $900 to $3,000 per year. The range depends on trade, years of experience, the limits you carry and claims history.",
       "affiliate_partners": [
         "Thimble",
         "NEXT"
@@ -178,67 +177,6 @@
           "a_es": "Normalmente basta con la dirección, la fecha en que empieza el lease, un estimado del valor de tus pertenencias y una forma de pago. Muchas compañías emiten la póliza el mismo día y mandan el certificado por correo electrónico, que es lo que el landlord necesita ver.",
           "q_en": "What do I need to get renters insurance?",
           "a_en": "Usually just the address, the lease start date, an estimate of what your belongings are worth and a payment method. Many companies issue the policy same day and email the certificate, which is what the landlord needs to see."
-        }
-      ]
-    },
-    {
-      "slug_en": "workers-comp",
-      "slug_es": "compensacion-laboral",
-      "url_pattern_en": "workers-comp-{town}",
-      "url_pattern_es": "compensacion-laboral-en-{town}",
-      "name_en": "Workers' Compensation",
-      "name_es": "Compensación Laboral",
-      "search_term_es": "aseguranza de compensación laboral",
-      "lines": [
-        "wc"
-      ],
-      "lines_label_es": "Gastos médicos por lesión de trabajo, salarios perdidos y responsabilidad del patrón",
-      "lines_label_en": "Medical costs for work injuries, lost wages and employer liability",
-      "audience_es": "dueños de negocio con empleados, cuadrillas de construcción, restaurantes, limpieza y paisajismo",
-      "audience_en": "business owners with employees, construction crews, restaurants, cleaning and landscaping",
-      "legal_facts": [
-        "nj_wc_mandatory",
-        "nj_wc_njcrib",
-        "nj_hic_2025_additions",
-        "ny_wc_mandatory",
-        "ny_dbl_pfl",
-        "ny_wc_penalties"
-      ],
-      "cost_range_es": "En NJ la prima de workers' comp se calcula por cada $100 de nómina, multiplicado por la tarifa del código de clasificación del NJCRIB y por tu experience mod. Para oficios de construcción las tarifas publicadas son mucho más altas que para trabajo de oficina, así que el mismo sueldo cuesta muy distinto según el oficio.",
-      "cost_range_en": "In NJ, workers' comp premium is calculated per $100 of payroll, multiplied by the NJCRIB class code rate and your experience mod. Published rates for construction trades run far above clerical work, so the same wage costs very differently by trade.",
-      "affiliate_partners": [
-        "NEXT"
-      ],
-      "faq": [
-        {
-          "q_es": "¿Desde cuántos empleados es obligatoria la compensación laboral en NJ?",
-          "a_es": "Desde el primero. La ley de Nueva Jersey (N.J.S.A. 34:15-1) exige compensación laboral para cualquier negocio con empleados, sin mínimo de cantidad y sin importar si son de tiempo completo, medio tiempo o temporales. Nueva York tiene un requisito igual de amplio bajo la sección 10 de su ley de compensación.",
-          "q_en": "How many employees before workers' comp is required in NJ?",
-          "a_en": "From the first one. New Jersey law (N.J.S.A. 34:15-1) requires workers' compensation for any business with employees, with no minimum headcount and regardless of full-time, part-time or temporary status. New York has an equally broad requirement under section 10 of its comp law."
-        },
-        {
-          "q_es": "Si le pago en efectivo o es subcontratista, ¿cuenta como empleado?",
-          "a_es": "En una auditoría, lo que decide no es cómo le llamas ni cómo le pagas, sino la relación real de trabajo: quién dirige la tarea, quién pone la herramienta y si la persona tiene su propia póliza. Un subcontratista sin comprobante de su propio workers' comp normalmente se cuenta como empleado tuyo y se agrega a tu nómina auditable.",
-          "q_en": "If I pay cash or they're a subcontractor, do they count as an employee?",
-          "a_en": "In an audit, what decides is not what you call them or how you pay, but the actual working relationship: who directs the task, who supplies the tools, and whether the person carries their own policy. A subcontractor without proof of their own workers' comp is normally counted as your employee and added to your auditable payroll."
-        },
-        {
-          "q_es": "¿Por qué Nueva Jersey tiene tarifas distintas a otros estados?",
-          "a_es": "Porque NJ usa su propio buró de tarifas, el New Jersey Compensation Rating & Inspection Bureau (NJCRIB), en vez del NCCI que usan la mayoría de los estados. Los códigos de clasificación y las tarifas de NJ son propios del estado, y por eso un precio de otro estado no se traduce directamente.",
-          "q_en": "Why does New Jersey have different rates than other states?",
-          "a_en": "Because NJ uses its own rating bureau, the New Jersey Compensation Rating & Inspection Bureau (NJCRIB), instead of the NCCI most states use. NJ class codes and rates are state-specific, which is why a price from another state does not translate directly."
-        },
-        {
-          "q_es": "¿Qué pasa si tengo empleados y no tengo workers' comp?",
-          "a_es": "En Nueva Jersey operar sin la cobertura teniendo empleados puede traer multas diarias y, más serio, responsabilidad personal del dueño por los costos médicos y salarios perdidos del trabajador lesionado. No tener la póliza no elimina la obligación de pagar: la traslada a ti directamente.",
-          "q_en": "What happens if I have employees and no workers' comp?",
-          "a_en": "In New Jersey, operating without coverage while having employees can bring daily fines and, more seriously, personal liability for the injured worker's medical costs and lost wages. Not having the policy does not remove the obligation to pay: it shifts it directly onto you."
-        },
-        {
-          "q_es": "Mi cuadrilla trabaja en NJ y en NY. ¿Necesito dos pólizas?",
-          "a_es": "Posiblemente. Una póliza emitida en NJ no necesariamente responde por una lesión ocurrida en Nueva York, y NY exige además DBL y Paid Family Leave, que son coberturas separadas del workers' comp. Si cruzas la línea estatal con regularidad, la póliza tiene que decir explícitamente qué estados cubre.",
-          "q_en": "My crew works in NJ and NY. Do I need two policies?",
-          "a_en": "Possibly. A policy issued in NJ does not necessarily respond to an injury that happens in New York, and NY additionally requires DBL and Paid Family Leave, which are separate from workers' comp. If you cross the state line regularly, the policy has to state explicitly which states it covers."
         }
       ]
     }

@@ -32,12 +32,6 @@ export const TRAIT_PARA = {
       small: 'Gran parte de la renta aquí son casas antiguas divididas en apartamentos, muchas con cableado y calefacción originales. El riesgo de incendio eléctrico en ese tipo de vivienda es la razón práctica por la que vale la pena tener la cobertura, incluso cuando el landlord no la exige por contrato.',
       ny: 'En Nueva York el tipo de edificio define todo. En un co-op, la línea entre lo que cubre el edificio y lo que te toca a ti está escrita en el proprietary lease, y suele ser menos favorable de lo que la gente supone. En renta estabilizada la división es otra. Vale la pena saber cuál es tu caso antes de comprar nada.',
     },
-    'workers-comp': {
-      compact: 'En una ciudad así de densa las cuadrillas rotan mucho entre patrones y entre trabajos. Eso complica una pregunta simple: quién responde si alguien se lesiona. La respuesta rara vez depende de quién firmó el cheque, sino de quién dirigía el trabajo ese día.',
-      spread: 'Aquí conviven construcción, servicios, restaurantes y almacén, y cada una de esas actividades cae en un código de clasificación distinto. Poner a toda tu gente bajo un solo código es exactamente lo que corrige la auditoría de fin de año, y casi siempre la corrige en tu contra.',
-      small: 'La cuadrilla estacional es lo normal aquí: cuatro personas en verano, una en invierno. Como la prima se calcula sobre nómina real y se audita al cierre del año, una nómina que sube y baja sin reportarse produce una factura de ajuste que nadie vio venir.',
-      ny: 'Nueva York exige compensación laboral para prácticamente cualquier empleador, y además DBL y Paid Family Leave, que son coberturas separadas. Es un requisito más amplio que el de Nueva Jersey, y si tu gente cruza la línea estatal la póliza tiene que decir explícitamente qué estados cubre.',
-    },
   },
   en: {
     'contractor-insurance': {
@@ -57,12 +51,6 @@ export const TRAIT_PARA = {
       spread: 'Building type varies a lot from one area to the next, and with it who answers for what. A two-family house, a large professionally managed building and a condo each split responsibility between owner and tenant differently. The right policy depends on which one you are in.',
       small: 'Much of the rental stock here is older houses cut into apartments, many with original wiring and heating. Electrical fire risk in that kind of housing is the practical reason the coverage is worth having, even when the landlord does not require it by lease.',
       ny: 'In New York the building type defines everything. In a co-op, the line between what the building covers and what falls on you is written into the proprietary lease, and it is usually less favorable than people assume. In rent-stabilized housing the split is different again. Worth knowing which one you are in before buying anything.',
-    },
-    'workers-comp': {
-      compact: 'In a city this dense, crews rotate heavily between employers and between jobs. That complicates a simple question: who answers if someone gets hurt. The answer rarely depends on who wrote the check, but on who was directing the work that day.',
-      spread: 'Construction, services, restaurants and warehousing all coexist here, and each falls under a different classification code. Putting everyone under one code is exactly what the year-end audit corrects, and it almost always corrects against you.',
-      small: 'Seasonal crews are the norm here: four people in summer, one in winter. Because premium is calculated on actual payroll and audited at year end, a payroll that rises and falls without being reported produces an adjustment bill nobody saw coming.',
-      ny: 'New York requires workers\' compensation for virtually every employer, plus DBL and Paid Family Leave, which are separate coverages. It is a broader requirement than New Jersey\'s, and if your people cross the state line the policy has to state explicitly which states it covers.',
     },
   },
 };
@@ -101,11 +89,6 @@ export const LAW_CLOSE = {
       'Si rentas un cuarto o vives con familia, la póliza tiene que estar a tu nombre. Tus cosas dentro de la póliza de otra persona normalmente no están cubiertas.',
       'La inundación es la exclusión que más sorprende. Se compra por separado, y en zonas bajas esa diferencia es la que decide si recuperas tus muebles o no.',
     ],
-    'workers-comp': [
-      'En una auditoría no decide cómo le llames a la persona ni cómo le pagues, sino la relación real de trabajo: quién dirige la tarea, quién pone la herramienta, y si esa persona tiene su propia póliza.',
-      'Operar sin la cobertura teniendo empleados no es solo una multa. Puede convertirse en responsabilidad personal del dueño por los costos médicos y los salarios perdidos del trabajador lesionado.',
-      'La prima se ajusta al final del año contra tu nómina real. Reportar los cambios cuando ocurren evita la factura de ajuste que llega meses después.',
-    ],
   },
   en: {
     'contractor-insurance': [
@@ -122,11 +105,6 @@ export const LAW_CLOSE = {
       'If the landlord asks for proof, check the exact limit required and whether they want to be listed as an interested party. Showing up with a policy below the contract limit is showing up with no policy.',
       'If you rent a room or live with family, the policy has to be in your name. Your belongings sitting under someone else\'s policy are usually not covered.',
       'Flood is the exclusion that surprises people most. It is bought separately, and in low-lying areas that difference decides whether you replace your furniture or not.',
-    ],
-    'workers-comp': [
-      'In an audit, what decides is not what you call the person or how you pay them, but the actual working relationship: who directs the task, who supplies the tools, and whether that person carries their own policy.',
-      'Operating without coverage while having employees is not just a fine. It can become personal liability for the injured worker\'s medical costs and lost wages.',
-      'Premium is trued up at year end against your actual payroll. Reporting changes as they happen avoids the adjustment bill that arrives months later.',
     ],
   },
 };

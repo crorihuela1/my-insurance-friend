@@ -24,13 +24,11 @@ const PAIN_HEADING = {
     'contractor-insurance': ['La realidad del contratista en {town}', 'Cómo se trabaja en {town}', 'El problema real de los contratistas en {town}'],
     'cheap-auto-insurance': ['Por qué el seguro cuesta lo que cuesta en {town}', 'Manejar en {town}', 'Lo que encarece el seguro en {town}'],
     'renters-insurance': ['Cómo se renta en {town}', 'La realidad del inquilino en {town}', 'Por qué esto importa en {town}'],
-    'workers-comp': ['Tener empleados en {town}', 'La realidad del patrón en {town}', 'Lo que se ve en {town}'],
   },
   en: {
     'contractor-insurance': ['What contracting in {town} looks like', 'How the work runs in {town}', 'The real problem for {town} contractors'],
     'cheap-auto-insurance': ['Why insurance costs what it costs in {town}', 'Driving in {town}', "What drives {town} premiums up"],
     'renters-insurance': ['Renting in {town}', 'The reality for {town} tenants', 'Why this matters in {town}'],
-    'workers-comp': ['Having employees in {town}', 'What employers face in {town}', 'What we see in {town}'],
   },
 };
 
@@ -94,14 +92,6 @@ const COST_FACTORS = {
       '**Si tienes mascota.** Algunas razas afectan la parte de responsabilidad de la póliza.',
       '**Si trabajas desde casa.** Equipo de trabajo en la vivienda puede quedar fuera de una póliza de inquilino normal.',
     ],
-    'workers-comp': [
-      '**El código de clasificación.** Es el factor más grande: el mismo sueldo cuesta muy distinto según el oficio.',
-      '**La nómina real.** La prima se calcula por cada $100 de nómina y se audita al final del año.',
-      '**El experience mod.** Tu historial de reclamos ajusta la tarifa hacia arriba o hacia abajo.',
-      '**Cuántos estados cubres.** Trabajar en más de un estado cambia cómo se emite la póliza.',
-      '**Si usas subcontratistas.** Los subs sin su propia cobertura normalmente se suman a tu nómina auditable.',
-      '**El tipo de trabajo dentro del oficio.** Trabajo en altura o con maquinaria pesada no se clasifica igual que trabajo a nivel de piso.',
-    ],
   },
   en: {
     'contractor-insurance': [
@@ -130,14 +120,6 @@ const COST_FACTORS = {
       '**Whether you have a pet.** Some breeds affect the liability side of the policy.',
       '**Whether you work from home.** Business equipment in the home can fall outside a standard renters policy.',
     ],
-    'workers-comp': [
-      '**The class code.** This is the biggest factor: the same wage costs very differently by trade.',
-      '**Actual payroll.** Premium is calculated per $100 of payroll and audited at year end.',
-      '**The experience mod.** Your claims history adjusts the rate up or down.',
-      '**How many states you cover.** Working in more than one state changes how the policy is issued.',
-      '**Whether you use subcontractors.** Subs without their own coverage usually get added to your auditable payroll.',
-      '**The kind of work within the trade.** Work at height or with heavy machinery does not classify like ground-level work.',
-    ],
   },
 };
 
@@ -161,12 +143,6 @@ const COST_BRIDGE = {
       'El precio importa menos que la letra: lo que decide si te sirve o no es el alcance de la cobertura.',
       'Dicho el rango, la pregunta útil es otra: qué cubre exactamente y qué está excluido.',
     ],
-    'workers-comp': [
-      'El precio varía. La obligación de tenerlo, no.',
-      'Eso es lo que mueve el número. Lo que no se mueve es si estás obligado a tenerlo.',
-      'Ese es el cálculo. La parte que no se calcula es si te aplica o no, porque eso lo decide la ley.',
-      'Hasta aquí el costo. La pregunta anterior, y más importante, es desde cuándo estás obligado.',
-    ],
   },
   en: {
     'contractor-insurance': [
@@ -187,12 +163,6 @@ const COST_BRIDGE = {
       'Price matters less than the fine print: what decides whether it helps you is the scope of coverage.',
       'With the range stated, the useful question is a different one: what exactly is covered, and what is excluded.',
     ],
-    'workers-comp': [
-      'The price varies. The obligation to have it does not.',
-      'That is what moves the number. What does not move is whether you are required to carry it.',
-      'That is the calculation. The part that is not calculated is whether it applies to you, because the law decides that.',
-      'That is the cost. The prior, and more important, question is from when you are required to carry it.',
-    ],
   },
 };
 
@@ -203,13 +173,11 @@ const LAW_HEADING = {
     'contractor-insurance': 'Qué exige la ley en {state_name}',
     'cheap-auto-insurance': 'Qué exige la ley en {state_name}',
     'renters-insurance': 'Qué cubre y qué no cubre',
-    'workers-comp': 'Qué exige la ley en {state_name}',
   },
   en: {
     'contractor-insurance': 'What {state_name} law requires',
     'cheap-auto-insurance': 'What {state_name} law requires',
     'renters-insurance': 'What it covers and what it does not',
-    'workers-comp': 'What {state_name} law requires',
   },
 };
 
@@ -233,12 +201,6 @@ const LAW_INTRO = {
       'Nadie te va a multar por no tener seguro de inquilino. Lo que sí puede pasar es que no te firmen el lease, o que un daño lo termines pagando tú.',
       'Esta cobertura no es obligatoria por ley, así que la pregunta útil no es si te obligan, sino qué cubre exactamente.',
     ],
-    'workers-comp': [
-      'Esto no depende del tamaño del negocio ni de cómo le pagues a tu gente:',
-      'La regla es más simple de lo que la gente cree:',
-      'No hay un número mínimo de empleados a partir del cual aplica. Esto es lo que dice la ley:',
-      'Antes de hablar de precio, conviene saber exactamente desde cuándo estás obligado:',
-    ],
   },
   en: {
     'contractor-insurance': [
@@ -258,12 +220,6 @@ const LAW_INTRO = {
       'Unlike auto insurance, there is no legal minimum here. What governs is the lease and what the policy says.',
       'Nobody will fine you for not having renters insurance. What can happen is that the lease does not get signed, or that damage ends up coming out of your pocket.',
       'This coverage is not required by law, so the useful question is not whether you are forced to carry it, but what exactly it covers.',
-    ],
-    'workers-comp': [
-      'This does not depend on the size of the business or how you pay your people:',
-      'The rule is simpler than people think:',
-      'There is no minimum headcount at which this kicks in. Here is what the law says:',
-      'Before talking price, it is worth knowing exactly when the obligation starts:',
     ],
   },
 };
@@ -303,13 +259,11 @@ function processSection(ctx) {
     'contractor-insurance': 'qué oficio haces, cuántas personas trabajan contigo, si tienes empleados en nómina, y qué te está pidiendo el cliente por escrito',
     'cheap-auto-insurance': 'qué vehículo manejas, si tienes seguro ahora mismo, y qué documento tienes para identificarte',
     'renters-insurance': 'la dirección, cuándo empieza el lease, y si el landlord te pidió un límite específico',
-    'workers-comp': 'qué hace tu negocio, cuántos empleados tienes, y en qué estados trabajan',
   };
   const askEn = {
     'contractor-insurance': 'what trade you work, how many people work with you, whether you have employees on payroll, and what the client is asking for in writing',
     'cheap-auto-insurance': 'what vehicle you drive, whether you have insurance right now, and what ID document you hold',
     'renters-insurance': 'the address, when the lease starts, and whether the landlord asked for a specific limit',
-    'workers-comp': 'what your business does, how many employees you have, and which states they work in',
   };
 
   const ask = lang === 'es' ? askEs[service.slug_en] : askEn[service.slug_en];

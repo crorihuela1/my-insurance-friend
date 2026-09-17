@@ -45,11 +45,6 @@ const LEDE = {
       'Qué pasa si se inunda el apartamento de abajo, si hay un incendio en la unidad de al lado, o si el landlord te pide comprobante antes de firmar. Seguro de inquilinos en {town}.',
       'Seguro de inquilinos en {town}: qué cubre, qué no cubre (ojo con la inundación), cuánto cuesta y cómo conseguirlo el mismo día.',
     ],
-    'workers-comp': [
-      'Si tienes aunque sea un empleado en {town}, la compensación laboral deja de ser opcional. Esta página explica qué exige {state}, cómo se calcula y qué pasa si no la tienes.',
-      'Compensación laboral en {town}: desde cuántos empleados es obligatoria, cómo se calcula la prima sobre tu nómina, y por qué llamarle subcontratista no te saca del requisito.',
-      'Lo que un patrón en {town} necesita saber de workers\' comp: la obligación legal, cómo se calcula el precio y qué encuentra una auditoría.',
-    ],
   },
   en: {
     'contractor-insurance': [
@@ -66,11 +61,6 @@ const LEDE = {
       "If you rent in {town}, the landlord's policy does not cover your belongings. This page explains what a renters policy does cover, what it excludes, and what it costs.",
       'What happens if the apartment below floods, if there is a fire next door, or if the landlord wants proof before signing. Renters insurance in {town}.',
       'Renters insurance in {town}: what it covers, what it does not (watch out for flood), what it costs, and how to get it the same day.',
-    ],
-    'workers-comp': [
-      'If you have even one employee in {town}, workers\' compensation stops being optional. This page explains what {state} requires, how it is calculated, and what happens without it.',
-      "Workers' comp in {town}: how many employees before it is required, how premium is calculated on your payroll, and why calling someone a subcontractor does not avoid it.",
-      "What a {town} employer needs to know about workers' comp: the legal obligation, how the price is calculated, and what an audit finds.",
     ],
   },
 };
