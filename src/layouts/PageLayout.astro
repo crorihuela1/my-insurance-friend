@@ -1,0 +1,60 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { t } from '../lib/i18n';
+import { homePath } from '../lib/urls';
+import type { Lang } from '../lib/types';
+
+/**
+ * Generic content page: legal pages, about, contact, thank-you. Narrower
+ * measure than the town x service template and no sticky CTA by default, since
+ * these are read-to-the-end pages rather than conversion pages.
+ */
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  path: string;
+  altPath: string;
+  h1: string;
+  lede?: string;
+  updated?: string;
+  noindex?: boolean;
+  ctaContext?: string;
+  schema?: object[];
+}
+
+/**
+ * MDX pages pass their frontmatter under `frontmatter`; .astro pages pass props
+ * directly. Accept both so one layout serves legal pages, thank-you and about.
+ */
+const p = (Astro.props as Props & { frontmatter?: Props }).frontmatter ?? Astro.props;
+const { lang, title, description, path, altPath, h1, lede, updated, noindex, ctaContext, schema } = p;
+---
+
+<BaseLayout
+  lang={lang}
+  title={title}
+  description={description}
+  path={path}
+  altPath={altPath}
+  noindex={noindex}
+  ctaContext={ctaContext}
+  schema={schema}
+>
+  <article class="mx-auto max-w-2xl px-4 py-6" data-page-type="content">
+    <Breadcrumbs items={[{ name: t(lang, 'breadcrumb_home'), path: homePath(lang) }, { name: h1, path }]} />
+    <h1 class="mt-3 text-3xl font-extrabold leading-tight text-brand-900">{h1}</h1>
+    {lede && <p class="mt-3 text-lg leading-relaxed text-slate-700">{lede}</p>}
+    {
+      updated && (
+        <p class="mt-2 text-xs text-slate-500">
+          {t(lang, 'last_updated')} {updated}
+        </p>
+      )
+    }
+    <div class="prose-body mt-6 text-[1.0625rem] text-slate-800">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

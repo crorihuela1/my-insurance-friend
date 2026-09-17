@@ -1,0 +1,172 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import WhatsAppCta from '../../components/WhatsAppCta.astro';
+import { countyName, services, site, towns, townName } from '../../lib/data';
+import { t } from '../../lib/i18n';
+import { homePath, serviceHubPath, stateHubPath, townHubPath } from '../../lib/urls';
+import type { Lang } from '../../lib/types';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'es' } }, { params: { lang: 'en' } }];
+}
+
+const lang = Astro.params.lang as Lang;
+const other: Lang = lang === 'es' ? 'en' : 'es';
+const path = homePath(lang);
+
+const copy = {
+  es: {
+    title: 'Seguros en español para NJ y NY | Cotiza gratis por WhatsApp',
+    description:
+      'Seguro de contratistas, auto, inquilinos y compensación laboral en NJ y NY. Te conectamos gratis con agentes con licencia. Todo explicado en español.',
+    h1: 'Seguros explicados en español, para NJ y NY',
+    lede: 'No vendemos pólizas. Te conectamos gratis con agentes de seguros con licencia en Nueva Jersey y Nueva York, y te explicamos en español lo que casi nadie se toma el tiempo de explicar.',
+    servicesH: '¿Qué seguro necesitas?',
+    townsH: '¿De dónde eres?',
+    townsSub: 'Cada ciudad tiene su propia página con lo que aplica ahí.',
+    howH: 'Cómo funciona',
+    steps: [
+      ['Nos escribes', 'Por WhatsApp o con el formulario. Solo datos, nada de letra chica.'],
+      ['Te conectamos', 'Con un agente con licencia en tu estado que trabaja tu tipo de caso.'],
+      ['Decides tú', 'El agente te explica las opciones en español. Sin costo y sin compromiso.'],
+    ],
+    whyH: 'Por qué esto es distinto',
+    why: [
+      ['Todo en español, de verdad', 'No es una traducción automática de una página en inglés. Está escrito para quien vive aquí y trabaja aquí.'],
+      ['Citamos la ley', 'Cada número legal de este sitio tiene su fuente oficial enlazada y su fecha de revisión.'],
+      ['No ganamos por comisión', 'Nos pagan una tarifa fija por el referido. No sube si compras más, así que no tenemos motivo para empujarte.'],
+    ],
+    allTowns: 'Ver todas las ciudades y seguros',
+  },
+  en: {
+    title: 'Bilingual insurance help for NJ & NY | Free quote',
+    description:
+      "Contractor, auto, renters and workers' comp insurance in NJ and NY. We connect you with licensed agents, free. Everything explained plainly.",
+    h1: 'Insurance explained plainly, for NJ and NY',
+    lede: "We don't sell policies. We connect you, free, with licensed insurance agents in New Jersey and New York, and we explain the things nobody else takes the time to explain.",
+    servicesH: 'What insurance do you need?',
+    townsH: 'Where are you?',
+    townsSub: 'Every city has its own page covering what applies there.',
+    howH: 'How it works',
+    steps: [
+      ['You message us', 'On WhatsApp or through the form. Just facts, no fine print.'],
+      ['We connect you', 'With a licensed agent in your state who works your kind of case.'],
+      ['You decide', 'The agent walks you through the options. No cost, no obligation.'],
+    ],
+    whyH: 'Why this is different',
+    why: [
+      ['Genuinely bilingual', "Not a machine translation of an English page. Written for people who live and work here."],
+      ['We cite the law', 'Every legal figure on this site links to its official source and carries a review date.'],
+      ["We're not paid on commission", "We're paid a flat referral fee. It doesn't rise if you buy more, so we have no reason to push you."],
+    ],
+    allTowns: 'See all cities and insurance types',
+  },
+}[lang];
+
+const ctaContext = lang === 'es' ? 'seguros en NJ y NY' : 'insurance in NJ and NY';
+---
+
+<BaseLayout
+  lang={lang}
+  title={copy.title}
+  description={copy.description}
+  path={path}
+  altPath={homePath(other)}
+  ctaContext={ctaContext}
+>
+  <section class="border-b border-slate-200 bg-gradient-to-b from-brand-50 to-white">
+    <div class="mx-auto max-w-3xl px-4 py-10">
+      <h1 class="text-3xl font-extrabold leading-tight text-brand-900 sm:text-4xl">{copy.h1}</h1>
+      <p class="mt-4 text-lg leading-relaxed text-slate-700">{copy.lede}</p>
+      <div class="mt-6">
+        <WhatsAppCta lang={lang} context={ctaContext} slug={path} />
+        <p class="mt-2 text-sm text-slate-500">{t(lang, 'response_promise')}</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto max-w-3xl px-4">
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold text-brand-900">{copy.servicesH}</h2>
+      <ul class="mt-4 grid gap-2.5 sm:grid-cols-2">
+        {
+          services.map((s) => (
+            <li>
+              <a
+                href={serviceHubPath(s, lang)}
+                class="flex h-full flex-col rounded-lg border border-slate-200 p-4 transition-colors hover:border-brand-600 hover:bg-brand-50"
+              >
+                <span class="font-semibold text-brand-800">{lang === 'es' ? s.name_es : s.name_en}</span>
+                <span class="mt-1 text-xs text-slate-500">
+                  {lang === 'es' ? s.lines_label_es : s.lines_label_en}
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold text-brand-900">{copy.townsH}</h2>
+      <p class="mt-1 text-sm text-slate-600">{copy.townsSub}</p>
+      <ul class="mt-4 flex flex-wrap gap-2">
+        {
+          towns.map((town) => (
+            <li>
+              <a
+                href={townHubPath(town, lang)}
+                class="inline-block rounded-full border border-slate-300 px-3.5 py-1.5 text-sm text-slate-700 hover:border-brand-600 hover:text-brand-700"
+              >
+                {townName(town, lang)}, {town.state}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-4 text-sm">
+        <a class="font-semibold text-brand-700 underline" href={stateHubPath(lang)}>{copy.allTowns}</a>
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold text-brand-900">{copy.howH}</h2>
+      <ol class="mt-4 grid gap-4 sm:grid-cols-3">
+        {
+          copy.steps.map(([head, body], i) => (
+            <li class="rounded-lg border border-slate-200 p-4">
+              <span class="flex h-7 w-7 items-center justify-center rounded-full bg-brand-700 text-sm font-bold text-white">
+                {i + 1}
+              </span>
+              <p class="mt-2.5 font-semibold text-brand-900">{head}</p>
+              <p class="mt-1 text-sm leading-relaxed text-slate-600">{body}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section class="mt-12">
+      <h2 class="text-2xl font-bold text-brand-900">{copy.whyH}</h2>
+      <dl class="mt-4 grid gap-4">
+        {
+          copy.why.map(([head, body]) => (
+            <div class="border-l-2 border-brand-600 pl-4">
+              <dt class="font-semibold text-brand-900">{head}</dt>
+              <dd class="mt-1 text-[0.9375rem] leading-relaxed text-slate-700">{body}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </section>
+
+    <section class="mt-12 rounded-xl border border-slate-200 bg-slate-50 p-4 sm:p-6">
+      <LeadForm lang={lang} slug={path} heading={t(lang, 'h_form')} />
+    </section>
+
+    <div class="mt-8 mb-4">
+      <WhatsAppCta lang={lang} context={ctaContext} slug={path} />
+    </div>
+  </div>
+</BaseLayout>

@@ -17,6 +17,9 @@ import { join, relative } from 'node:path';
 const DIST = 'dist';
 const rules = JSON.parse(await readFile(new URL('./compliance-rules.json', import.meta.url), 'utf8'));
 
+/** Words that flip the meaning of a following phrase. */
+const NEGATORS = /\b(no|not|never|nunca|tampoco|jamás|sin ser|ni)\s+$/i;
+
 const errors = [];
 const warnings = [];
 
@@ -75,11 +78,21 @@ for (const file of files) {
   const html = await readFile(file, 'utf8');
   const text = visibleText(html).toLowerCase();
 
-  // 1. Forbidden phrases
+  // 1. Forbidden phrases. A phrase directly negated ("no somos una agencia con
+  //    licencia") is the correct thing to say, so it is reported as a warning
+  //    rather than failing the build - but it is never silently ignored.
   for (const rule of rules.forbidden) {
     const needle = rule.pattern.toLowerCase();
-    if (text.includes(needle)) {
-      errors.push(`${rel}: forbidden phrase "${rule.pattern}" - ${rule.why}`);
+    let from = 0;
+    let idx;
+    while ((idx = text.indexOf(needle, from)) !== -1) {
+      from = idx + needle.length;
+      const before = text.slice(Math.max(0, idx - 14), idx);
+      if (NEGATORS.test(before)) {
+        warnings.push(`${rel}: "${rule.pattern}" appears negated ("...${before.trim()}${rule.pattern}"). Allowed, but read it.`);
+      } else {
+        errors.push(`${rel}: forbidden phrase "${rule.pattern}" - ${rule.why}`);
+      }
     }
   }
 

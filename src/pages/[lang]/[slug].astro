@@ -1,43 +1,230 @@
 ---
 import { getCollection, render } from 'astro:content';
 import TownServiceLayout from '../../layouts/TownServiceLayout.astro';
-import { getService, getTown } from '../../lib/data';
-import { townServicePath } from '../../lib/urls';
-import type { Lang } from '../../lib/types';
+import HubLayout from '../../layouts/HubLayout.astro';
+import type { LinkGroup } from '../../layouts/HubLayout.astro';
+import {
+  countyName, getService, getTown, nearbyTowns, services, towns, townName,
+} from '../../lib/data';
+import { t } from '../../lib/i18n';
+import {
+  homePath, serviceHubPath, stateHubPath, townHubPath, townServicePath,
+} from '../../lib/urls';
+import { clamp, DESC_MAX, TITLE_MAX } from '../../lib/seo';
+import type { Lang, Service, Town } from '../../lib/types';
 
 /**
- * Every town x service page. Routes are derived from the content collection, so
- * a page exists exactly when its MDX exists - no orphan URLs, no 404s in the
- * sitemap. Astro prefers static routes over this dynamic one, so flat pages
- * like /es/seguros-nj still win.
+ * Every flat page under /es/ and /en/ that is derived from data: town x service
+ * pages, town hubs, service hubs and the state hub. They share one route so
+ * Astro never has to choose between two dynamic routes of equal specificity.
+ * Fully static pages (home, legal, thank-you) live in src/pages/es|en/ and win
+ * over this route automatically.
  */
 export async function getStaticPaths() {
   const entries = await getCollection('town-service');
+  const langs: Lang[] = ['es', 'en'];
+  const paths: any[] = [];
 
-  return entries.map((entry) => {
+  const slugOf = (full: string) => full.split('/').slice(2).join('/');
+
+  for (const entry of entries) {
     const town = getTown(entry.data.town);
     const service = getService(entry.data.service);
     const lang = entry.data.lang as Lang;
-    // Derive the slug from the same builder the links use, then strip /{lang}/.
-    const slug = townServicePath(service, town, lang).split('/').slice(2).join('/');
+    paths.push({
+      params: { lang, slug: slugOf(townServicePath(service, town, lang)) },
+      props: { kind: 'town-service', entry, town, service, lang },
+    });
+  }
 
-    return { params: { lang, slug }, props: { entry, town, service, lang } };
-  });
+  for (const lang of langs) {
+    for (const town of towns) {
+      paths.push({
+        params: { lang, slug: slugOf(townHubPath(town, lang)) },
+        props: { kind: 'town-hub', town, lang },
+      });
+    }
+    for (const service of services) {
+      paths.push({
+        params: { lang, slug: slugOf(serviceHubPath(service, lang)) },
+        props: { kind: 'service-hub', service, lang },
+      });
+    }
+    paths.push({
+      params: { lang, slug: slugOf(stateHubPath(lang)) },
+      props: { kind: 'state-hub', lang },
+    });
+  }
+
+  return paths;
 }
 
-const { entry, town, service, lang } = Astro.props;
-const { Content } = await render(entry);
+const props = Astro.props as any;
+const lang = props.lang as Lang;
+const other: Lang = lang === 'es' ? 'en' : 'es';
+
+// --- town x service -------------------------------------------------------
+let Content: any = null;
+if (props.kind === 'town-service') {
+  Content = (await render(props.entry)).Content;
+}
+
+// --- hubs -----------------------------------------------------------------
+let hub: {
+  title: string; description: string; path: string; altPath: string; h1: string;
+  lede: string; crumbs: Array<{ name: string; path: string }>; groups: LinkGroup[];
+  ctaContext: string; formCity?: string;
+} | null = null;
+
+const serviceLinks = (town: Town): LinkGroup => ({
+  links: services.map((s) => ({
+    label: lang === 'es' ? s.name_es : s.name_en,
+    sub: lang === 'es' ? s.lines_label_es : s.lines_label_en,
+    href: townServicePath(s, town, lang),
+  })),
+});
+
+/** Towns grouped by county, so a long list reads as a map rather than a wall. */
+const townsByCountyGroups = (service: Service): LinkGroup[] => {
+  const byCounty = new Map<string, Town[]>();
+  for (const town of towns) {
+    const key = `${town.county}|${town.state}`;
+    if (!byCounty.has(key)) byCounty.set(key, []);
+    byCounty.get(key)!.push(town);
+  }
+  return [...byCounty.entries()].map(([key, group]) => {
+    const [, state] = key.split('|');
+    return {
+      heading: `${countyName(group[0], lang)}, ${state}`,
+      links: group.map((town) => ({
+        label: `${lang === 'es' ? service.name_es : service.name_en} ${lang === 'es' ? 'en' : 'in'} ${townName(town, lang)}`,
+        sub: town.zip_list.slice(0, 3).join(', '),
+        href: townServicePath(service, town, lang),
+      })),
+    };
+  });
+};
+
+if (props.kind === 'town-hub') {
+  const town = props.town as Town;
+  const name = townName(town, lang);
+  const county = countyName(town, lang);
+  const path = townHubPath(town, lang);
+  hub = {
+    path,
+    altPath: townHubPath(town, other),
+    title: lang === 'es' ? `Seguros en ${name} ${town.state} | Cotiza en español` : `Insurance in ${name}, ${town.state} | Free Quotes`,
+    description: lang === 'es'
+      ? `Seguro de auto, de contratista, de inquilinos y compensación laboral en ${name}, ${county}. Te conectamos con agentes con licencia. En español.`
+      : `Auto, contractor, renters and workers' comp insurance in ${name}, ${county}. We connect you with licensed agents. Bilingual.`,
+    h1: lang === 'es' ? `Seguros en ${name}, ${town.state}` : `Insurance in ${name}, ${town.state}`,
+    lede: lang === 'es' ? town.local_notes_es : town.local_notes_en,
+    crumbs: [
+      { name: t(lang, 'breadcrumb_home'), path: homePath(lang) },
+      { name: lang === 'es' ? 'Seguros NJ y NY' : 'NJ & NY Insurance', path: stateHubPath(lang) },
+      { name, path },
+    ],
+    groups: [
+      serviceLinks(town),
+      {
+        heading: t(lang, 'h_nearby'),
+        links: nearbyTowns(town).map((n) => ({
+          label: townName(n, lang),
+          sub: countyName(n, lang),
+          href: townHubPath(n, lang),
+        })),
+      },
+    ],
+    ctaContext: lang === 'es' ? `seguros en ${name}` : `insurance in ${name}`,
+    formCity: name,
+  };
+}
+
+if (props.kind === 'service-hub') {
+  const service = props.service as Service;
+  const sname = lang === 'es' ? service.name_es : service.name_en;
+  const path = serviceHubPath(service, lang);
+  hub = {
+    path,
+    altPath: serviceHubPath(service, other),
+    title: lang === 'es' ? `${sname} en NJ y NY | Cotiza por WhatsApp` : `${sname} in NJ & NY | Free Quote`,
+    description: lang === 'es'
+      ? `${sname} en Nueva Jersey y Nueva York. Qué exige la ley, rangos de precio reales y cómo te conectamos con un agente con licencia. En español.`
+      : `${sname} in New Jersey and New York. What the law requires, real price ranges, and how we connect you with a licensed agent.`,
+    h1: lang === 'es' ? `${sname} en Nueva Jersey y Nueva York` : `${sname} in New Jersey and New York`,
+    lede: lang === 'es'
+      ? `Para ${service.audience_es}. Cubre ${service.lines_label_es.toLowerCase()}. Elige tu ciudad para ver qué aplica ahí.`
+      : `For ${service.audience_en}. Covers ${service.lines_label_en.toLowerCase()}. Pick your city to see what applies there.`,
+    crumbs: [
+      { name: t(lang, 'breadcrumb_home'), path: homePath(lang) },
+      { name: lang === 'es' ? 'Seguros NJ y NY' : 'NJ & NY Insurance', path: stateHubPath(lang) },
+      { name: sname, path },
+    ],
+    groups: townsByCountyGroups(service),
+    ctaContext: sname.toLowerCase(),
+  };
+}
+
+if (props.kind === 'state-hub') {
+  const path = stateHubPath(lang);
+  hub = {
+    path,
+    altPath: stateHubPath(other),
+    title: lang === 'es' ? 'Seguros en NJ y NY | Cotiza gratis en español' : 'Insurance in NJ & NY | Free bilingual quotes',
+    description: lang === 'es'
+      ? 'Seguro de contratistas, auto, inquilinos y compensación laboral en Nueva Jersey y Nueva York. Te conectamos gratis con agentes con licencia.'
+      : "Contractor, auto, renters and workers' comp insurance in New Jersey and New York. We connect you with licensed agents, free.",
+    h1: lang === 'es' ? 'Seguros en Nueva Jersey y Nueva York' : 'Insurance in New Jersey and New York',
+    lede: lang === 'es'
+      ? 'Elige el seguro que necesitas o tu ciudad. Cada página explica qué exige la ley del estado, qué rangos de precio se publican y cómo funciona el proceso.'
+      : 'Pick the insurance you need or your city. Every page explains what state law requires, what price ranges are published, and how the process works.',
+    crumbs: [
+      { name: t(lang, 'breadcrumb_home'), path: homePath(lang) },
+      { name: lang === 'es' ? 'Seguros NJ y NY' : 'NJ & NY Insurance', path },
+    ],
+    groups: [
+      {
+        heading: t(lang, 'nav_services'),
+        links: services.map((s) => ({
+          label: lang === 'es' ? s.name_es : s.name_en,
+          sub: lang === 'es' ? s.lines_label_es : s.lines_label_en,
+          href: serviceHubPath(s, lang),
+        })),
+      },
+      {
+        heading: t(lang, 'nav_towns'),
+        links: towns.map((town) => ({
+          label: townName(town, lang),
+          sub: `${countyName(town, lang)}, ${town.state}`,
+          href: townHubPath(town, lang),
+        })),
+      },
+    ],
+    ctaContext: lang === 'es' ? 'seguros en NJ y NY' : 'insurance in NJ and NY',
+  };
+}
 ---
 
-<TownServiceLayout
-  town={town}
-  service={service}
-  lang={lang}
-  lede={entry.data.lede}
-  updated={entry.data.updated}
-  title={entry.data.title}
-  description={entry.data.description}
-  h1={entry.data.h1}
->
-  <Content />
-</TownServiceLayout>
+{
+  props.kind === 'town-service' ? (
+    <TownServiceLayout
+      town={props.town}
+      service={props.service}
+      lang={lang}
+      lede={props.entry.data.lede}
+      updated={props.entry.data.updated}
+      title={props.entry.data.title}
+      description={props.entry.data.description}
+      h1={props.entry.data.h1}
+    >
+      <Content />
+    </TownServiceLayout>
+  ) : (
+    <HubLayout
+      lang={lang}
+      {...hub!}
+      title={clamp(hub!.title, TITLE_MAX)}
+      description={clamp(hub!.description, DESC_MAX)}
+    />
+  )
+}

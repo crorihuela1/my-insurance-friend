@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WhatsAppCta from '../../components/WhatsAppCta.astro';
+import { site } from '../../lib/data';
+import { t } from '../../lib/i18n';
+
+const lang = 'en' as const;
+const path = '/en/thank-you';
+---
+
+<BaseLayout
+  lang={lang}
+  title="Thank you — we'll contact you in minutes"
+  description="We received your request. A licensed agent will contact you in under 5 minutes during business hours."
+  path={path}
+  altPath="/es/gracias"
+  noindex={true}
+>
+  <div class="mx-auto max-w-xl px-4 py-10 text-center">
+    <div
+      class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-wa-500/15"
+      aria-hidden="true"
+    >
+      <svg viewBox="0 0 24 24" class="h-8 w-8 fill-wa-600">
+        <path d="M9.6 16.6 5 12l1.4-1.4 3.2 3.2 8-8L19 7.2z" />
+      </svg>
+    </div>
+
+    <h1 class="mt-5 text-3xl font-extrabold text-brand-900">Got it — your request is in</h1>
+
+    <p class="mt-3 text-lg leading-relaxed text-slate-700">
+      {t(lang, 'response_promise')}
+    </p>
+
+    <p class="mt-2 text-sm text-slate-500">{site.contact.hours_en}</p>
+
+    <div class="mt-7 rounded-xl border border-slate-200 bg-slate-50 p-5 text-left">
+      <h2 class="text-base font-bold text-brand-900">What happens next</h2>
+      <ol class="prose-body mt-2 text-[0.9375rem] text-slate-700">
+        <li>A <strong>licensed</strong> insurance agent reviews your case.</li>
+        <li>They call or text the number you gave us, in English or Spanish.</li>
+        <li>They walk you through your options. You decide, no obligation.</li>
+      </ol>
+      <p class="mt-3 text-sm text-slate-600">
+        Remember: we don't sell policies. We connect you with someone licensed to do that, and we
+        charge you nothing for it.
+      </p>
+    </div>
+
+    <div class="mt-7 text-left">
+      <p class="mb-2 text-center text-sm font-semibold text-slate-700">
+        Urgent? Message us directly:
+      </p>
+      <WhatsAppCta lang={lang} context="your request" slug={path} />
+    </div>
+
+    <p class="mt-6 text-sm text-slate-600">
+      Prefer to book a time?
+      <a class="font-semibold text-brand-700 underline" href={site.contact.calendar_url}>
+        Pick a slot here
+      </a>.
+    </p>
+  </div>
+</BaseLayout>

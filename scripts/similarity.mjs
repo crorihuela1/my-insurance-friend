@@ -73,6 +73,9 @@ const docs = [];
 
 for (const file of files) {
   const html = await readFile(file, 'utf8');
+  // Only town x service pages are judged. Hubs and legal pages deliberately
+  // share a layout, and including them buries the signal this tool exists for.
+  if (!html.includes('data-page-type="town-service"')) continue;
   const text = bodyText(html);
   const words = text.split(' ').filter(Boolean).length;
   // Language is part of identity: an ES and EN twin are not duplicates.
@@ -94,7 +97,7 @@ for (let i = 0; i < docs.length; i++) {
 
 pairs.sort((x, y) => y.score - x.score);
 
-console.log(`similarity: ${docs.length} page(s), threshold ${THRESHOLD}, ${SHINGLE}-word shingles\n`);
+console.log(`similarity: ${docs.length} town x service page(s) of ${files.length} built, threshold ${THRESHOLD}, ${SHINGLE}-word shingles\n`);
 
 if (thin.length) {
   console.log('\x1b[33mThin pages (body under 600 words):\x1b[0m');

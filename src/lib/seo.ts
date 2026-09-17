@@ -5,7 +5,7 @@ export const TITLE_MAX = 60;
 export const DESC_MAX = 155;
 
 /** Truncate on a word boundary so we never ship a title cut mid-word. */
-function clamp(s: string, max: number): string {
+export function clamp(s: string, max: number): string {
   const clean = s.replace(/\s+/g, ' ').trim();
   if (clean.length <= max) return clean;
   const cut = clean.slice(0, max - 1);

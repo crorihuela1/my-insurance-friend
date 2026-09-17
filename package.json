@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm run lint:compliance",
+    "build": "astro build && npm run lint:compliance && npm run lint:links",
     "build:only": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint:compliance": "node scripts/lint-compliance.mjs",
     "similarity": "node scripts/similarity.mjs",
     "queue": "node scripts/content-queue.mjs",
-    "generate:towns": "node scripts/generate-town-pages.mjs"
+    "generate:towns": "node scripts/generate-town-pages.mjs",
+    "lint:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.2.4",

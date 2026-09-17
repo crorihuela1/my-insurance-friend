@@ -8,7 +8,9 @@ import type { Lang } from '../lib/types';
 interface Props { lang: Lang; altPath: string }
 const { lang, altPath } = Astro.props;
 const alt = otherLang(lang);
-const guides = lang === 'es' ? '/es/guias' : '/en/guides';
+// TODO: point at /es/guias once the pillar guides ship. Until then this links
+// to the about page rather than a 404.
+const guides = lang === 'es' ? '/es/quienes-somos' : '/en/about';
 ---
 
 <header class="border-b border-slate-200 bg-white">
@@ -22,7 +24,7 @@ const guides = lang === 'es' ? '/es/guias' : '/en/guides';
         {t(lang, 'nav_services')}
       </a>
       <a href={guides} class="hidden text-slate-600 hover:text-brand-700 sm:inline">
-        {t(lang, 'nav_guides')}
+        {t(lang, 'nav_about')}
       </a>
       <a
         href={telUrl()}
