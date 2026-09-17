@@ -1,0 +1,31 @@
+{
+  "_README": "Phrases that must never appear in built HTML. We are not licensed to advise, so copy may describe what the law requires and what things typically cost, but must never recommend coverage or quote a premium to the reader. Add patterns here, not in the script.",
+  "forbidden": [
+    { "pattern": "te recomendamos", "why": "Recommending coverage requires a license." },
+    { "pattern": "le recomendamos", "why": "Recommending coverage requires a license." },
+    { "pattern": "we recommend", "why": "Recommending coverage requires a license." },
+    { "pattern": "our recommendation", "why": "Recommending coverage requires a license." },
+    { "pattern": "you should buy", "why": "Directing a purchase requires a license." },
+    { "pattern": "deberías comprar", "why": "Directing a purchase requires a license." },
+    { "pattern": "debes comprar", "why": "Directing a purchase requires a license." },
+    { "pattern": "tu prima será", "why": "Quoting a premium to the reader requires a license." },
+    { "pattern": "su prima será", "why": "Quoting a premium to the reader requires a license." },
+    { "pattern": "your premium will be", "why": "Quoting a premium to the reader requires a license." },
+    { "pattern": "you will pay $", "why": "Quoting a premium to the reader requires a license." },
+    { "pattern": "vas a pagar $", "why": "Quoting a premium to the reader requires a license." },
+    { "pattern": "la mejor póliza para ti", "why": "Selecting a policy for the reader requires a license." },
+    { "pattern": "the best policy for you", "why": "Selecting a policy for the reader requires a license." },
+    { "pattern": "we are a licensed", "why": "Phase 1 is unlicensed; this would be a false statement." },
+    { "pattern": "somos una agencia con licencia", "why": "Phase 1 is unlicensed; this would be a false statement." },
+    { "pattern": "guaranteed savings", "why": "Unsubstantiated savings claim." },
+    { "pattern": "ahorro garantizado", "why": "Unsubstantiated savings claim." },
+    { "pattern": "cheapest rate guaranteed", "why": "Unsubstantiated price claim." }
+  ],
+  "affiliate_markers": [
+    "PLACEHOLDER_AFFILIATE_URL",
+    "lemonade.com",
+    "hippo.com",
+    "thimble.com",
+    "nextinsurance.com"
+  ]
+}

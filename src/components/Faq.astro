@@ -1,0 +1,39 @@
+---
+import { t } from '../lib/i18n';
+import type { Lang, ServiceFaq } from '../lib/types';
+
+/**
+ * Visible FAQ markup. The FAQPage JSON-LD is emitted separately by the page via
+ * schema.faqPage() so the structured data and this markup share one source.
+ * <details> gives a mobile accordion with no JavaScript.
+ */
+interface Props { lang: Lang; faq: ServiceFaq[]; heading?: string }
+const { lang, faq, heading } = Astro.props;
+---
+
+<section class="mt-10" aria-labelledby="faq-heading">
+  <h2 id="faq-heading" class="text-2xl font-bold text-brand-900">
+    {heading ?? t(lang, 'h_faq')}
+  </h2>
+  <div class="mt-4 divide-y divide-slate-200 border-y border-slate-200">
+    {
+      faq.map((item) => (
+        <details class="group py-1">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-3 py-3 text-base font-semibold text-slate-900 marker:content-none">
+            <span>{lang === 'es' ? item.q_es : item.q_en}</span>
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 20 20"
+              class="h-5 w-5 shrink-0 fill-slate-400 transition-transform group-open:rotate-180"
+            >
+              <path d="M5.2 7.5 10 12.3l4.8-4.8 1.2 1.2-6 6-6-6z" />
+            </svg>
+          </summary>
+          <p class="pb-4 pr-8 text-[0.9375rem] leading-relaxed text-slate-700">
+            {lang === 'es' ? item.a_es : item.a_en}
+          </p>
+        </details>
+      ))
+    }
+  </div>
+</section>

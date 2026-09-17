@@ -1,0 +1,40 @@
+{
+  "_README": "PLACEHOLDERS — replace every value marked PLACEHOLDER before launch. This is the only file you need to touch for brand/contact changes.",
+  "brand": {
+    "name": "PLACEHOLDER Seguros",
+    "legal_name": "PLACEHOLDER Seguros LLC",
+    "domain": "https://example-placeholder.com",
+    "tagline_es": "Te conectamos con agentes de seguros con licencia en NJ y NY",
+    "tagline_en": "We connect you with licensed insurance agents in NJ and NY"
+  },
+  "contact": {
+    "phone_e164": "+15550000000",
+    "phone_display": "(555) 000-0000",
+    "whatsapp_e164": "15550000000",
+    "email": "PLACEHOLDER@example-placeholder.com",
+    "hours_es": "Lunes a viernes 8am–7pm, sábados 9am–2pm",
+    "hours_en": "Monday–Friday 8am–7pm, Saturday 9am–2pm",
+    "address": {
+      "street": "PLACEHOLDER 123 Main St, Suite 000",
+      "locality": "Paterson",
+      "region": "NJ",
+      "postal_code": "07501",
+      "country": "US"
+    },
+    "calendar_url": "https://example-placeholder.com/agenda"
+  },
+  "forms": {
+    "endpoint": "/api/lead",
+    "consent_version": "2026-09-17-v1"
+  },
+  "defaults": {
+    "lang": "es",
+    "locales": ["es", "en"]
+  },
+  "affiliates": [
+    { "name": "Lemonade", "lines": ["renters"], "url": "PLACEHOLDER_AFFILIATE_URL" },
+    { "name": "Hippo", "lines": ["renters", "home"], "url": "PLACEHOLDER_AFFILIATE_URL" },
+    { "name": "Thimble", "lines": ["gl", "tools"], "url": "PLACEHOLDER_AFFILIATE_URL" },
+    { "name": "NEXT", "lines": ["gl", "wc", "commercial_auto", "tools"], "url": "PLACEHOLDER_AFFILIATE_URL" }
+  ]
+}

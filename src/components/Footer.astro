@@ -1,0 +1,74 @@
+---
+import Disclaimer from './Disclaimer.astro';
+import { services, site, towns, townName } from '../lib/data';
+import { consentLinks } from '../lib/compliance';
+import { serviceHubPath, townHubPath } from '../lib/urls';
+import { t } from '../lib/i18n';
+import type { Lang } from '../lib/types';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const L = consentLinks[lang];
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-14 bg-brand-900 text-slate-200">
+  <div class="mx-auto max-w-5xl px-4 py-10">
+    <div class="grid gap-8 sm:grid-cols-3">
+      <div>
+        <p class="text-base font-bold text-white">{site.brand.name}</p>
+        <p class="mt-2 text-sm text-slate-300">
+          {lang === 'es' ? site.brand.tagline_es : site.brand.tagline_en}
+        </p>
+        <p class="mt-3 text-sm">
+          <a href={`tel:${site.contact.phone_e164}`} class="font-semibold text-white hover:underline">
+            {site.contact.phone_display}
+          </a>
+        </p>
+        <p class="mt-1 text-xs text-slate-400">
+          {lang === 'es' ? site.contact.hours_es : site.contact.hours_en}
+        </p>
+      </div>
+
+      <nav aria-label={t(lang, 'nav_services')}>
+        <p class="text-sm font-semibold text-white">{t(lang, 'nav_services')}</p>
+        <ul class="mt-2 space-y-1.5 text-sm">
+          {
+            services.map((s) => (
+              <li>
+                <a href={serviceHubPath(s, lang)} class="text-slate-300 hover:text-white hover:underline">
+                  {lang === 'es' ? s.name_es : s.name_en}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <nav aria-label={t(lang, 'nav_towns')}>
+        <p class="text-sm font-semibold text-white">{t(lang, 'nav_towns')}</p>
+        <ul class="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5 text-sm">
+          {
+            towns.slice(0, 8).map((town) => (
+              <li>
+                <a href={townHubPath(town, lang)} class="text-slate-300 hover:text-white hover:underline">
+                  {townName(town, lang)}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mt-8 border-t border-white/15 pt-6">
+      <Disclaimer lang={lang} variant="compact" />
+      <ul class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-slate-400">
+        <li><a href={L.privacy} class="hover:text-white hover:underline">{lang === 'es' ? 'Privacidad' : 'Privacy'}</a></li>
+        <li><a href={L.terms} class="hover:text-white hover:underline">{lang === 'es' ? 'Términos' : 'Terms'}</a></li>
+        <li><a href={L.disclaimer} class="hover:text-white hover:underline">{lang === 'es' ? 'Aviso legal' : 'Disclaimer'}</a></li>
+      </ul>
+      <p class="mt-4 text-xs text-slate-500">© {year} {site.brand.legal_name}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,413 @@
+{
+  "_README": "One row = one town. Adding a town here generates 8 pages (4 services x 2 languages) plus a town hub. Required: slug, name_en, name_es, state, county, zip_list, hispanic_pct, pop, lat, lng, nearby_slugs, local_notes_es, local_notes_en. The `angles` object is what keeps generated pages from being near-duplicates: each service pulls its own town-specific paragraph. hispanic_pct and pop are approximate 2020 Census / ACS figures - re-verify before citing in new copy.",
+  "towns": [
+    {
+      "slug": "paterson",
+      "name_en": "Paterson",
+      "name_es": "Paterson",
+      "state": "NJ",
+      "county": "Passaic",
+      "county_es": "condado de Passaic",
+      "zip_list": ["07501", "07502", "07503", "07504", "07505", "07513", "07514", "07522", "07524"],
+      "hispanic_pct": 61,
+      "pop": 159732,
+      "lat": 40.9168,
+      "lng": -74.1718,
+      "nearby_slugs": ["passaic", "newark", "west-new-york", "union-city"],
+      "local_notes_es": "Muchos contratistas de Paterson trabajan en Bergen County, donde los generales piden un COI con $1M antes de dejarte pisar la obra, aunque tu registro HIC solo exija $500,000.",
+      "local_notes_en": "Many Paterson contractors work jobs in Bergen County, where general contractors demand a $1M COI before you set foot on site, even though HIC registration only requires $500,000.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Paterson es una ciudad de cuadrillas pequeñas: dos o tres personas, una troca, y trabajo que cruza el condado casi todos los días. El problema típico no es conseguir el trabajo, es que el general contractor en Ridgewood o Wyckoff pide el certificado el jueves para empezar el lunes, y la póliza que compraste por teléfono hace ocho meses no dice \"additional insured\". Ahí es donde se cae el trabajo.",
+          "en": "Paterson runs on small crews: two or three guys, one truck, and work that crosses county lines most days. The usual problem isn't landing the job, it's that the general contractor in Ridgewood or Wyckoff wants the certificate Thursday for a Monday start, and the policy you bought over the phone eight months ago doesn't name them as additional insured. That's where the job falls apart."
+        },
+        "cheap-auto-insurance": {
+          "es": "En Paterson el carro no es opcional. Route 19, la 80 y la Broadway se llenan desde las 5:30 de la mañana con gente que maneja a obras en Bergen o a almacenes en Secaucus. Las primas en los códigos postales 07501 al 07505 tienden a estar arriba del promedio estatal por densidad de tráfico y frecuencia de reclamos, y mucha gente termina pagando mes a mes con un recargo que no sabía que estaba pagando.",
+          "en": "In Paterson a car isn't optional. Route 19, I-80 and Broadway fill up from 5:30am with people driving to Bergen County job sites or Secaucus warehouses. Premiums in the 07501-07505 ZIPs tend to run above the state average because of traffic density and claim frequency, and many drivers end up on month-to-month billing with an installment surcharge they never noticed."
+        },
+        "renters-insurance": {
+          "es": "Gran parte de Paterson vive en casas multifamiliares de dos y tres pisos, muchas de antes de 1940. El seguro del dueño cubre el edificio, no tus cosas ni tu responsabilidad si una tubería revienta y moja el apartamento de abajo. Cada vez más landlords en el 07503 y el 07513 piden comprobante de seguro de inquilino antes de firmar el lease.",
+          "en": "Much of Paterson lives in two- and three-family houses, many built before 1940. The landlord's policy covers the building, not your belongings and not your liability if a pipe bursts and soaks the apartment below. More landlords in 07503 and 07513 now ask for proof of renters insurance before signing a lease."
+        },
+        "workers-comp": {
+          "es": "Si en Paterson tienes aunque sea un ayudante en la nómina, el workers' comp deja de ser opcional el primer día que trabaja. El error más común aquí es pensar que pagar en efectivo o llamarle \"subcontratista\" te saca del requisito: en una auditoría de NJ eso casi siempre termina contando como empleado y la prima se recalcula hacia atrás.",
+          "en": "If you have even one helper on payroll in Paterson, workers' comp stops being optional on their first day. The most common mistake here is assuming that paying cash or calling someone a \"subcontractor\" avoids the requirement: in a NJ audit that almost always gets counted as an employee and the premium is recalculated retroactively."
+        }
+      }
+    },
+    {
+      "slug": "passaic",
+      "name_en": "Passaic",
+      "name_es": "Passaic",
+      "state": "NJ",
+      "county": "Passaic",
+      "county_es": "condado de Passaic",
+      "zip_list": ["07055"],
+      "hispanic_pct": 74,
+      "pop": 70537,
+      "lat": 40.8568,
+      "lng": -74.1285,
+      "nearby_slugs": ["paterson", "newark", "union-city", "west-new-york"],
+      "local_notes_es": "Passaic es una de las ciudades más densas de todo Estados Unidos, y eso se nota en las primas de auto y en lo rápido que un accidente menor se vuelve un reclamo.",
+      "local_notes_en": "Passaic is one of the densest cities in the entire United States, and that shows up in auto premiums and in how fast a fender-bender becomes a claim.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "En Passaic el trabajo de remodelación se concentra en edificios viejos de ladrillo y casas multifamiliares divididas. Eso significa demolición, plomería en paredes de yeso viejo y trabajo eléctrico sobre instalaciones de los años 50. Los aseguradores miran ese tipo de trabajo distinto al de construcción nueva, y la clasificación que te pongan en la póliza cambia bastante lo que terminas pagando.",
+          "en": "Passaic remodeling work concentrates in old brick buildings and subdivided multifamily houses. That means demo, plumbing inside old plaster walls, and electrical on 1950s systems. Carriers look at that work differently than new construction, and the classification they assign on your policy moves your premium quite a bit."
+        },
+        "cheap-auto-insurance": {
+          "es": "Con más de 70,000 personas en poco más de tres millas cuadradas, Passaic tiene estacionamiento en la calle, tráfico lento y golpes de espejo constantes. Esa densidad es una de las razones por las que el 07055 suele cotizar por encima del promedio de NJ, incluso para alguien con récord limpio.",
+          "en": "With over 70,000 people in barely three square miles, Passaic means street parking, slow traffic and constant mirror clips. That density is one reason 07055 tends to quote above the NJ average, even for a clean record."
+        },
+        "renters-insurance": {
+          "es": "Passaic es mayoritariamente de inquilinos, y mucho del inventario son apartamentos en edificios de tres y cuatro pisos compartiendo paredes y tuberías. Un incendio de cocina en el apartamento vecino puede dejarte sin nada aunque tú no hayas hecho nada, y la póliza del dueño no te repone ni un mueble.",
+          "en": "Passaic is majority-renter, and much of the stock is apartments in three- and four-story buildings sharing walls and plumbing. A kitchen fire in the next unit can wipe you out even though you did nothing wrong, and the landlord's policy won't replace a single piece of your furniture."
+        },
+        "workers-comp": {
+          "es": "Passaic tiene mucha actividad de almacén, distribución y textil además de construcción. Cada una de esas actividades cae en un código de clasificación distinto del NJCRIB, y poner a toda tu gente bajo un solo código es el tipo de cosa que la auditoría de fin de año corrige, casi siempre en tu contra.",
+          "en": "Passaic has significant warehouse, distribution and textile activity alongside construction. Each falls under a different NJCRIB class code, and putting everyone under one code is exactly what the year-end audit corrects, almost always against you."
+        }
+      }
+    },
+    {
+      "slug": "elizabeth",
+      "name_en": "Elizabeth",
+      "name_es": "Elizabeth",
+      "state": "NJ",
+      "county": "Union",
+      "county_es": "condado de Union",
+      "zip_list": ["07201", "07202", "07206", "07208"],
+      "hispanic_pct": 65,
+      "pop": 137298,
+      "lat": 40.6639,
+      "lng": -74.2107,
+      "nearby_slugs": ["newark", "perth-amboy", "union-city", "new-brunswick"],
+      "local_notes_es": "Elizabeth vive alrededor del puerto y del aeropuerto: mucha gente maneja camioneta o van de trabajo, y ese uso comercial cambia por completo qué póliza aplica.",
+      "local_notes_en": "Elizabeth revolves around the port and the airport: a lot of people drive a work van or pickup, and that commercial use completely changes which policy applies.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Elizabeth está pegada al puerto de Newark-Elizabeth, y eso arrastra trabajo comercial: bodegas, locales, oficinas. Cuando entras a propiedad comercial en vez de casas, el contrato deja de ser un apretón de manos y aparecen requisitos escritos: límites más altos, additional insured, a veces waiver of subrogation. Sin eso en papel no entras.",
+          "en": "Elizabeth sits against the Newark-Elizabeth port, which pulls in commercial work: warehouses, storefronts, offices. Once you move from houses to commercial property the contract stops being a handshake and written requirements appear: higher limits, additional insured, sometimes waiver of subrogation. Without that on paper you don't get in."
+        },
+        "cheap-auto-insurance": {
+          "es": "En Elizabeth muchísima gente usa el carro para trabajar: llevar herramienta, hacer entregas, manejar para apps. Si tu póliza es personal y andas cargando material o haciendo deliveries, la aseguradora puede negar un reclamo por uso comercial. Es el error más caro y más común de esta ciudad.",
+          "en": "In Elizabeth a huge number of people use the car for work: hauling tools, making deliveries, driving for apps. If your policy is personal and you're carrying materials or doing deliveries, the carrier can deny a claim for commercial use. It's the most expensive and most common mistake in this city."
+        },
+        "renters-insurance": {
+          "es": "Elizabeth tiene mucho edificio de apartamentos grande, y ahí los landlords institucionales sí exigen seguro de inquilino en el lease, con límite de responsabilidad específico. Si te piden $100,000 de liability y llegas con una póliza de $25,000, no te firman.",
+          "en": "Elizabeth has a lot of large apartment buildings, and institutional landlords there do require renters insurance in the lease with a specific liability limit. If they ask for $100,000 liability and you show up with a $25,000 policy, they won't sign."
+        },
+        "workers-comp": {
+          "es": "Con tanto trabajo de puerto, almacén y transporte, Elizabeth tiene clasificaciones de riesgo alto en la tabla del NJCRIB. Un solo empleado en un código de warehousing puede costar varias veces lo que cuesta un empleado de oficina, y por eso la clasificación correcta importa tanto como el número de empleados.",
+          "en": "With so much port, warehouse and transport work, Elizabeth carries high-hazard classifications on the NJCRIB table. A single employee in a warehousing code can cost several times what a clerical employee costs, which is why correct classification matters as much as headcount."
+        }
+      }
+    },
+    {
+      "slug": "union-city",
+      "name_en": "Union City",
+      "name_es": "Union City",
+      "state": "NJ",
+      "county": "Hudson",
+      "county_es": "condado de Hudson",
+      "zip_list": ["07087"],
+      "hispanic_pct": 80,
+      "pop": 68589,
+      "lat": 40.7795,
+      "lng": -74.0238,
+      "nearby_slugs": ["west-new-york", "paterson", "passaic", "newark"],
+      "local_notes_es": "Union City es la ciudad más densa de Nueva Jersey y una de las más hispanas del país; casi todo el trabajo de construcción aquí es renovación de edificios existentes, no obra nueva.",
+      "local_notes_en": "Union City is New Jersey's densest city and one of the most Hispanic in the country; nearly all construction work here is renovation of existing buildings, not new builds.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Trabajar en Union City es trabajar en espacios apretados: edificios pegados, sin driveway, con vecinos a un metro de tu andamio. El riesgo de daño a propiedad ajena es real y constante, y es exactamente lo que cubre la parte de property damage de tu GL. Un balde de pintura en el carro del vecino es un reclamo.",
+          "en": "Working in Union City means working tight: buildings touching each other, no driveway, neighbors three feet from your scaffold. The risk of damaging someone else's property is real and constant, and that's exactly what the property damage side of your GL covers. A paint bucket on the neighbor's car is a claim."
+        },
+        "cheap-auto-insurance": {
+          "es": "En Union City el estacionamiento es deporte de combate y el carro pasa la mayor parte del tiempo en la calle. Robo de catalizador, vandalismo y golpes de estacionamiento son la razón número uno por la que la gente de aquí pregunta por comprehensive, no por liability.",
+          "en": "In Union City parking is a contact sport and the car spends most of its life on the street. Catalytic converter theft, vandalism and parking dings are the number one reason people here ask about comprehensive rather than liability."
+        },
+        "renters-insurance": {
+          "es": "Union City es abrumadoramente de inquilinos. En edificios donde una sola tubería sirve a seis apartamentos, la responsabilidad por daños de agua es el reclamo más común, y es la parte de la póliza que la gente ignora hasta que el vecino de abajo toca la puerta.",
+          "en": "Union City is overwhelmingly renter-occupied. In buildings where one pipe serves six apartments, water damage liability is the most common claim, and it's the part of the policy people ignore until the downstairs neighbor knocks."
+        },
+        "workers-comp": {
+          "es": "Mucho del trabajo en Union City es de cuadrillas que rotan entre Hudson County y Manhattan. Ahí aparece un problema serio: una póliza de workers' comp de NJ no necesariamente responde por un accidente en Nueva York, y NY exige su propia cobertura además de DBL y PFL.",
+          "en": "A lot of Union City work involves crews rotating between Hudson County and Manhattan. That raises a serious issue: a NJ workers' comp policy doesn't necessarily respond to an injury in New York, and NY requires its own coverage plus DBL and PFL."
+        }
+      }
+    },
+    {
+      "slug": "west-new-york",
+      "name_en": "West New York",
+      "name_es": "West New York",
+      "state": "NJ",
+      "county": "Hudson",
+      "county_es": "condado de Hudson",
+      "zip_list": ["07093"],
+      "hispanic_pct": 77,
+      "pop": 52912,
+      "lat": 40.7879,
+      "lng": -74.0143,
+      "nearby_slugs": ["union-city", "paterson", "passaic", "newark"],
+      "local_notes_es": "Desde West New York mucha gente cruza a Manhattan a trabajar todos los días, en carro por el Lincoln Tunnel o en bus por Bergenline.",
+      "local_notes_en": "From West New York a lot of people commute into Manhattan daily, by car through the Lincoln Tunnel or by bus down Bergenline.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "West New York tiene una mezcla rara: edificios antiguos de Bergenline y condominios nuevos sobre el river. Los condominios traen HOA, y las HOA traen requisitos de seguro por escrito antes de aprobar cualquier trabajo en una unidad. Muchos contratistas descubren eso el día que el board les pide el COI.",
+          "en": "West New York has an unusual mix: old Bergenline walk-ups and new riverfront condos. Condos mean HOAs, and HOAs mean written insurance requirements before any unit work is approved. Plenty of contractors find that out the day the board asks for the COI."
+        },
+        "cheap-auto-insurance": {
+          "es": "Si cruzas el Lincoln Tunnel a diario desde el 07093, acumulas millas y exposición en uno de los corredores con más tráfico del país. Las aseguradoras preguntan por el millaje anual y por el uso (commute vs. placer), y contestar mal esa pregunta es una forma silenciosa de invalidar un reclamo.",
+          "en": "If you cross the Lincoln Tunnel daily from 07093, you rack up miles and exposure in one of the busiest corridors in the country. Carriers ask about annual mileage and use (commute vs. pleasure), and answering that wrong is a quiet way to void a claim."
+        },
+        "renters-insurance": {
+          "es": "En West New York conviven rentas estabilizadas en edificios viejos y torres nuevas con requisitos de lease estrictos. En las torres casi siempre te piden comprobante de seguro con liability específica; en los edificios viejos nadie te lo pide, pero el riesgo de incendio eléctrico es mayor.",
+          "en": "West New York mixes stabilized rents in older buildings with new towers carrying strict lease requirements. In the towers they almost always demand proof of insurance with a specific liability limit; in the older buildings nobody asks, but the electrical fire risk is higher."
+        },
+        "workers-comp": {
+          "es": "Como en todo Hudson County, aquí la línea entre trabajar en NJ y trabajar en NY se cruza a diario. Si tu gente trabaja en los dos estados, necesitas que la póliza lo diga explícitamente; asumir que \"ya estoy cubierto\" es lo que deja a un trabajador lesionado sin nada y al patrón expuesto.",
+          "en": "As across Hudson County, the line between working in NJ and working in NY gets crossed daily. If your people work in both states, the policy has to say so explicitly; assuming \"I'm already covered\" is what leaves an injured worker with nothing and the employer exposed."
+        }
+      }
+    },
+    {
+      "slug": "newark",
+      "name_en": "Newark",
+      "name_es": "Newark",
+      "state": "NJ",
+      "county": "Essex",
+      "county_es": "condado de Essex",
+      "zip_list": ["07102", "07103", "07104", "07105", "07106", "07107", "07108", "07112", "07114"],
+      "hispanic_pct": 36,
+      "pop": 311549,
+      "lat": 40.7357,
+      "lng": -74.1724,
+      "nearby_slugs": ["elizabeth", "paterson", "passaic", "union-city"],
+      "local_notes_es": "El Ironbound (07105) concentra una parte enorme del trabajo de construcción y de los negocios pequeños latinos de Newark.",
+      "local_notes_en": "The Ironbound (07105) concentrates a huge share of Newark's construction work and Latino small businesses.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Newark es la ciudad más grande del estado y tiene permisos municipales, inspecciones y trabajo público. Cuando entras a un proyecto con dinero de la ciudad o del estado, los requisitos de seguro se vuelven contractuales y no negociables: límites fijos, certificados a nombre de la entidad y a veces bonding. No es el mismo mundo que remodelar una cocina.",
+          "en": "Newark is the state's largest city, with municipal permits, inspections and public work. Once you're on a project with city or state money, insurance requirements become contractual and non-negotiable: fixed limits, certificates naming the entity, sometimes bonding. It is not the same world as remodeling a kitchen."
+        },
+        "cheap-auto-insurance": {
+          "es": "Newark tiene de los costos de auto más altos de Nueva Jersey, empujados por densidad, frecuencia de robos y volumen de reclamos. Es también donde más se ve gente manejando con la póliza cancelada por falta de pago, lo cual en NJ dispara multas, suspensión y una recarga grande cuando vuelves a asegurarte.",
+          "en": "Newark carries some of the highest auto costs in New Jersey, driven by density, theft frequency and claim volume. It's also where you most often see people driving on a policy cancelled for non-payment, which in NJ triggers fines, suspension and a big surcharge when you re-insure."
+        },
+        "renters-insurance": {
+          "es": "En Newark hay desde casas de tres familias en el Ironbound hasta edificios grandes en downtown. El denominador común es que el seguro del dueño no cubre tus cosas, y que la responsabilidad por daños de agua o fuego que empiecen en tu unidad sí te la pueden cobrar a ti.",
+          "en": "Newark ranges from Ironbound three-families to large downtown buildings. The common thread is that the landlord's policy doesn't cover your things, and liability for water or fire damage that starts in your unit can absolutely land on you."
+        },
+        "workers-comp": {
+          "es": "Newark tiene la mayor concentración de negocios pequeños con empleados del estado, y también mucha fiscalización. En NJ operar sin workers' comp teniendo empleados no es solo una multa: puede ser responsabilidad personal del dueño por los costos médicos completos del accidente.",
+          "en": "Newark has the state's largest concentration of small businesses with employees, and a lot of enforcement. In NJ, operating without workers' comp while having employees isn't just a fine: it can mean personal liability for the full medical cost of an injury."
+        }
+      }
+    },
+    {
+      "slug": "perth-amboy",
+      "name_en": "Perth Amboy",
+      "name_es": "Perth Amboy",
+      "state": "NJ",
+      "county": "Middlesex",
+      "county_es": "condado de Middlesex",
+      "zip_list": ["08861", "08862"],
+      "hispanic_pct": 80,
+      "pop": 55436,
+      "lat": 40.5068,
+      "lng": -74.2654,
+      "nearby_slugs": ["new-brunswick", "elizabeth", "newark", "dover"],
+      "local_notes_es": "Perth Amboy es ciudad costera: parte del municipio está en zona de inundación y el agua es un factor real en cualquier conversación de seguro aquí.",
+      "local_notes_en": "Perth Amboy is a waterfront city: part of the municipality sits in a flood zone and water is a real factor in any insurance conversation here.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Después de Sandy, buena parte del trabajo residencial en Perth Amboy es reparación, elevación y mitigación de agua. Ese trabajo toca estructura y cimientos, que los aseguradores tratan como riesgo mayor que un trabajo cosmético. Si tu póliza fue cotizada como \"handyman\" y estás haciendo trabajo estructural, tienes un hueco serio.",
+          "en": "Since Sandy, much residential work in Perth Amboy is repair, elevation and water mitigation. That work touches structure and foundations, which carriers treat as higher risk than cosmetic work. If your policy was quoted as \"handyman\" and you're doing structural work, you have a serious gap."
+        },
+        "cheap-auto-insurance": {
+          "es": "En Perth Amboy la inundación de calles en marejada es normal, y el daño por agua a un carro se cubre bajo comprehensive, no bajo liability ni colisión. Mucha gente con cobertura mínima descubre eso cuando el motor ya tragó agua salada.",
+          "en": "Street flooding during storm surge is normal in Perth Amboy, and flood damage to a car falls under comprehensive, not liability or collision. Plenty of people with minimum coverage learn that after the engine has already swallowed salt water."
+        },
+        "renters-insurance": {
+          "es": "Importante y poco sabido: el seguro de inquilino estándar no cubre inundación. En las partes bajas de Perth Amboy eso significa que el daño de una marejada a tus muebles queda fuera a menos que agregues cobertura de flood por separado.",
+          "en": "Important and widely misunderstood: standard renters insurance does not cover flood. In low-lying Perth Amboy that means storm surge damage to your furniture is excluded unless you add separate flood coverage."
+        },
+        "workers-comp": {
+          "es": "Perth Amboy mezcla construcción, marina y manufactura ligera. Los trabajos cerca del agua a veces caen bajo jurisdicción federal marítima en vez de la de compensación estatal de NJ, que es una distinción técnica pero que decide quién paga si alguien se lesiona.",
+          "en": "Perth Amboy mixes construction, marine and light manufacturing. Work near the water sometimes falls under federal maritime jurisdiction rather than NJ state comp, a technical distinction that decides who pays if someone gets hurt."
+        }
+      }
+    },
+    {
+      "slug": "dover",
+      "name_en": "Dover",
+      "name_es": "Dover",
+      "state": "NJ",
+      "county": "Morris",
+      "county_es": "condado de Morris",
+      "zip_list": ["07801"],
+      "hispanic_pct": 70,
+      "pop": 18460,
+      "lat": 40.8840,
+      "lng": -74.5621,
+      "nearby_slugs": ["paterson", "passaic", "newark", "new-brunswick"],
+      "local_notes_es": "Dover es un pueblo hispano rodeado de los suburbios más caros de Morris County; los contratistas de aquí trabajan casi todos hacia afuera, en Randolph, Denville y Morristown.",
+      "local_notes_en": "Dover is a Hispanic town surrounded by Morris County's wealthiest suburbs; contractors here almost all work outward, in Randolph, Denville and Morristown.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "El contratista de Dover trabaja casi siempre para clientes de Morris County con casas caras, y ahí el cliente pregunta por el seguro antes de pedir el precio. Un COI limpio, con límites que se ven serios, es literalmente parte de tu propuesta comercial en este mercado, no un trámite.",
+          "en": "The Dover contractor almost always works for Morris County clients with expensive homes, and there the client asks about insurance before asking about price. A clean COI with limits that look serious is literally part of your sales pitch in this market, not paperwork."
+        },
+        "cheap-auto-insurance": {
+          "es": "Dover es de los pocos puntos de esta lista donde el manejo es de carretera larga, no de ciudad: Route 46, la 80 y la 10 hacia los trabajos. Más millas a velocidad de autopista cambia el perfil de riesgo respecto a alguien que solo maneja en ciudad, y eso puede jugar a tu favor o en tu contra según la aseguradora.",
+          "en": "Dover is one of the few towns on this list where driving is long-haul, not city: Route 46, I-80 and Route 10 out to jobs. More miles at highway speed changes your risk profile versus a pure city driver, and that can cut either way depending on the carrier."
+        },
+        "renters-insurance": {
+          "es": "El inventario de renta en Dover es sobre todo casas viejas divididas en apartamentos, muchas con calefacción y cableado originales. El riesgo de incendio eléctrico en ese tipo de vivienda es la razón práctica por la que vale la pena tener cobertura, aunque el landlord no la pida.",
+          "en": "Dover's rental stock is mostly old houses cut into apartments, many with original heating and wiring. Electrical fire risk in that kind of housing is the practical reason coverage is worth having, even when the landlord doesn't ask."
+        },
+        "workers-comp": {
+          "es": "En Dover es muy común la cuadrilla estacional: cuatro personas en verano, una en invierno. En NJ la prima de workers' comp se calcula sobre nómina real y se audita al final del año, así que una nómina que sube y baja te puede dar una factura de ajuste inesperada si no reportas los cambios.",
+          "en": "Seasonal crews are very common in Dover: four people in summer, one in winter. In NJ, workers' comp premium is calculated on actual payroll and audited at year-end, so a payroll that rises and falls can produce a surprise adjustment bill if you don't report the changes."
+        }
+      }
+    },
+    {
+      "slug": "new-brunswick",
+      "name_en": "New Brunswick",
+      "name_es": "New Brunswick",
+      "state": "NJ",
+      "county": "Middlesex",
+      "county_es": "condado de Middlesex",
+      "zip_list": ["08901", "08903"],
+      "hispanic_pct": 53,
+      "pop": 55266,
+      "lat": 40.4862,
+      "lng": -74.4518,
+      "nearby_slugs": ["perth-amboy", "elizabeth", "newark", "dover"],
+      "local_notes_es": "New Brunswick combina una población estudiantil grande de Rutgers con un barrio latino establecido, y eso parte el mercado de renta en dos mundos distintos.",
+      "local_notes_en": "New Brunswick combines a large Rutgers student population with an established Latino neighborhood, splitting the rental market into two different worlds.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "New Brunswick tiene construcción institucional constante: Rutgers, hospitales, desarrollo de downtown. Entrar a un proyecto institucional significa cumplir requisitos de seguro escritos por el departamento legal de alguien más, normalmente con límites más altos y cláusulas específicas que tu póliza básica no trae.",
+          "en": "New Brunswick has constant institutional construction: Rutgers, hospitals, downtown development. Getting onto an institutional project means meeting insurance requirements written by someone else's legal department, usually with higher limits and specific clauses your basic policy doesn't carry."
+        },
+        "cheap-auto-insurance": {
+          "es": "El tráfico de New Brunswick es de ciudad universitaria: peatones, ciclistas, calles estrechas y mucho movimiento en horarios raros. La frecuencia de reclamos de baja severidad aquí es alta, y las aseguradoras la toman en cuenta al cotizar el 08901.",
+          "en": "New Brunswick traffic is college-town traffic: pedestrians, cyclists, narrow streets and heavy movement at odd hours. Low-severity claim frequency here is high, and carriers price that into 08901."
+        },
+        "renters-insurance": {
+          "es": "Aquí los landlords que rentan a estudiantes casi siempre exigen seguro de inquilino por contrato, y esa costumbre se está extendiendo al resto del mercado de renta de la ciudad. Es de los pocos lugares de NJ donde te lo van a pedir por escrito.",
+          "en": "Landlords renting to students here almost always require renters insurance by contract, and that practice is spreading to the rest of the city's rental market. It's one of the few places in NJ where you'll be asked for it in writing."
+        },
+        "workers-comp": {
+          "es": "New Brunswick tiene mucho negocio de servicio: restaurantes, limpieza, paisajismo, además de construcción. Todos con empleados, todos bajo el mismo requisito de NJ, y todos con códigos de clasificación distintos que cambian la prima de forma importante.",
+          "en": "New Brunswick has a lot of service businesses: restaurants, cleaning, landscaping, alongside construction. All with employees, all under the same NJ requirement, and all with different class codes that move the premium significantly."
+        }
+      }
+    },
+    {
+      "slug": "jackson-heights",
+      "name_en": "Jackson Heights",
+      "name_es": "Jackson Heights",
+      "state": "NY",
+      "county": "Queens",
+      "county_es": "condado de Queens",
+      "zip_list": ["11372"],
+      "hispanic_pct": 57,
+      "pop": 108152,
+      "lat": 40.7557,
+      "lng": -73.8831,
+      "nearby_slugs": ["corona", "queens", "union-city", "west-new-york"],
+      "local_notes_es": "Jackson Heights es uno de los barrios más diversos del planeta y la base de muchísimos contratistas latinos que trabajan en Manhattan y Long Island.",
+      "local_notes_en": "Jackson Heights is one of the most diverse neighborhoods on earth and home base for a great many Latino contractors working in Manhattan and Long Island.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Si trabajas desde Jackson Heights, lo más probable es que tu obra esté en Manhattan o en Long Island, no en tu cuadra. Eso te mete en el mundo del Department of Buildings de NYC, donde la licencia depende de mantener GL activa y donde un lapso en la póliza puede frenar tu licencia, no solo tu trabajo.",
+          "en": "Working out of Jackson Heights, your job site is probably in Manhattan or Long Island, not on your block. That puts you in NYC Department of Buildings territory, where licensing depends on keeping GL active and a lapse in coverage can stall your license, not just your job."
+        },
+        "cheap-auto-insurance": {
+          "es": "Ojo con esto: Nueva York y Nueva Jersey tienen reglas de seguro de auto distintas, y los mínimos de NJ que cambian en 2026 no aplican en NY. Si te mudaste de NJ a Queens o manejas entre los dos estados, tu póliza tiene que estar emitida en el estado donde el carro está registrado.",
+          "en": "Watch this one: New York and New Jersey have different auto insurance rules, and the NJ minimums changing in 2026 do not apply in NY. If you moved from NJ to Queens or drive between both states, your policy has to be issued in the state where the car is registered."
+        },
+        "renters-insurance": {
+          "es": "Jackson Heights es famoso por sus co-ops de ladrillo de los años 20 y 30. En un co-op, la línea entre lo que cubre el edificio y lo que te toca a ti está definida en el proprietary lease, y suele ser menos favorable de lo que la gente asume.",
+          "en": "Jackson Heights is known for its 1920s and 30s brick co-ops. In a co-op, the line between what the building covers and what falls on you is set by the proprietary lease, and it's usually less favorable than people assume."
+        },
+        "workers-comp": {
+          "es": "Nueva York exige workers' comp para prácticamente cualquier empleador, y además DBL y Paid Family Leave, que son coberturas separadas. Es un requisito más amplio que el de NJ, y a los contratistas que se mudan de Jersey a Queens los agarra desprevenidos.",
+          "en": "New York requires workers' comp for virtually every employer, plus DBL and Paid Family Leave, which are separate coverages. It's a broader requirement than NJ's, and it catches contractors moving from Jersey to Queens off guard."
+        }
+      }
+    },
+    {
+      "slug": "corona",
+      "name_en": "Corona",
+      "name_es": "Corona",
+      "state": "NY",
+      "county": "Queens",
+      "county_es": "condado de Queens",
+      "zip_list": ["11368"],
+      "hispanic_pct": 72,
+      "pop": 109931,
+      "lat": 40.7449,
+      "lng": -73.8626,
+      "nearby_slugs": ["jackson-heights", "queens", "union-city", "west-new-york"],
+      "local_notes_es": "Corona tiene una de las concentraciones más altas de trabajadores de construcción latinos de toda la ciudad de Nueva York.",
+      "local_notes_en": "Corona has one of the highest concentrations of Latino construction workers in all of New York City.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "En Corona abunda el contratista que empezó como empleado y ahora toma sus propios trabajos. Ese salto es justo donde aparece el hueco: trabajas como negocio pero sigues asegurado como persona, o no estás asegurado, y el primer contrato serio que te pida un COI te deja fuera.",
+          "en": "Corona is full of contractors who started as employees and now take their own jobs. That jump is exactly where the gap appears: you operate as a business but are still insured as an individual, or not insured at all, and the first serious contract that asks for a COI shuts you out."
+        },
+        "cheap-auto-insurance": {
+          "es": "Muchos en Corona manejan van o pickup de trabajo estacionada en la calle. Si el vehículo está a nombre del negocio, o lo usas para llevar material y herramienta, una póliza personal puede no responder. La distinción entre personal y comercial es la conversación más importante aquí.",
+          "en": "Many in Corona drive a work van or pickup parked on the street. If the vehicle is titled to the business, or you use it to haul materials and tools, a personal policy may not respond. The personal-versus-commercial distinction is the most important conversation here."
+        },
+        "renters-insurance": {
+          "es": "Corona tiene mucha vivienda subdividida y ocupación densa, y ahí el riesgo de que un incendio o una fuga afecte a varias familias a la vez es alto. La parte de responsabilidad de la póliza de inquilino es la que realmente importa en ese escenario, más que la de contenidos.",
+          "en": "Corona has a lot of subdivided housing and dense occupancy, where the odds of a fire or leak affecting several families at once are high. The liability side of a renters policy matters more in that scenario than the contents side."
+        },
+        "workers-comp": {
+          "es": "En Corona es común la cuadrilla de día que rota entre contratistas. En NY, la ley de compensación laboral es amplia y la responsabilidad recae en quien dirige el trabajo, no en quien firmó el cheque. Esa distinción decide quién responde cuando alguien se cae de una escalera.",
+          "en": "Day crews rotating among contractors are common in Corona. In NY, the comp law is broad and liability attaches to whoever directs the work, not whoever wrote the check. That distinction decides who answers when someone falls off a ladder."
+        }
+      }
+    },
+    {
+      "slug": "queens",
+      "name_en": "Queens",
+      "name_es": "Queens",
+      "state": "NY",
+      "county": "Queens",
+      "county_es": "condado de Queens",
+      "zip_list": ["11101", "11354", "11368", "11372", "11373", "11377", "11385", "11432"],
+      "hispanic_pct": 28,
+      "pop": 2405464,
+      "lat": 40.7282,
+      "lng": -73.7949,
+      "nearby_slugs": ["jackson-heights", "corona", "union-city", "west-new-york"],
+      "local_notes_es": "Queens es el condado más grande que cubrimos y el más variado: de casas unifamiliares en Bayside a torres en Long Island City, con reglas de seguro que cambian según el tipo de propiedad.",
+      "local_notes_en": "Queens is the largest county we cover and the most varied: single-family homes in Bayside to towers in Long Island City, with insurance rules that shift by property type.",
+      "angles": {
+        "contractor-insurance": {
+          "es": "Queens es enorme y el trabajo varía muchísimo de barrio en barrio, pero el requisito que no cambia es el del DOB de NYC: para tener y mantener licencia de contratista necesitas responsabilidad civil general activa. Ese es el piso, y lo que pida el cliente va encima.",
+          "en": "Queens is huge and the work varies enormously by neighborhood, but the one constant is the NYC DOB requirement: to get and keep a contractor license you need active general liability. That's the floor, and whatever the client asks sits on top of it."
+        },
+        "cheap-auto-insurance": {
+          "es": "Queens tiene la tasa de propiedad de carro más alta de los cinco condados, y el mercado de seguro de NY funciona con reglas propias: mínimos distintos a los de NJ, y sistema de no-fault propio. Comparar un precio de Queens con uno de Jersey es comparar dos productos distintos.",
+          "en": "Queens has the highest car ownership rate of the five boroughs, and the NY insurance market runs on its own rules: different minimums than NJ, and its own no-fault system. Comparing a Queens price to a Jersey price is comparing two different products."
+        },
+        "renters-insurance": {
+          "es": "En Queens el tipo de edificio cambia todo: co-op, condominio, casa de dos familias o edificio de renta estabilizada tienen divisiones de responsabilidad distintas entre el dueño y tú. La póliza correcta depende de cuál de esos cuatro es tu caso.",
+          "en": "In Queens the building type changes everything: co-op, condo, two-family house or rent-stabilized building each split responsibility between owner and tenant differently. The right policy depends on which of those four you're in."
+        },
+        "workers-comp": {
+          "es": "Para cualquier negocio con empleados en Queens aplica la ley de NY: workers' comp obligatorio, más DBL y PFL. Si además tienes trabajo en Nueva Jersey, necesitas que la póliza cubra ambos estados de forma explícita.",
+          "en": "Any business with employees in Queens falls under NY law: mandatory workers' comp, plus DBL and PFL. If you also have work in New Jersey, the policy needs to cover both states explicitly."
+        }
+      }
+    }
+  ]
+}

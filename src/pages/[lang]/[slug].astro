@@ -1,0 +1,43 @@
+---
+import { getCollection, render } from 'astro:content';
+import TownServiceLayout from '../../layouts/TownServiceLayout.astro';
+import { getService, getTown } from '../../lib/data';
+import { townServicePath } from '../../lib/urls';
+import type { Lang } from '../../lib/types';
+
+/**
+ * Every town x service page. Routes are derived from the content collection, so
+ * a page exists exactly when its MDX exists - no orphan URLs, no 404s in the
+ * sitemap. Astro prefers static routes over this dynamic one, so flat pages
+ * like /es/seguros-nj still win.
+ */
+export async function getStaticPaths() {
+  const entries = await getCollection('town-service');
+
+  return entries.map((entry) => {
+    const town = getTown(entry.data.town);
+    const service = getService(entry.data.service);
+    const lang = entry.data.lang as Lang;
+    // Derive the slug from the same builder the links use, then strip /{lang}/.
+    const slug = townServicePath(service, town, lang).split('/').slice(2).join('/');
+
+    return { params: { lang, slug }, props: { entry, town, service, lang } };
+  });
+}
+
+const { entry, town, service, lang } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<TownServiceLayout
+  town={town}
+  service={service}
+  lang={lang}
+  lede={entry.data.lede}
+  updated={entry.data.updated}
+  title={entry.data.title}
+  description={entry.data.description}
+  h1={entry.data.h1}
+>
+  <Content />
+</TownServiceLayout>

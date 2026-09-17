@@ -1,0 +1,137 @@
+{
+  "_README": "Single source of truth for every legal/statistical claim in page copy. Reference by `id` from templates and MDX (<Fact id=\"nj_hic_cgl\" />). Update here once; every page updates. `verify_by` is when someone should re-check the citation.",
+  "facts": [
+    {
+      "id": "nj_hic_cgl",
+      "jurisdiction": "NJ",
+      "lines": ["gl"],
+      "citation": "N.J.A.C. 13:45A-17.6",
+      "source_url": "https://www.njconsumeraffairs.gov/hic",
+      "effective": "2006-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "Para registrarse como Home Improvement Contractor (HIC) en Nueva Jersey, la ley exige una póliza de responsabilidad civil general (CGL) con un mínimo de $500,000 por ocurrencia.",
+      "text_en": "To register as a Home Improvement Contractor (HIC) in New Jersey, the law requires a commercial general liability (CGL) policy with a minimum of $500,000 per occurrence."
+    },
+    {
+      "id": "nj_hic_2025_additions",
+      "jurisdiction": "NJ",
+      "lines": ["gl", "wc"],
+      "citation": "N.J.S.A. 56:8-136 et seq. (as amended, effective 2025)",
+      "source_url": "https://www.njconsumeraffairs.gov/hic",
+      "effective": "2025-01-01",
+      "verify_by": "2026-12-31",
+      "text_es": "Desde 2025, el registro de contratista en NJ también exige comprobante de compensación laboral (workers' comp) cuando hay empleados, y una fianza de cumplimiento (compliance bond) de $10,000 a $50,000 según el tamaño del contrato.",
+      "text_en": "Since 2025, NJ contractor registration also requires proof of workers' compensation when there are employees, plus a compliance bond of $10,000 to $50,000 depending on contract size."
+    },
+    {
+      "id": "nj_hic_renewal",
+      "jurisdiction": "NJ",
+      "lines": ["gl"],
+      "citation": "NJ Division of Consumer Affairs, HIC registration renewal",
+      "source_url": "https://www.njconsumeraffairs.gov/hic",
+      "effective": "2006-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "El registro de contratista en NJ se renueva cada año y vence el 31 de marzo.",
+      "text_en": "NJ contractor registration renews annually and expires March 31."
+    },
+    {
+      "id": "nj_wc_mandatory",
+      "jurisdiction": "NJ",
+      "lines": ["wc"],
+      "citation": "N.J.S.A. 34:15-1 et seq.",
+      "source_url": "https://www.nj.gov/labor/wc/",
+      "effective": "1911-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "En Nueva Jersey, la compensación laboral es obligatoria para cualquier negocio con empleados, sin importar cuántos sean ni si son de tiempo completo.",
+      "text_en": "In New Jersey, workers' compensation is mandatory for any business with employees, regardless of how many or whether they are full-time."
+    },
+    {
+      "id": "nj_wc_njcrib",
+      "jurisdiction": "NJ",
+      "lines": ["wc"],
+      "citation": "New Jersey Compensation Rating & Inspection Bureau (NJCRIB)",
+      "source_url": "https://www.njcrib.com/",
+      "effective": "1935-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "Nueva Jersey usa su propio buró de tarifas, el NJCRIB, no el NCCI que usan la mayoría de los estados. Por eso las tarifas y los códigos de clasificación de NJ no son iguales a los de otros estados.",
+      "text_en": "New Jersey uses its own rating bureau, NJCRIB, not the NCCI used by most states. That is why NJ class codes and rates do not match other states."
+    },
+    {
+      "id": "nj_auto_minimums_2023",
+      "jurisdiction": "NJ",
+      "lines": ["auto"],
+      "citation": "N.J.S.A. 39:6B-1 (2023 limits)",
+      "source_url": "https://www.nj.gov/dobi/division_consumers/insurance/auto.htm",
+      "effective": "2023-01-01",
+      "verify_by": "2026-12-31",
+      "text_es": "Los límites mínimos de responsabilidad para autos en NJ son 25/50/25: $25,000 por persona por lesiones, $50,000 por accidente, y $25,000 por daños a la propiedad.",
+      "text_en": "New Jersey's minimum auto liability limits are 25/50/25: $25,000 per person for bodily injury, $50,000 per accident, and $25,000 for property damage."
+    },
+    {
+      "id": "nj_auto_minimums_2026",
+      "jurisdiction": "NJ",
+      "lines": ["auto"],
+      "citation": "NJ DOBI Bulletin 25-06",
+      "source_url": "https://www.nj.gov/dobi/bulletins/",
+      "effective": "2026-01-01",
+      "verify_by": "2026-12-31",
+      "text_es": "Para pólizas emitidas o renovadas a partir del 1 de enero de 2026, los mínimos de NJ suben a 35/70/25: $35,000 por persona, $70,000 por accidente y $25,000 por daños a la propiedad.",
+      "text_en": "For policies issued or renewed on or after January 1, 2026, NJ minimums rise to 35/70/25: $35,000 per person, $70,000 per accident, and $25,000 property damage."
+    },
+    {
+      "id": "nj_auto_no_fault_pip",
+      "jurisdiction": "NJ",
+      "lines": ["auto"],
+      "citation": "N.J.S.A. 39:6A-1 et seq.",
+      "source_url": "https://www.nj.gov/dobi/division_consumers/insurance/pip.htm",
+      "effective": "1972-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "Nueva Jersey es un estado \"no-fault\": el PIP (Personal Injury Protection) es obligatorio y paga tus gastos médicos después de un accidente sin importar quién tuvo la culpa.",
+      "text_en": "New Jersey is a no-fault state: PIP (Personal Injury Protection) is mandatory and pays your medical expenses after a crash regardless of who was at fault."
+    },
+    {
+      "id": "nj_auto_premium_range",
+      "jurisdiction": "NJ",
+      "lines": ["auto"],
+      "citation": "Rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify (2024–2025)",
+      "source_url": "https://www.bankrate.com/insurance/car/new-jersey/",
+      "effective": "2025-01-01",
+      "verify_by": "2026-12-31",
+      "text_es": "Según rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify, la prima anual promedio de auto en NJ va de aproximadamente $1,400–$1,600 por cobertura mínima a aproximadamente $3,100–$3,800 por cobertura completa. Son promedios estatales, no una cotización.",
+      "text_en": "Per ranges published by U.S. News, Bankrate, NerdWallet and Insurify, average annual NJ auto premiums run roughly $1,400–$1,600 for minimum coverage and roughly $3,100–$3,800 for full coverage. These are statewide averages, not a quote."
+    },
+    {
+      "id": "ny_wc_mandatory",
+      "jurisdiction": "NY",
+      "lines": ["wc"],
+      "citation": "NY Workers' Compensation Law § 10",
+      "source_url": "https://www.wcb.ny.gov/",
+      "effective": "1914-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "En Nueva York, la compensación laboral es obligatoria para prácticamente todo empleador con empleados, incluyendo familiares y trabajadores de medio tiempo.",
+      "text_en": "In New York, workers' compensation is mandatory for virtually every employer with employees, including family members and part-time workers."
+    },
+    {
+      "id": "ny_dbl_pfl",
+      "jurisdiction": "NY",
+      "lines": ["wc"],
+      "citation": "NY WCL Article 9 (DBL) y NY Paid Family Leave",
+      "source_url": "https://paidfamilyleave.ny.gov/",
+      "effective": "2018-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "Además del workers' comp, los empleadores de NY deben tener seguro de incapacidad (DBL) y Paid Family Leave (PFL). Son coberturas separadas del workers' comp.",
+      "text_en": "Beyond workers' comp, NY employers must carry disability benefits (DBL) and Paid Family Leave (PFL). These are separate from workers' comp."
+    },
+    {
+      "id": "nyc_dob_gl",
+      "jurisdiction": "NY",
+      "lines": ["gl"],
+      "citation": "NYC Department of Buildings licensing requirements",
+      "source_url": "https://www.nyc.gov/site/buildings/industry/licensing.page",
+      "effective": "2020-01-01",
+      "verify_by": "2027-01-01",
+      "text_es": "En la ciudad de Nueva York, los contratistas necesitan responsabilidad civil general (GL) para obtener y mantener su licencia con el Department of Buildings (DOB).",
+      "text_en": "In New York City, contractors need commercial general liability (GL) to obtain and keep their Department of Buildings (DOB) license."
+    }
+  ]
+}

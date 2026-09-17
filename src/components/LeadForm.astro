@@ -1,0 +1,238 @@
+---
+import { CONSENT_VERSION, consentLinks, consentText } from '../lib/compliance';
+import { t } from '../lib/i18n';
+import { site } from '../lib/data';
+import type { Lang } from '../lib/types';
+
+/**
+ * Fields are facts only - nothing about coverage preferences, because asking
+ * "how much liability do you want?" edges toward advising, which we are not
+ * licensed to do. The TCPA consent box is unchecked by default and is never a
+ * condition of submitting anything else.
+ *
+ * Works without JavaScript: the form natively POSTs to the Worker, which
+ * redirects to the thank-you page. JS only upgrades that to an inline result.
+ */
+interface Props { lang: Lang; slug: string; defaultCity?: string; heading?: string }
+const { lang, slug, defaultCity = '', heading } = Astro.props;
+
+const L = consentLinks[lang];
+const thankYou = lang === 'es' ? '/es/gracias' : '/en/thank-you';
+const labelCls = 'block text-sm font-medium text-slate-700';
+const inputCls =
+  'mt-1 block w-full min-h-[3rem] rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-base text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-600/30';
+---
+
+<form
+  class="grid gap-4"
+  method="POST"
+  action={site.forms.endpoint}
+  data-lead-form
+  novalidate
+>
+  {heading && <h2 class="text-xl font-bold text-brand-900">{heading}</h2>}
+
+  <!-- Context the CRM needs; populated server-side where possible. -->
+  <input type="hidden" name="page_slug" value={slug} />
+  <input type="hidden" name="page_language" value={lang} />
+  <input type="hidden" name="consent_version" value={CONSENT_VERSION} />
+  <input type="hidden" name="consent_text" value={consentText[lang]} />
+  <input type="hidden" name="redirect_to" value={thankYou} />
+  <input type="hidden" name="utm_source" data-utm="utm_source" />
+  <input type="hidden" name="utm_medium" data-utm="utm_medium" />
+  <input type="hidden" name="utm_campaign" data-utm="utm_campaign" />
+  <input type="hidden" name="utm_term" data-utm="utm_term" />
+  <input type="hidden" name="utm_content" data-utm="utm_content" />
+  <input type="hidden" name="gclid" data-utm="gclid" />
+  <input type="hidden" name="referrer" data-referrer />
+
+  <!-- Honeypot: bots fill it, humans never see it. -->
+  <div class="hidden" aria-hidden="true">
+    <label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class={labelCls} for="lead-name">{t(lang, 'f_name')} *</label>
+      <input
+        class={inputCls}
+        id="lead-name"
+        name="name"
+        type="text"
+        required
+        autocomplete="name"
+        enterkeyhint="next"
+      />
+    </div>
+    <div>
+      <label class={labelCls} for="lead-phone">{t(lang, 'f_phone')} *</label>
+      <input
+        class={inputCls}
+        id="lead-phone"
+        name="phone"
+        type="tel"
+        required
+        inputmode="tel"
+        autocomplete="tel"
+        placeholder="(973) 555-0100"
+        enterkeyhint="next"
+      />
+    </div>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class={labelCls} for="lead-city">{t(lang, 'f_city')} *</label>
+      <input
+        class={inputCls}
+        id="lead-city"
+        name="city"
+        type="text"
+        required
+        value={defaultCity}
+        autocomplete="address-level2"
+      />
+    </div>
+    <div>
+      <label class={labelCls} for="lead-biz">{t(lang, 'f_business_type')}</label>
+      <input class={inputCls} id="lead-biz" name="business_type" type="text" />
+    </div>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class={labelCls} for="lead-has">{t(lang, 'f_has_insurance')}</label>
+      <select class={inputCls} id="lead-has" name="has_insurance">
+        <option value="">{t(lang, 'f_select')}</option>
+        <option value="yes">{t(lang, 'f_yes')}</option>
+        <option value="no">{t(lang, 'f_no')}</option>
+      </select>
+    </div>
+    <div>
+      <label class={labelCls} for="lead-coi">{t(lang, 'f_needs_coi')}</label>
+      <select class={inputCls} id="lead-coi" name="needs_coi">
+        <option value="">{t(lang, 'f_select')}</option>
+        <option value="yes">{t(lang, 'f_yes')}</option>
+        <option value="no">{t(lang, 'f_no')}</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label class={labelCls} for="lead-time">{t(lang, 'f_best_time')}</label>
+      <select class={inputCls} id="lead-time" name="best_time">
+        <option value="">{t(lang, 'f_select')}</option>
+        <option value="morning">{t(lang, 'f_time_morning')}</option>
+        <option value="afternoon">{t(lang, 'f_time_afternoon')}</option>
+        <option value="evening">{t(lang, 'f_time_evening')}</option>
+        <option value="any">{t(lang, 'f_time_any')}</option>
+      </select>
+    </div>
+    <div>
+      <label class={labelCls} for="lead-lang">{t(lang, 'f_language')}</label>
+      <select class={inputCls} id="lead-lang" name="preferred_language">
+        <option value="es" selected={lang === 'es'}>{t(lang, 'f_lang_es')}</option>
+        <option value="en" selected={lang === 'en'}>{t(lang, 'f_lang_en')}</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- TCPA prior express written consent. Unchecked by default, by law. -->
+  <label class="flex cursor-pointer items-start gap-3 rounded-lg border border-slate-300 bg-slate-50 p-3">
+    <input
+      type="checkbox"
+      name="tcpa_consent"
+      value="yes"
+      required
+      class="mt-1 h-5 w-5 shrink-0 rounded border-slate-400 text-brand-600 focus:ring-brand-600"
+    />
+    <span class="text-xs leading-relaxed text-slate-600">
+      {consentText[lang]}
+      <a class="font-semibold text-brand-700 underline" href={L.privacy}>
+        {lang === 'es' ? 'Política de Privacidad' : 'Privacy Policy'}</a
+      >
+      ·
+      <a class="font-semibold text-brand-700 underline" href={L.terms}>
+        {lang === 'es' ? 'Términos' : 'Terms'}</a
+      >
+    </span>
+  </label>
+
+  <button
+    type="submit"
+    class="min-h-[3.25rem] w-full rounded-lg bg-brand-700 px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-brand-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-700 disabled:opacity-60"
+    data-submit
+  >
+    {t(lang, 'f_submit')}
+  </button>
+
+  <p class="text-center text-xs text-slate-500">{t(lang, 'response_promise')}</p>
+
+  <p
+    class="hidden rounded-md bg-red-50 p-3 text-sm text-red-700"
+    role="alert"
+    data-form-error
+    data-msg-generic={t(lang, 'f_error_generic')}
+    data-msg-required={t(lang, 'f_error_required')}
+  >
+  </p>
+</form>
+
+<script>
+  // The only client JS on the site besides nothing at all. Progressive
+  // enhancement: if this never runs, the form still natively POSTs to the Worker.
+  const forms = document.querySelectorAll<HTMLFormElement>('[data-lead-form]');
+
+  const params = new URLSearchParams(location.search);
+
+  for (const form of forms) {
+    // Carry UTMs through from the landing URL.
+    form.querySelectorAll<HTMLInputElement>('[data-utm]').forEach((el) => {
+      el.value = params.get(el.dataset.utm!) ?? '';
+    });
+    const ref = form.querySelector<HTMLInputElement>('[data-referrer]');
+    if (ref) ref.value = document.referrer ?? '';
+
+    const button = form.querySelector<HTMLButtonElement>('[data-submit]')!;
+    const errorEl = form.querySelector<HTMLParagraphElement>('[data-form-error]')!;
+    const submitLabel = button.textContent ?? '';
+
+    form.addEventListener('submit', async (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        errorEl.textContent = errorEl.dataset.msgRequired ?? '';
+        errorEl.classList.remove('hidden');
+        form.reportValidity();
+        return;
+      }
+
+      event.preventDefault();
+      errorEl.classList.add('hidden');
+      button.disabled = true;
+      button.textContent = button.dataset.submitting ?? submitLabel;
+
+      const payload = new FormData(form);
+      // Consent timestamp is captured at the moment of submission.
+      payload.set('consent_timestamp', new Date().toISOString());
+      payload.set('client_tz', Intl.DateTimeFormat().resolvedOptions().timeZone ?? '');
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: payload,
+          headers: { Accept: 'application/json' },
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const redirect =
+          form.querySelector<HTMLInputElement>('[name="redirect_to"]')?.value ?? '/';
+        location.assign(redirect);
+      } catch {
+        errorEl.textContent = errorEl.dataset.msgGeneric ?? '';
+        errorEl.classList.remove('hidden');
+        button.disabled = false;
+        button.textContent = submitLabel;
+      }
+    });
+  }
+</script>

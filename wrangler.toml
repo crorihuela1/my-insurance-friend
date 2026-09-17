@@ -1,0 +1,13 @@
+# Cloudflare Pages project config. The site is static; functions/ supplies the
+# single dynamic endpoint (POST /api/lead).
+name = "my-insurance-friend"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-09-01"
+
+# Durable consent records. Create with:
+#   npx wrangler kv namespace create LEADS_KV
+# then paste the id below and uncomment. Optional but strongly recommended:
+# it is the evidence that wins a TCPA dispute.
+# [[kv_namespaces]]
+# binding = "LEADS_KV"
+# id = "PLACEHOLDER_KV_NAMESPACE_ID"

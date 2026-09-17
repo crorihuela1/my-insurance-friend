@@ -1,0 +1,32 @@
+{
+  "name": "my-insurance-friend",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build && npm run lint:compliance",
+    "build:only": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint:compliance": "node scripts/lint-compliance.mjs",
+    "similarity": "node scripts/similarity.mjs",
+    "queue": "node scripts/content-queue.mjs"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.4",
+    "@astrojs/sitemap": "^3.3.0",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260917.1",
+    "@types/node": "^22.14.0",
+    "vite": "^6.4.3"
+  },
+  "overrides": {
+    "vite": "$vite"
+  }
+}

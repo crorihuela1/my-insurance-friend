@@ -1,0 +1,205 @@
+{
+  "_README": "One row = one service. Adding a service here generates 2 pages per town per language plus a service hub. `legal_facts` are ids from legal_facts.json. `url_pattern_*` use {town} as the slug token. FAQ copy uses 'aseguranza' in Spanish questions because that is the search term, and 'seguro' in body copy.",
+  "services": [
+    {
+      "slug_en": "contractor-insurance",
+      "slug_es": "seguro-para-contratistas",
+      "url_pattern_en": "contractor-insurance-{town}",
+      "url_pattern_es": "seguro-para-contratistas-en-{town}",
+      "name_en": "Contractor Insurance",
+      "name_es": "Seguro para Contratistas",
+      "search_term_es": "aseguranza para contratistas",
+      "lines": ["gl", "wc", "commercial_auto", "tools"],
+      "lines_label_es": "Responsabilidad civil general (GL), compensación laboral, auto comercial y cobertura de herramienta",
+      "lines_label_en": "General liability (GL), workers' comp, commercial auto and tools coverage",
+      "audience_es": "contratistas, remodeladores, plomeros, electricistas, techadores, pintores y cuadrillas pequeñas",
+      "audience_en": "contractors, remodelers, plumbers, electricians, roofers, painters and small crews",
+      "legal_facts": ["nj_hic_cgl", "nj_hic_2025_additions", "nj_hic_renewal", "nj_wc_mandatory", "nyc_dob_gl"],
+      "cost_range_es": "Para una cuadrilla pequeña en NJ, las pólizas de GL para contratistas suelen publicarse en rangos de aproximadamente $900 a $3,000 al año, y el workers' comp se calcula aparte sobre la nómina. El rango depende del oficio, la nómina, los años de experiencia y el historial de reclamos.",
+      "cost_range_en": "For a small NJ crew, contractor GL policies are commonly published in ranges of roughly $900 to $3,000 per year, with workers' comp calculated separately on payroll. The range depends on trade, payroll, years of experience and claims history.",
+      "affiliate_partners": ["Thimble", "NEXT"],
+      "faq": [
+        {
+          "q_es": "¿Cuánta aseguranza de responsabilidad civil necesito para registrarme como contratista en NJ?",
+          "a_es": "La regulación de Nueva Jersey (N.J.A.C. 13:45A-17.6) establece un mínimo de $500,000 por ocurrencia en responsabilidad civil general para el registro de Home Improvement Contractor. Ese es el mínimo legal para registrarte. Aparte de eso, muchos contratistas generales y dueños de propiedad comercial piden límites más altos por contrato, comúnmente $1,000,000 por ocurrencia. Son dos cosas distintas: el mínimo del estado y lo que exige tu cliente.",
+          "q_en": "How much liability insurance do I need to register as a contractor in NJ?",
+          "a_en": "New Jersey regulation (N.J.A.C. 13:45A-17.6) sets a minimum of $500,000 per occurrence in commercial general liability for Home Improvement Contractor registration. That is the legal minimum to register. Separately, many general contractors and commercial property owners require higher limits by contract, commonly $1,000,000 per occurrence. These are two different things: the state minimum and what your client demands."
+        },
+        {
+          "q_es": "¿Necesito workers' comp si trabajo solo, sin empleados?",
+          "a_es": "La ley de NJ (N.J.S.A. 34:15-1) exige compensación laboral cuando tienes empleados. Si de verdad trabajas solo, sin nadie en nómina, el requisito estatal de workers' comp no aplica de la misma forma. Dicho eso, desde 2025 el registro de contratista de NJ pide comprobante de workers' comp cuando hay empleados, y muchos contratistas generales exigen una póliza o un certificado de exención antes de dejarte entrar a la obra aunque trabajes solo.",
+          "q_en": "Do I need workers' comp if I work alone with no employees?",
+          "a_en": "NJ law (N.J.S.A. 34:15-1) requires workers' compensation when you have employees. If you genuinely work alone with nobody on payroll, the state workers' comp requirement does not apply the same way. That said, since 2025 NJ contractor registration asks for proof of workers' comp where employees exist, and many general contractors require either a policy or an exemption certificate before letting you on site even as a solo operator."
+        },
+        {
+          "q_es": "¿Qué tan rápido puedo tener un certificado (COI) para empezar un trabajo?",
+          "a_es": "Cuando ya tienes una póliza activa, un certificado de seguro normalmente se emite el mismo día; en muchos casos en menos de una hora, porque es un documento que refleja una póliza que ya existe. Lo que toma más tiempo es cuando el cliente pide que lo agreguen como additional insured, porque eso es un cambio de endoso en la póliza, no solo un papel.",
+          "q_en": "How fast can I get a certificate (COI) to start a job?",
+          "a_en": "When you already have an active policy, a certificate of insurance is normally issued same day, often within the hour, because it reflects a policy that already exists. What takes longer is when the client asks to be added as additional insured, since that is an endorsement change to the policy, not just a document."
+        },
+        {
+          "q_es": "¿La aseguranza de contratista cubre mis herramientas si me las roban de la troca?",
+          "a_es": "La responsabilidad civil general no cubre tus herramientas: la GL responde por daños que tú le causes a terceros. Las herramientas se cubren con una cobertura aparte que en la industria se llama contractor's tools and equipment o inland marine. Es una decisión separada de la GL y muchas pólizas básicas no la incluyen por defecto.",
+          "q_en": "Does contractor insurance cover my tools if they're stolen from the truck?",
+          "a_en": "General liability does not cover your tools: GL responds to damage you cause to third parties. Tools are covered under a separate coverage the industry calls contractor's tools and equipment, or inland marine. It is a separate decision from GL and many basic policies do not include it by default."
+        },
+        {
+          "q_es": "¿Puedo conseguir aseguranza de contratista con ITIN, sin número de Seguro Social?",
+          "a_es": "Muchas aseguradoras comerciales aceptan ITIN o el EIN del negocio para emitir una póliza comercial, aunque no todas. El requisito práctico suele ser que el negocio esté formalmente registrado y que puedas documentar la actividad. Varía por aseguradora, así que la pregunta correcta es con cuáles compañías trabaja el agente que te atiende.",
+          "q_en": "Can I get contractor insurance with an ITIN and no Social Security number?",
+          "a_en": "Many commercial carriers accept an ITIN or the business EIN to issue a commercial policy, though not all do. The practical requirement is usually that the business is formally registered and that you can document the activity. It varies by carrier, so the right question is which companies the agent you're working with can place business with."
+        }
+      ]
+    },
+    {
+      "slug_en": "cheap-auto-insurance",
+      "slug_es": "seguro-de-auto-barato",
+      "url_pattern_en": "cheap-auto-insurance-{town}",
+      "url_pattern_es": "seguro-de-auto-barato-en-{town}",
+      "name_en": "Cheap Auto Insurance",
+      "name_es": "Seguro de Auto Barato",
+      "search_term_es": "aseguranza de carro barata",
+      "lines": ["auto"],
+      "lines_label_es": "Responsabilidad civil, PIP, colisión, comprehensive y conductor sin seguro",
+      "lines_label_en": "Liability, PIP, collision, comprehensive and uninsured motorist",
+      "audience_es": "conductores que buscan el precio más bajo sin quedarse sin protección",
+      "audience_en": "drivers looking for the lowest price without leaving themselves unprotected",
+      "legal_facts": ["nj_auto_minimums_2023", "nj_auto_minimums_2026", "nj_auto_no_fault_pip", "nj_auto_premium_range"],
+      "cost_range_es": "Según rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify, la prima promedio anual en NJ va de aproximadamente $1,400–$1,600 por cobertura mínima a aproximadamente $3,100–$3,800 por cobertura completa. Son promedios estatales, no una cotización para ti.",
+      "cost_range_en": "Per ranges published by U.S. News, Bankrate, NerdWallet and Insurify, average annual NJ premiums run roughly $1,400–$1,600 for minimum coverage and roughly $3,100–$3,800 for full coverage. Those are statewide averages, not a quote for you.",
+      "affiliate_partners": [],
+      "faq": [
+        {
+          "q_es": "¿Cuál es el mínimo de aseguranza de carro que exige Nueva Jersey?",
+          "a_es": "Hasta 2025 el mínimo de responsabilidad en NJ es 25/50/25: $25,000 por persona por lesiones corporales, $50,000 por accidente y $25,000 por daños a la propiedad. Para pólizas emitidas o renovadas a partir del 1 de enero de 2026, el Boletín 25-06 del DOBI sube esos mínimos a 35/70/25. Además, NJ es un estado no-fault y el PIP es obligatorio.",
+          "q_en": "What is the minimum auto insurance New Jersey requires?",
+          "a_en": "Through 2025 the NJ liability minimum is 25/50/25: $25,000 per person for bodily injury, $50,000 per accident and $25,000 property damage. For policies issued or renewed on or after January 1, 2026, DOBI Bulletin 25-06 raises those minimums to 35/70/25. New Jersey is also a no-fault state and PIP is mandatory."
+        },
+        {
+          "q_es": "¿Puedo sacar aseguranza de carro con licencia extranjera, ITIN o matrícula consular?",
+          "a_es": "Hay aseguradoras en NJ que emiten pólizas usando licencia extranjera, ITIN o matrícula consular, y otras que no. Nueva Jersey también emite la licencia estándar y la Real ID, y desde 2021 existe una licencia disponible sin importar estatus migratorio. Qué documentos acepta cada compañía varía, y eso es justo lo que un agente con licencia puede revisar contigo antes de que pagues.",
+          "q_en": "Can I get car insurance with a foreign license, ITIN or consular ID?",
+          "a_en": "Some NJ carriers will issue policies using a foreign license, ITIN or consular ID, and others will not. New Jersey also issues both a standard and a Real ID license, and since 2021 a license is available regardless of immigration status. Which documents each company accepts varies, and that is exactly what a licensed agent can check with you before you pay."
+        },
+        {
+          "q_es": "¿Por qué mi aseguranza sube si nunca he tenido un accidente?",
+          "a_es": "En NJ el precio no depende solo de tu récord. Influyen el código postal, la frecuencia de reclamos en tu zona, el costo de reparación de tu modelo, el kilometraje anual, si el uso es de trabajo o personal, y si has tenido lapsos sin cobertura. Un lapso de cobertura en particular es una de las cosas que más sube el precio en este estado.",
+          "q_en": "Why did my insurance go up when I've never had an accident?",
+          "a_en": "In NJ price doesn't depend on your record alone. ZIP code, claim frequency in your area, repair cost for your model, annual mileage, whether use is work or personal, and any lapses in coverage all factor in. A coverage lapse in particular is one of the biggest price drivers in this state."
+        },
+        {
+          "q_es": "¿Qué pasa si manejo en NJ sin seguro?",
+          "a_es": "Manejar sin seguro en Nueva Jersey trae multas, suspensión de licencia y de registración, y posible responsabilidad personal por todos los daños de un accidente. Después, cuando te vuelves a asegurar, el historial de haber estado sin cobertura te coloca en un rango de precio más alto por varios años.",
+          "q_en": "What happens if I drive in NJ without insurance?",
+          "a_en": "Driving uninsured in New Jersey brings fines, license and registration suspension, and potential personal liability for all damages in a crash. Afterward, when you re-insure, the history of having been uninsured puts you in a higher price tier for several years."
+        },
+        {
+          "q_es": "¿La póliza personal de mi carro me cubre si uso la troca para el trabajo?",
+          "a_es": "Depende del uso. Llevar herramienta propia al trabajo suele estar dentro del uso personal, pero transportar material para clientes, hacer entregas o usar el vehículo a nombre del negocio normalmente requiere una póliza de auto comercial. Si la aseguradora determina que el uso era comercial y la póliza era personal, puede negar el reclamo.",
+          "q_en": "Does my personal auto policy cover me if I use the truck for work?",
+          "a_en": "It depends on use. Carrying your own tools to a job is usually within personal use, but hauling materials for clients, making deliveries, or a vehicle titled to the business normally requires a commercial auto policy. If the carrier determines the use was commercial and the policy was personal, it can deny the claim."
+        }
+      ]
+    },
+    {
+      "slug_en": "renters-insurance",
+      "slug_es": "seguro-de-inquilinos",
+      "url_pattern_en": "renters-insurance-{town}",
+      "url_pattern_es": "seguro-de-inquilinos-en-{town}",
+      "name_en": "Renters Insurance",
+      "name_es": "Seguro de Inquilinos",
+      "search_term_es": "aseguranza para inquilinos",
+      "lines": ["renters"],
+      "lines_label_es": "Contenidos, responsabilidad personal y gastos de vivienda temporal",
+      "lines_label_en": "Contents, personal liability and additional living expenses",
+      "audience_es": "inquilinos de apartamentos, casas multifamiliares y cuartos rentados",
+      "audience_en": "renters in apartments, multifamily houses and rented rooms",
+      "legal_facts": [],
+      "cost_range_es": "Las pólizas de inquilino en NJ y NY comúnmente se publican en rangos de aproximadamente $12 a $30 al mes, según el límite de contenidos, el deducible y el edificio. No cubre inundación, que es una póliza aparte.",
+      "cost_range_en": "Renters policies in NJ and NY are commonly published in ranges of roughly $12 to $30 per month, depending on contents limit, deductible and building. It does not cover flood, which is a separate policy.",
+      "affiliate_partners": ["Lemonade", "Hippo"],
+      "faq": [
+        {
+          "q_es": "¿La aseguranza del dueño del edificio cubre mis cosas?",
+          "a_es": "No. La póliza del dueño cubre la estructura del edificio, no tus muebles, tu ropa, tu computadora ni tus herramientas. Tampoco cubre tu responsabilidad si un daño empieza en tu apartamento y afecta a otra unidad. Esas dos cosas son lo que cubre una póliza de inquilino.",
+          "q_en": "Does the landlord's insurance cover my belongings?",
+          "a_en": "No. The landlord's policy covers the building structure, not your furniture, clothes, computer or tools. It also does not cover your liability if damage starts in your apartment and affects another unit. Those two things are what a renters policy covers."
+        },
+        {
+          "q_es": "¿El seguro de inquilino cubre inundación?",
+          "a_es": "No. Las pólizas estándar de inquilino excluyen inundación. Si vives en zona de inundación, la cobertura de flood se compra por separado, normalmente a través del programa federal NFIP o de una aseguradora privada. Es una de las confusiones más caras después de una tormenta.",
+          "q_en": "Does renters insurance cover flooding?",
+          "a_en": "No. Standard renters policies exclude flood. If you live in a flood zone, flood coverage is bought separately, usually through the federal NFIP program or a private carrier. It is one of the most expensive misunderstandings after a storm."
+        },
+        {
+          "q_es": "Mi landlord me pide seguro de inquilino para firmar el lease. ¿Es legal?",
+          "a_es": "Sí. En NJ y NY un propietario puede exigir seguro de inquilino como condición del contrato de renta, y es cada vez más común, sobre todo en edificios administrados por empresas. Normalmente piden un límite de responsabilidad específico, por ejemplo $100,000, y que el edificio aparezca como interested party en el certificado.",
+          "q_en": "My landlord requires renters insurance to sign the lease. Is that legal?",
+          "a_en": "Yes. In NJ and NY a landlord can require renters insurance as a lease condition, and it is increasingly common, especially in professionally managed buildings. They typically ask for a specific liability limit, for example $100,000, and for the building to be listed as an interested party on the certificate."
+        },
+        {
+          "q_es": "¿Puedo tener seguro de inquilino si rento un cuarto o vivo con familia?",
+          "a_es": "Sí. Existen pólizas para quien renta una habitación dentro de una casa. Lo importante es que la póliza esté a tu nombre: si tus cosas están dentro de la póliza de otra persona, normalmente no estás cubierto como tal. Cada adulto con bienes propios suele necesitar su propia póliza.",
+          "q_en": "Can I get renters insurance if I rent a room or live with family?",
+          "a_en": "Yes. Policies exist for people renting a room inside a house. What matters is that the policy is in your name: if your things sit under someone else's policy, you are usually not covered. Each adult with their own belongings typically needs their own policy."
+        },
+        {
+          "q_es": "¿Qué necesito para sacar una aseguranza de inquilinos?",
+          "a_es": "Normalmente basta con la dirección, la fecha en que empieza el lease, un estimado del valor de tus pertenencias y una forma de pago. Muchas compañías emiten la póliza el mismo día y mandan el certificado por correo electrónico, que es lo que el landlord necesita ver.",
+          "q_en": "What do I need to get renters insurance?",
+          "a_en": "Usually just the address, the lease start date, an estimate of what your belongings are worth and a payment method. Many companies issue the policy same day and email the certificate, which is what the landlord needs to see."
+        }
+      ]
+    },
+    {
+      "slug_en": "workers-comp",
+      "slug_es": "compensacion-laboral",
+      "url_pattern_en": "workers-comp-{town}",
+      "url_pattern_es": "compensacion-laboral-en-{town}",
+      "name_en": "Workers' Compensation",
+      "name_es": "Compensación Laboral",
+      "search_term_es": "aseguranza de compensación laboral",
+      "lines": ["wc"],
+      "lines_label_es": "Gastos médicos por lesión de trabajo, salarios perdidos y responsabilidad del patrón",
+      "lines_label_en": "Medical costs for work injuries, lost wages and employer liability",
+      "audience_es": "dueños de negocio con empleados, cuadrillas de construcción, restaurantes, limpieza y paisajismo",
+      "audience_en": "business owners with employees, construction crews, restaurants, cleaning and landscaping",
+      "legal_facts": ["nj_wc_mandatory", "nj_wc_njcrib", "nj_hic_2025_additions", "ny_wc_mandatory", "ny_dbl_pfl"],
+      "cost_range_es": "En NJ la prima de workers' comp se calcula por cada $100 de nómina, multiplicado por la tarifa del código de clasificación del NJCRIB y por tu experience mod. Para oficios de construcción las tarifas publicadas son mucho más altas que para trabajo de oficina, así que el mismo sueldo cuesta muy distinto según el oficio.",
+      "cost_range_en": "In NJ, workers' comp premium is calculated per $100 of payroll, multiplied by the NJCRIB class code rate and your experience mod. Published rates for construction trades run far above clerical work, so the same wage costs very differently by trade.",
+      "affiliate_partners": ["NEXT"],
+      "faq": [
+        {
+          "q_es": "¿Desde cuántos empleados es obligatoria la compensación laboral en NJ?",
+          "a_es": "Desde el primero. La ley de Nueva Jersey (N.J.S.A. 34:15-1) exige compensación laboral para cualquier negocio con empleados, sin mínimo de cantidad y sin importar si son de tiempo completo, medio tiempo o temporales. Nueva York tiene un requisito igual de amplio bajo la sección 10 de su ley de compensación.",
+          "q_en": "How many employees before workers' comp is required in NJ?",
+          "a_en": "From the first one. New Jersey law (N.J.S.A. 34:15-1) requires workers' compensation for any business with employees, with no minimum headcount and regardless of full-time, part-time or temporary status. New York has an equally broad requirement under section 10 of its comp law."
+        },
+        {
+          "q_es": "Si le pago en efectivo o es subcontratista, ¿cuenta como empleado?",
+          "a_es": "En una auditoría, lo que decide no es cómo le llamas ni cómo le pagas, sino la relación real de trabajo: quién dirige la tarea, quién pone la herramienta y si la persona tiene su propia póliza. Un subcontratista sin comprobante de su propio workers' comp normalmente se cuenta como empleado tuyo y se agrega a tu nómina auditable.",
+          "q_en": "If I pay cash or they're a subcontractor, do they count as an employee?",
+          "a_en": "In an audit, what decides is not what you call them or how you pay, but the actual working relationship: who directs the task, who supplies the tools, and whether the person carries their own policy. A subcontractor without proof of their own workers' comp is normally counted as your employee and added to your auditable payroll."
+        },
+        {
+          "q_es": "¿Por qué Nueva Jersey tiene tarifas distintas a otros estados?",
+          "a_es": "Porque NJ usa su propio buró de tarifas, el New Jersey Compensation Rating & Inspection Bureau (NJCRIB), en vez del NCCI que usan la mayoría de los estados. Los códigos de clasificación y las tarifas de NJ son propios del estado, y por eso un precio de otro estado no se traduce directamente.",
+          "q_en": "Why does New Jersey have different rates than other states?",
+          "a_en": "Because NJ uses its own rating bureau, the New Jersey Compensation Rating & Inspection Bureau (NJCRIB), instead of the NCCI most states use. NJ class codes and rates are state-specific, which is why a price from another state does not translate directly."
+        },
+        {
+          "q_es": "¿Qué pasa si tengo empleados y no tengo workers' comp?",
+          "a_es": "En Nueva Jersey operar sin la cobertura teniendo empleados puede traer multas diarias y, más serio, responsabilidad personal del dueño por los costos médicos y salarios perdidos del trabajador lesionado. No tener la póliza no elimina la obligación de pagar: la traslada a ti directamente.",
+          "q_en": "What happens if I have employees and no workers' comp?",
+          "a_en": "In New Jersey, operating without coverage while having employees can bring daily fines and, more seriously, personal liability for the injured worker's medical costs and lost wages. Not having the policy does not remove the obligation to pay: it shifts it directly onto you."
+        },
+        {
+          "q_es": "Mi cuadrilla trabaja en NJ y en NY. ¿Necesito dos pólizas?",
+          "a_es": "Posiblemente. Una póliza emitida en NJ no necesariamente responde por una lesión ocurrida en Nueva York, y NY exige además DBL y Paid Family Leave, que son coberturas separadas del workers' comp. Si cruzas la línea estatal con regularidad, la póliza tiene que decir explícitamente qué estados cubre.",
+          "q_en": "My crew works in NJ and NY. Do I need two policies?",
+          "a_en": "Possibly. A policy issued in NJ does not necessarily respond to an injury that happens in New York, and NY additionally requires DBL and Paid Family Leave, which are separate from workers' comp. If you cross the state line regularly, the policy has to state explicitly which states it covers."
+        }
+      ]
+    }
+  ]
+}

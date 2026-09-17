@@ -1,0 +1,34 @@
+---
+import { getFact } from '../lib/data';
+import { t } from '../lib/i18n';
+import type { Lang } from '../lib/types';
+
+/**
+ * Renders one legal fact from src/data/legal_facts.json with its citation.
+ * Copy never hardcodes these numbers - change the JSON and every page updates.
+ */
+interface Props { id: string; lang: Lang; showSource?: boolean }
+const { id, lang, showSource = true } = Astro.props;
+const fact = getFact(id);
+---
+
+<li class="rounded-lg border border-slate-200 bg-slate-50 p-4">
+  <p class="text-[0.9375rem] leading-relaxed text-slate-800">
+    {lang === 'es' ? fact.text_es : fact.text_en}
+  </p>
+  {
+    showSource && (
+      <p class="mt-2 text-xs text-slate-500">
+        {t(lang, 'fact_source')}:{' '}
+        <a
+          href={fact.source_url}
+          rel="noopener nofollow"
+          target="_blank"
+          class="underline hover:text-brand-700"
+        >
+          {fact.citation}
+        </a>
+      </p>
+    )
+  }
+</li>
