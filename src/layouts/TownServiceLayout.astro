@@ -1,7 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
-import Disclaimer from '../components/Disclaimer.astro';
 import Faq from '../components/Faq.astro';
 import LeadForm from '../components/LeadForm.astro';
 import NearbyTowns from '../components/NearbyTowns.astro';
@@ -103,10 +102,6 @@ const zips = town.zip_list.slice(0, 6).join(', ');
       <p class="mt-2 text-center text-xs text-slate-500 sm:text-left">
         {t(lang, 'response_promise')}
       </p>
-    </div>
-
-    <div class="mt-6">
-      <Disclaimer lang={lang} variant="boxed" />
     </div>
 
     {/* Body copy: MDX from the content collection. */}
