@@ -25,6 +25,7 @@ constraint is enforced in code, not just in copy — see [Compliance](#complianc
 | Home, hubs, legal, thank-you, about | ✅ 142 pages total, 0 broken internal links |
 | Social content generator | ✅ 510 posts, all compliance-checked |
 | Social API publisher | ⚠️ written, **unverified against live APIs** — see below |
+| Per-page OG images (Satori) | ✅ 126 images, 1200×630, card text compliance-checked |
 | 4 pillar guides (ES + EN) | ✅ 8 guides, 1,500–2,500 words, length gated in the lint |
 | Blog / noticias collection | ⏸ not started |
 
@@ -191,6 +192,9 @@ Budget: LCP under 2s on 4G, since 80%+ of this traffic is on a phone.
 Current town × service page: **~11 KB gzip HTML, ~5 KB gzip CSS, 48 KB font,
 ~1.1 KB inline JS, zero external JS files.**
 
+- Open Graph images are generated at build time (Satori + resvg), one per page,
+  and add ~18s to the build. They are never fetched by the browser — only by
+  social crawlers — so they cost nothing on page load.
 - One variable font family, self-hosted, split into `latin` and `latin-ext`. The
   `latin` file covers every Spanish accent (U+0000–00FF), so it is the only file
   on the critical path; `latin-ext` downloads only if a page needs it.
@@ -343,3 +347,27 @@ the site will be wrong.
 8. **Re-verify the figures with a 2026 `verify_by` date** in
    `src/data/legal_facts.json` — notably the NJ auto minimum change and the 2025
    HIC requirements.
+
+
+---
+
+## Open Graph images
+
+One 1200×630 PNG per page, generated at build time by
+`src/pages/og/[...slug].png.ts` using Satori + resvg. The route mirrors the page
+path, and that mapping lives in `ogImagePath()` in `src/lib/seo.ts`, so a page
+and its card cannot drift apart. `check-links` verifies every `og:image`
+resolves — a broken card is otherwise invisible until someone shares the link.
+
+**Card text is compliance-checked before it renders.** The HTML lint cannot read
+a PNG, which is exactly how a workers' comp guide card shipped with a "free
+quote on WhatsApp" footer. `renderOg()` now runs the card's title, subtitle and
+CTA through the same `compliance-rules.json` and throws, failing the build.
+
+Product pages carry the WhatsApp quote CTA. Guides and legal pages carry an
+informational one ("Lee la guía completa" / "Read more"), because a guide is
+content, not an offer.
+
+Satori supports TTF, OTF and **WOFF but not WOFF2**. The site's own fonts are
+woff2, so the generator loads the woff build from `@fontsource/inter`. That is a
+devDependency — it is never served to browsers.

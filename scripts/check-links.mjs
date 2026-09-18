@@ -43,7 +43,14 @@ let checked = 0;
 
 for (const page of pages) {
   const html = await readFile(page, 'utf8');
-  const hrefs = [...html.matchAll(/(?:href|src)="([^"]+)"/g)].map((m) => m[1]);
+  const hrefs = [
+    ...[...html.matchAll(/(?:href|src)="([^"]+)"/g)].map((m) => m[1]),
+    // og:image and twitter:image are absolute URLs on our own domain; a broken
+    // one shows up only when someone shares the page, so check them here.
+    ...[...html.matchAll(/<meta\s+(?:property|name)="(?:og:image|twitter:image)"\s+content="([^"]+)"/g)]
+      .map((m) => m[1])
+      .map((u) => { try { return new URL(u).pathname; } catch { return u; } }),
+  ];
   for (const href of hrefs) {
     // Skip external, anchors, and non-http schemes (tel:, mailto:, wa.me).
     if (/^(https?:)?\/\//.test(href) || /^(#|tel:|mailto:|data:|javascript:)/.test(href)) continue;

@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { site } from '../lib/data';
 import { absolute, otherLang } from '../lib/urls';
 import { graph, localBusiness } from '../lib/schema';
+import { ogImagePath } from '../lib/seo';
 import { t } from '../lib/i18n';
 import type { Lang } from '../lib/types';
 import Header from '../components/Header.astro';
@@ -39,7 +40,8 @@ const {
 const canonical = absolute(path);
 const alt = otherLang(lang);
 const htmlLang = lang === 'es' ? 'es-US' : 'en-US';
-const og = ogImage ?? '/og-default.png';
+// Every page has a generated OG image at a path mirroring its own.
+const og = ogImage ?? ogImagePath(path);
 
 // Spanish is the primary language, so x-default points at /es.
 const esPath = lang === 'es' ? path : altPath;
