@@ -23,6 +23,15 @@ const NEGATORS = /\b(no|not|never|nunca|tampoco|jamás|sin ser|ni)\s+$/i;
 const errors = [];
 const warnings = [];
 
+/**
+ * A production build must not carry placeholder brand data. In preview this is
+ * only a warning - placeholders are expected there - but shipping "PLACEHOLDER
+ * Seguros" and (555) 000-0000 to a public, indexable site is the single most
+ * embarrassing failure available, so production fails hard.
+ */
+const IS_PRODUCTION = process.env.SITE_ENV === 'production';
+const PLACEHOLDER_PATTERNS = ['PLACEHOLDER', '(555) 000-0000', 'example-placeholder.com'];
+
 async function htmlFiles(dir) {
   let out = [];
   let entries;
@@ -66,6 +75,8 @@ function decodeEntities(s) {
     .replace(/&quot;/g, '"')
     .replace(/&nbsp;/g, ' ');
 }
+
+const placeholderWarned = new Set();
 
 const files = await htmlFiles(DIST);
 if (files.length === 0) {
@@ -126,7 +137,18 @@ for (const file of files) {
     else if (words > 2500) warnings.push(`${rel}: guide is ${words} words, over the 2,500 spec - consider splitting.`);
   }
 
-  // 6. Title and description length
+  // 6. Placeholder brand data
+  for (const pat of PLACEHOLDER_PATTERNS) {
+    if (!html.includes(pat)) continue;
+    const msg = `${rel}: contains placeholder "${pat}". Replace the values in src/data/site.json.`;
+    if (IS_PRODUCTION) errors.push(msg);
+    else if (!placeholderWarned.has(pat)) {
+      placeholderWarned.add(pat);
+      warnings.push(`placeholder "${pat}" still present (preview build, so not fatal). First seen in ${rel}.`);
+    }
+  }
+
+  // 7. Title and description length
   const title = attr(html, /<title>([\s\S]*?)<\/title>/i);
   if (title && title.length > 60) {
     warnings.push(`${rel}: <title> is ${title.length} chars (max 60): ${title}`);

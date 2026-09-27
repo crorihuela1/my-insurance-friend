@@ -6,7 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 import site from './src/data/site.json' with { type: 'json' };
 
 export default defineConfig({
-  site: site.brand.domain,
+  // SITE_URL lets a preview deploy use its own origin instead of the
+  // placeholder in site.json. See src/lib/env.ts.
+  site: (process.env.SITE_URL ?? site.brand.domain).replace(/\/$/, ''),
   trailingSlash: 'never',
   build: { format: 'file' },
   integrations: [

@@ -1,5 +1,6 @@
 import { absolute, townServicePath } from './urls';
 import { countyName, site, towns, townName } from './data';
+import { SITE_URL } from './env';
 import type { Lang, Service, ServiceFaq, Town } from './types';
 
 /**
@@ -11,9 +12,9 @@ export function localBusiness(lang: Lang) {
   const a = site.contact.address;
   return {
     '@type': 'InsuranceAgency',
-    '@id': `${site.brand.domain}/#organization`,
+    '@id': `${SITE_URL}/#organization`,
     name: site.brand.name,
-    url: site.brand.domain,
+    url: SITE_URL,
     telephone: site.contact.phone_e164,
     email: site.contact.email,
     description: lang === 'es' ? site.brand.tagline_es : site.brand.tagline_en,
@@ -79,8 +80,8 @@ export function articleSchema(opts: {
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
     mainEntityOfPage: { '@type': 'WebPage', '@id': opts.url },
-    publisher: { '@id': `${site.brand.domain}/#organization` },
-    author: { '@id': `${site.brand.domain}/#organization` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    author: { '@id': `${SITE_URL}/#organization` },
   };
 }
 
@@ -92,7 +93,7 @@ export function serviceSchema(service: Service, town: Town, lang: Lang) {
     '@id': `${url}#service`,
     name: lang === 'es' ? service.name_es : service.name_en,
     serviceType: lang === 'es' ? service.name_es : service.name_en,
-    provider: { '@id': `${site.brand.domain}/#organization` },
+    provider: { '@id': `${SITE_URL}/#organization` },
     areaServed: {
       '@type': 'City',
       name: townName(town, lang),

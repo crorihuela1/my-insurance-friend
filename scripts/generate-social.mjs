@@ -30,7 +30,7 @@ const site = JSON.parse(await readFile('src/data/site.json', 'utf8'));
 const social = JSON.parse(await readFile('src/data/social.json', 'utf8'));
 const rules = JSON.parse(await readFile('scripts/compliance-rules.json', 'utf8'));
 
-const DOMAIN = site.brand.domain.replace(/\/$/, '');
+const DOMAIN = (process.env.SITE_URL ?? site.brand.domain).replace(/\/$/, '');
 const NEGATORS = /\b(no|not|never|nunca|tampoco|ni)\s+$/i;
 
 /** Same check the site build runs, applied to caption text. */

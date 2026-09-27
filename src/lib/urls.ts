@@ -1,4 +1,5 @@
-import { services, site, towns } from './data';
+import { services, towns } from './data';
+import { SITE_URL } from './env';
 import type { Lang, Service, Town } from './types';
 
 /**
@@ -36,7 +37,7 @@ export function homePath(lang: Lang): string {
 }
 
 export function absolute(path: string): string {
-  return new URL(path, site.brand.domain).href;
+  return new URL(path, SITE_URL).href;
 }
 
 export const otherLang = (lang: Lang): Lang => (lang === 'es' ? 'en' : 'es');

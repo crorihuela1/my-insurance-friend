@@ -4,6 +4,7 @@ import { site } from '../lib/data';
 import { absolute, otherLang } from '../lib/urls';
 import { graph, localBusiness } from '../lib/schema';
 import { ogImagePath } from '../lib/seo';
+import { IS_PRODUCTION } from '../lib/env';
 import { t } from '../lib/i18n';
 import type { Lang } from '../lib/types';
 import Header from '../components/Header.astro';
@@ -62,7 +63,14 @@ const jsonLd = graph([localBusiness(lang), ...schema]);
     <link rel="alternate" hreflang={alt === 'es' ? 'es' : 'en'} href={absolute(altPath)} />
     <link rel="alternate" hreflang="x-default" href={absolute(esPath)} />
 
-    {noindex && <meta name="robots" content="noindex,follow" />}
+    {/* Non-production builds are never indexable. Canonical, hreflang and
+        og:image all bake the origin in at build time, so a preview Google
+        picks up is expensive to undo. */}
+    {!IS_PRODUCTION ? (
+      <meta name="robots" content="noindex,nofollow" />
+    ) : (
+      noindex && <meta name="robots" content="noindex,follow" />
+    )}
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />

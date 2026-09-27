@@ -214,6 +214,24 @@ Cloudflare Pages, connected to this repo:
 | Output directory | `dist` |
 | Node version | 22 |
 
+### Deploy environment variables
+
+| Name | Preview | Production |
+|---|---|---|
+| `SITE_URL` | the `*.pages.dev` URL | the real domain |
+| `SITE_ENV` | unset (or anything) | `production` |
+| `CRM_WEBHOOK_URL` | a test webhook | the live Go High Level hook |
+| `IP_HASH_SALT` | any random hex | a different random hex |
+
+**Indexing is off unless `SITE_ENV` is exactly `production`.** Every other build
+emits `noindex,nofollow` on all pages and a `robots.txt` that disallows
+everything. Canonical URLs, hreflang and og:image all bake the origin in at
+build time, so a preview Google indexes is expensive to undo.
+
+**A production build fails if any placeholder survives.** `PLACEHOLDER`,
+`(555) 000-0000` and `example-placeholder.com` are fatal when `SITE_ENV` is
+`production`, and warnings otherwise. Swap `src/data/site.json` first.
+
 `functions/` deploys automatically as Pages Functions. Because `npm run build`
 includes the compliance lint, **a compliance failure fails the deploy** — which
 is the point.
