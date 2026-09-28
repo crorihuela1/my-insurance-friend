@@ -309,6 +309,22 @@ coverage or quotes a premium fails the run and nothing is written.
 Regenerating preserves anything you filled in by hand — `media_url`, `status`
 and `scheduled_for` all carry over, so rewriting copy never wipes your schedule.
 
+### Post images
+
+`npm run build` generates a 1080x1350 Instagram card per image post into the
+site build at `/social/<post-id>.png`, and `generate-social.mjs` fills each
+post's `media_url` with that address. Nothing to host and nothing to upload —
+the Instagram API fetches media from a public URL, and these are already on it.
+
+Three layouts keyed to post kind so a feed of them doesn't read as one template:
+`local` leads with the town, `faq` with the question, `fact` inverts to a light
+card so citations stand out in a grid. Card text runs through the same
+compliance rules as the pages.
+
+**Video platforms stay empty by design.** TikTok needs footage; the generator
+writes the hook/body/close script but cannot shoot it. Those posts keep
+`media_url: ""` and the publisher refuses them until you supply one.
+
 ### Publishing
 
 ```bash

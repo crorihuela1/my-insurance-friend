@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T00:05:53.445Z",
+  "generated": "2026-09-28T23:20:33.610Z",
   "posts": [
     {
       "id": "local-contractor-insurance-paterson-es-facebook",
@@ -32,8 +32,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Paterson, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-paterson-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Paterson, NJ",
+        "headline": "Paterson es una ciudad de cuadrillas pequeñas: dos o tres personas, una camioneta, y trabajo que cruza el condado casi todos los días.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -86,8 +91,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Paterson, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-paterson-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Paterson, NJ",
+        "headline": "Paterson runs on small crews: two or three guys, one truck, and work that crosses county lines most days.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -140,8 +150,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Paterson, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-paterson-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Paterson, NJ",
+        "headline": "En Paterson el carro no es opcional.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -194,8 +209,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Paterson, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-paterson-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Paterson, NJ",
+        "headline": "In Paterson a car isn't optional.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -248,8 +268,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Paterson, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-paterson-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Paterson, NJ",
+        "headline": "Gran parte de Paterson vive en casas multifamiliares de dos y tres pisos, muchas de antes de 1940.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -302,8 +327,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Paterson, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-paterson-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Paterson, NJ",
+        "headline": "Much of Paterson lives in two- and three-family houses, many built before 1940.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -356,8 +386,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Passaic, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-passaic-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Passaic, NJ",
+        "headline": "En Passaic el trabajo de remodelación se concentra en edificios viejos de ladrillo y casas multifamiliares divididas.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -410,8 +445,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Passaic, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-passaic-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Passaic, NJ",
+        "headline": "Passaic remodeling work concentrates in old brick buildings and subdivided multifamily houses.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -464,8 +504,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Passaic, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-passaic-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Passaic, NJ",
+        "headline": "Con más de 70,000 personas en poco más de tres millas cuadradas, Passaic tiene estacionamiento en la calle, tráfico lento y golpes de espejo…",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -518,8 +563,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Passaic, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-passaic-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Passaic, NJ",
+        "headline": "With over 70,000 people in barely three square miles, Passaic means street parking, slow traffic and constant mirror clips.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -572,8 +622,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Passaic, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-passaic-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Passaic, NJ",
+        "headline": "Passaic es mayoritariamente de inquilinos, y mucho del inventario son apartamentos en edificios de tres y cuatro pisos compartiendo paredes y…",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -626,8 +681,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Passaic, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-passaic-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Passaic, NJ",
+        "headline": "Passaic is majority-renter, and much of the stock is apartments in three- and four-story buildings sharing walls and plumbing.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -680,8 +740,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Elizabeth, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-elizabeth-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Elizabeth, NJ",
+        "headline": "Elizabeth está pegada al puerto de Newark-Elizabeth, y eso arrastra trabajo comercial: bodegas, locales, oficinas.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -734,8 +799,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Elizabeth, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-elizabeth-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Elizabeth, NJ",
+        "headline": "Elizabeth sits against the Newark-Elizabeth port, which pulls in commercial work: warehouses, storefronts, offices.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -788,8 +858,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Elizabeth, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-elizabeth-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Elizabeth, NJ",
+        "headline": "En Elizabeth muchísima gente usa el carro para trabajar: llevar herramienta, hacer entregas, manejar para apps.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -842,8 +917,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Elizabeth, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-elizabeth-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Elizabeth, NJ",
+        "headline": "In Elizabeth a huge number of people use the car for work: hauling tools, making deliveries, driving for apps.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -896,8 +976,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Elizabeth, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-elizabeth-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Elizabeth, NJ",
+        "headline": "Elizabeth tiene mucho edificio de apartamentos grande, y ahí los landlords institucionales sí exigen seguro de inquilino en el lease, con límite de…",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -950,8 +1035,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Elizabeth, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-elizabeth-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Elizabeth, NJ",
+        "headline": "Elizabeth has a lot of large apartment buildings, and institutional landlords there do require renters insurance in the lease with a specific…",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1004,8 +1094,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Union City, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-union-city-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Union City, NJ",
+        "headline": "Trabajar en Union City es trabajar en espacios apretados: edificios pegados, sin driveway, con vecinos a un metro de tu andamio.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1058,8 +1153,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Union City, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-union-city-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Union City, NJ",
+        "headline": "Working in Union City means working tight: buildings touching each other, no driveway, neighbors three feet from your scaffold.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1112,8 +1212,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Union City, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-union-city-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Union City, NJ",
+        "headline": "En Union City el estacionamiento es deporte de combate y el carro pasa la mayor parte del tiempo en la calle.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1166,8 +1271,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Union City, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-union-city-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Union City, NJ",
+        "headline": "In Union City parking is a contact sport and the car spends most of its life on the street.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1220,8 +1330,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Union City, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-union-city-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Union City, NJ",
+        "headline": "Union City es abrumadoramente de inquilinos.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1274,8 +1389,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Union City, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-union-city-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Union City, NJ",
+        "headline": "Union City is overwhelmingly renter-occupied.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1328,8 +1448,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"West New York, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-west-new-york-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "West New York, NJ",
+        "headline": "West New York tiene una mezcla rara: edificios antiguos de Bergenline y condominios nuevos sobre el river.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1382,8 +1507,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"West New York, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-west-new-york-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "West New York, NJ",
+        "headline": "West New York has an unusual mix: old Bergenline walk-ups and new riverfront condos.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1436,8 +1566,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"West New York, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-west-new-york-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "West New York, NJ",
+        "headline": "Si cruzas el Lincoln Tunnel a diario desde el 07093, acumulas millas y exposición en uno de los corredores con más tráfico del país.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1490,8 +1625,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"West New York, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-west-new-york-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "West New York, NJ",
+        "headline": "If you cross the Lincoln Tunnel daily from 07093, you rack up miles and exposure in one of the busiest corridors in the country.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1544,8 +1684,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"West New York, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-west-new-york-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "West New York, NJ",
+        "headline": "En West New York conviven rentas estabilizadas en edificios viejos y torres nuevas con requisitos de lease estrictos.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1598,8 +1743,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"West New York, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-west-new-york-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "West New York, NJ",
+        "headline": "West New York mixes stabilized rents in older buildings with new towers carrying strict lease requirements.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1652,8 +1802,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Newark, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-newark-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Newark, NJ",
+        "headline": "Newark es la ciudad más grande del estado y tiene permisos municipales, inspecciones y trabajo público.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1706,8 +1861,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Newark, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-newark-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Newark, NJ",
+        "headline": "Newark is the state's largest city, with municipal permits, inspections and public work.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1760,8 +1920,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Newark, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-newark-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Newark, NJ",
+        "headline": "Newark tiene de los costos de auto más altos de Nueva Jersey, empujados por densidad, frecuencia de robos y volumen de reclamos.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1814,8 +1979,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Newark, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-newark-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Newark, NJ",
+        "headline": "Newark carries some of the highest auto costs in New Jersey, driven by density, theft frequency and claim volume.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1868,8 +2038,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Newark, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-newark-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Newark, NJ",
+        "headline": "En Newark hay desde casas de tres familias en el Ironbound hasta edificios grandes en downtown.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1922,8 +2097,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Newark, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-newark-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Newark, NJ",
+        "headline": "Newark ranges from Ironbound three-families to large downtown buildings.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -1976,8 +2156,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Perth Amboy, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-perth-amboy-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Perth Amboy, NJ",
+        "headline": "Después de Sandy, buena parte del trabajo residencial en Perth Amboy es reparación, elevación y mitigación de agua.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2030,8 +2215,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Perth Amboy, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-perth-amboy-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Perth Amboy, NJ",
+        "headline": "Since Sandy, much residential work in Perth Amboy is repair, elevation and water mitigation.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2084,8 +2274,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Perth Amboy, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-perth-amboy-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Perth Amboy, NJ",
+        "headline": "En Perth Amboy la inundación de calles en marejada es normal, y el daño por agua a un carro se cubre bajo comprehensive, no bajo liability ni…",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2138,8 +2333,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Perth Amboy, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-perth-amboy-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Perth Amboy, NJ",
+        "headline": "Street flooding during storm surge is normal in Perth Amboy, and flood damage to a car falls under comprehensive, not liability or collision.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2192,8 +2392,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Perth Amboy, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-perth-amboy-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Perth Amboy, NJ",
+        "headline": "Importante y poco sabido: el seguro de inquilino estándar no cubre inundación.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2246,8 +2451,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Perth Amboy, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-perth-amboy-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Perth Amboy, NJ",
+        "headline": "Important and widely misunderstood: standard renters insurance does not cover flood.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2300,8 +2510,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Dover, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-dover-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Dover, NJ",
+        "headline": "El contratista de Dover trabaja casi siempre para clientes de Morris County con casas caras, y ahí el cliente pregunta por el seguro antes de pedir…",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2354,8 +2569,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Dover, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-dover-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Dover, NJ",
+        "headline": "The Dover contractor almost always works for Morris County clients with expensive homes, and there the client asks about insurance before asking…",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2408,8 +2628,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Dover, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-dover-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Dover, NJ",
+        "headline": "Dover es de los pocos puntos de esta lista donde el manejo es de carretera larga, no de ciudad: Route 46, la 80 y la 10 hacia los trabajos.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2462,8 +2687,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Dover, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-dover-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Dover, NJ",
+        "headline": "Dover is one of the few towns on this list where driving is long-haul, not city: Route 46, I-80 and Route 10 out to jobs.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2516,8 +2746,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Dover, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-dover-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Dover, NJ",
+        "headline": "El inventario de renta en Dover es sobre todo casas viejas divididas en apartamentos, muchas con calefacción y cableado originales.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2570,8 +2805,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Dover, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-dover-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Dover, NJ",
+        "headline": "Dover's rental stock is mostly old houses cut into apartments, many with original heating and wiring.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2624,8 +2864,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"New Brunswick, NJ\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-new-brunswick-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "New Brunswick, NJ",
+        "headline": "New Brunswick tiene construcción institucional constante: Rutgers, hospitales, desarrollo de downtown.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2678,8 +2923,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"New Brunswick, NJ\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-new-brunswick-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "New Brunswick, NJ",
+        "headline": "New Brunswick has constant institutional construction: Rutgers, hospitals, downtown development.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2732,8 +2982,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"New Brunswick, NJ\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-new-brunswick-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "New Brunswick, NJ",
+        "headline": "El tráfico de New Brunswick es de ciudad universitaria: peatones, ciclistas, calles estrechas y mucho movimiento en horarios raros.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2786,8 +3041,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"New Brunswick, NJ\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-new-brunswick-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "New Brunswick, NJ",
+        "headline": "New Brunswick traffic is college-town traffic: pedestrians, cyclists, narrow streets and heavy movement at odd hours.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2840,8 +3100,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"New Brunswick, NJ\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-new-brunswick-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "New Brunswick, NJ",
+        "headline": "Aquí los landlords que rentan a estudiantes casi siempre exigen seguro de inquilino por contrato, y esa costumbre se está extendiendo al resto del…",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2894,8 +3159,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"New Brunswick, NJ\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-new-brunswick-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "New Brunswick, NJ",
+        "headline": "Landlords renting to students here almost always require renters insurance by contract, and that practice is spreading to the rest of the city's…",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -2948,8 +3218,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Jackson Heights, NY\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-jackson-heights-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Jackson Heights, NY",
+        "headline": "Si trabajas desde Jackson Heights, lo más probable es que tu obra esté en Manhattan o en Long Island, no en tu cuadra.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3002,8 +3277,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Jackson Heights, NY\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-jackson-heights-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Jackson Heights, NY",
+        "headline": "Working out of Jackson Heights, your job site is probably in Manhattan or Long Island, not on your block.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3056,8 +3336,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Jackson Heights, NY\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-jackson-heights-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Jackson Heights, NY",
+        "headline": "Ojo con esto: Nueva York y Nueva Jersey tienen reglas de seguro de auto distintas, y los mínimos de NJ que cambian en 2026 no aplican en NY.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3110,8 +3395,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Jackson Heights, NY\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-jackson-heights-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Jackson Heights, NY",
+        "headline": "Watch this one: New York and New Jersey have different auto insurance rules, and the NJ minimums changing in 2026 do not apply in NY.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3164,8 +3454,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Jackson Heights, NY\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-jackson-heights-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Jackson Heights, NY",
+        "headline": "Jackson Heights es famoso por sus co-ops de ladrillo de los años 20 y 30.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3218,8 +3513,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Jackson Heights, NY\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-jackson-heights-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Jackson Heights, NY",
+        "headline": "Jackson Heights is known for its 1920s and 30s brick co-ops.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3272,8 +3572,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Corona, NY\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-corona-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Corona, NY",
+        "headline": "En Corona abunda el contratista que empezó como empleado y ahora toma sus propios trabajos.",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3326,8 +3631,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Corona, NY\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-corona-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Corona, NY",
+        "headline": "Corona is full of contractors who started as employees and now take their own jobs.",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3380,8 +3690,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Corona, NY\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-corona-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Corona, NY",
+        "headline": "Muchos en Corona manejan van o pickup de trabajo estacionada en la calle.",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3434,8 +3749,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Corona, NY\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-corona-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Corona, NY",
+        "headline": "Many in Corona drive a work van or pickup parked on the street.",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3488,8 +3808,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Corona, NY\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-corona-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Corona, NY",
+        "headline": "Corona tiene mucha vivienda subdividida y ocupación densa, y ahí el riesgo de que un incendio o una fuga afecte a varias familias a la vez es alto.",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3542,8 +3867,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Corona, NY\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-corona-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Corona, NY",
+        "headline": "Corona has a lot of subdivided housing and dense occupancy, where the odds of a fire or leak affecting several families at once are high.",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3596,8 +3926,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Queens, NY\" y el texto \"Seguro para Contratistas\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-queens-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Queens, NY",
+        "headline": "Queens es enorme y el trabajo varía muchísimo de barrio en barrio, pero el requisito que no cambia es el del DOB de NYC: para tener y mantener…",
+        "footnote": "Seguro para Contratistas"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3650,8 +3985,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Queens, NY\" with \"Contractor Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-contractor-insurance-queens-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Queens, NY",
+        "headline": "Queens is huge and the work varies enormously by neighborhood, but the one constant is the NYC DOB requirement: to get and keep a contractor license…",
+        "footnote": "Contractor Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3704,8 +4044,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Queens, NY\" y el texto \"Seguro de Auto Barato\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-queens-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Queens, NY",
+        "headline": "Queens tiene la tasa de propiedad de carro más alta de los cinco condados, y el mercado de seguro de NY funciona con reglas propias: mínimos…",
+        "footnote": "Seguro de Auto Barato"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3758,8 +4103,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Queens, NY\" with \"Cheap Auto Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-cheap-auto-insurance-queens-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Queens, NY",
+        "headline": "Queens has the highest car ownership rate of the five boroughs, and the NY insurance market runs on its own rules: different minimums than NJ, and…",
+        "footnote": "Cheap Auto Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3812,8 +4162,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Foto o gráfico con el nombre \"Queens, NY\" y el texto \"Seguro de Inquilinos\". Mostrar gente real de oficio, no stock corporativo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-queens-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Queens, NY",
+        "headline": "En Queens el tipo de edificio cambia todo: co-op, condominio, casa de dos familias o edificio de renta estabilizada tienen divisiones de…",
+        "footnote": "Seguro de Inquilinos"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3866,8 +4221,13 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Photo or graphic reading \"Queens, NY\" with \"Renters Insurance\". Real trade workers, not corporate stock.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/local-renters-insurance-queens-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Queens, NY",
+        "headline": "In Queens the building type changes everything: co-op, condo, two-family house or rent-stabilized building each split responsibility between owner…",
+        "footnote": "Renters Insurance"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
@@ -3890,7 +4250,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-facebook",
+      "id": "faq-contractor-insurance-q1-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -3908,7 +4268,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-instagram",
+      "id": "faq-contractor-insurance-q1-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -3920,13 +4280,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q1-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro para Contratistas",
+        "headline": "¿Cuánta aseguranza de responsabilidad civil necesito para registrarme como contratista en NJ?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-tiktok",
+      "id": "faq-contractor-insurance-q1-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -3944,7 +4309,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-facebook",
+      "id": "faq-contractor-insurance-q1-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -3962,7 +4327,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-instagram",
+      "id": "faq-contractor-insurance-q1-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -3974,13 +4339,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q1-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Contractor Insurance",
+        "headline": "How much liability insurance do I need to register as a contractor in NJ?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-tiktok",
+      "id": "faq-contractor-insurance-q1-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -3998,7 +4368,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-facebook",
+      "id": "faq-contractor-insurance-q2-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4016,7 +4386,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-instagram",
+      "id": "faq-contractor-insurance-q2-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4028,13 +4398,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q2-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro para Contratistas",
+        "headline": "¿Necesito workers' comp si trabajo solo, sin empleados?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-tiktok",
+      "id": "faq-contractor-insurance-q2-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4052,7 +4427,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-facebook",
+      "id": "faq-contractor-insurance-q2-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4070,7 +4445,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-instagram",
+      "id": "faq-contractor-insurance-q2-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4082,13 +4457,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q2-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Contractor Insurance",
+        "headline": "Do I need workers' comp if I work alone with no employees?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-tiktok",
+      "id": "faq-contractor-insurance-q2-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4106,7 +4486,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-facebook",
+      "id": "faq-contractor-insurance-q3-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4124,7 +4504,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-instagram",
+      "id": "faq-contractor-insurance-q3-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4136,13 +4516,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q3-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro para Contratistas",
+        "headline": "¿Qué tan rápido puedo tener un certificado (COI) para empezar un trabajo?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-tiktok",
+      "id": "faq-contractor-insurance-q3-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4160,7 +4545,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-facebook",
+      "id": "faq-contractor-insurance-q3-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4178,7 +4563,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-instagram",
+      "id": "faq-contractor-insurance-q3-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4190,13 +4575,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q3-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Contractor Insurance",
+        "headline": "How fast can I get a certificate (COI) to start a job?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-tiktok",
+      "id": "faq-contractor-insurance-q3-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4214,7 +4604,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-facebook",
+      "id": "faq-contractor-insurance-q4-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4232,7 +4622,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-instagram",
+      "id": "faq-contractor-insurance-q4-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4244,13 +4634,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q4-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro para Contratistas",
+        "headline": "¿La aseguranza de contratista cubre mis herramientas si me las roban de la camioneta?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-tiktok",
+      "id": "faq-contractor-insurance-q4-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4268,7 +4663,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-facebook",
+      "id": "faq-contractor-insurance-q4-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4286,7 +4681,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-instagram",
+      "id": "faq-contractor-insurance-q4-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4298,13 +4693,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q4-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Contractor Insurance",
+        "headline": "Does contractor insurance cover my tools if they're stolen from the truck?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-tiktok",
+      "id": "faq-contractor-insurance-q4-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4322,7 +4722,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-facebook",
+      "id": "faq-contractor-insurance-q5-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4340,7 +4740,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-instagram",
+      "id": "faq-contractor-insurance-q5-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4352,13 +4752,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q5-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro para Contratistas",
+        "headline": "¿Puedo conseguir aseguranza de contratista con ITIN, sin número de Seguro Social?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-es-tiktok",
+      "id": "faq-contractor-insurance-q5-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4376,7 +4781,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-facebook",
+      "id": "faq-contractor-insurance-q5-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4394,7 +4799,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-instagram",
+      "id": "faq-contractor-insurance-q5-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4406,13 +4811,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-contractor-insurance-q5-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Contractor Insurance",
+        "headline": "Can I get contractor insurance with an ITIN and no Social Security number?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-contractor-insurance-all-en-tiktok",
+      "id": "faq-contractor-insurance-q5-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4430,7 +4840,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-facebook",
+      "id": "faq-cheap-auto-insurance-q1-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4448,7 +4858,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-instagram",
+      "id": "faq-cheap-auto-insurance-q1-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4460,13 +4870,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q1-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Auto Barato",
+        "headline": "¿Cuál es el mínimo de aseguranza de carro que exige Nueva Jersey?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-tiktok",
+      "id": "faq-cheap-auto-insurance-q1-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4484,7 +4899,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-facebook",
+      "id": "faq-cheap-auto-insurance-q1-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4502,7 +4917,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-instagram",
+      "id": "faq-cheap-auto-insurance-q1-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4514,13 +4929,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q1-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Cheap Auto Insurance",
+        "headline": "What is the minimum auto insurance New Jersey requires?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-tiktok",
+      "id": "faq-cheap-auto-insurance-q1-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4538,7 +4958,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-facebook",
+      "id": "faq-cheap-auto-insurance-q2-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4556,7 +4976,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-instagram",
+      "id": "faq-cheap-auto-insurance-q2-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4568,13 +4988,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q2-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Auto Barato",
+        "headline": "¿Puedo sacar aseguranza de carro con licencia extranjera, ITIN o matrícula consular?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-tiktok",
+      "id": "faq-cheap-auto-insurance-q2-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4592,7 +5017,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-facebook",
+      "id": "faq-cheap-auto-insurance-q2-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4610,7 +5035,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-instagram",
+      "id": "faq-cheap-auto-insurance-q2-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4622,13 +5047,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q2-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Cheap Auto Insurance",
+        "headline": "Can I get car insurance with a foreign license, ITIN or consular ID?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-tiktok",
+      "id": "faq-cheap-auto-insurance-q2-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4646,7 +5076,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-facebook",
+      "id": "faq-cheap-auto-insurance-q3-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4664,7 +5094,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-instagram",
+      "id": "faq-cheap-auto-insurance-q3-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4676,13 +5106,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q3-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Auto Barato",
+        "headline": "¿Por qué mi aseguranza sube si nunca he tenido un accidente?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-tiktok",
+      "id": "faq-cheap-auto-insurance-q3-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4700,7 +5135,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-facebook",
+      "id": "faq-cheap-auto-insurance-q3-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4718,7 +5153,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-instagram",
+      "id": "faq-cheap-auto-insurance-q3-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4730,13 +5165,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q3-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Cheap Auto Insurance",
+        "headline": "Why did my insurance go up when I've never had an accident?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-tiktok",
+      "id": "faq-cheap-auto-insurance-q3-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4754,7 +5194,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-facebook",
+      "id": "faq-cheap-auto-insurance-q4-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4772,7 +5212,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-instagram",
+      "id": "faq-cheap-auto-insurance-q4-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4784,13 +5224,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q4-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Auto Barato",
+        "headline": "¿Qué pasa si manejo en NJ sin seguro?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-tiktok",
+      "id": "faq-cheap-auto-insurance-q4-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4808,7 +5253,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-facebook",
+      "id": "faq-cheap-auto-insurance-q4-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4826,7 +5271,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-instagram",
+      "id": "faq-cheap-auto-insurance-q4-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4838,13 +5283,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q4-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Cheap Auto Insurance",
+        "headline": "What happens if I drive in NJ without insurance?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-tiktok",
+      "id": "faq-cheap-auto-insurance-q4-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4862,7 +5312,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-facebook",
+      "id": "faq-cheap-auto-insurance-q5-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4880,7 +5330,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-instagram",
+      "id": "faq-cheap-auto-insurance-q5-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -4892,13 +5342,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q5-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Auto Barato",
+        "headline": "¿La póliza personal de mi carro me cubre si uso la camioneta para el trabajo?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-es-tiktok",
+      "id": "faq-cheap-auto-insurance-q5-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -4916,7 +5371,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-facebook",
+      "id": "faq-cheap-auto-insurance-q5-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -4934,7 +5389,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-instagram",
+      "id": "faq-cheap-auto-insurance-q5-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -4946,13 +5401,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-cheap-auto-insurance-q5-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Cheap Auto Insurance",
+        "headline": "Does my personal auto policy cover me if I use the truck for work?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-cheap-auto-insurance-all-en-tiktok",
+      "id": "faq-cheap-auto-insurance-q5-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -4970,7 +5430,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-facebook",
+      "id": "faq-renters-insurance-q1-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -4988,7 +5448,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-instagram",
+      "id": "faq-renters-insurance-q1-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -5000,13 +5460,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q1-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Inquilinos",
+        "headline": "¿La aseguranza del dueño del edificio cubre mis cosas?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-tiktok",
+      "id": "faq-renters-insurance-q1-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -5024,7 +5489,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-facebook",
+      "id": "faq-renters-insurance-q1-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -5042,7 +5507,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-instagram",
+      "id": "faq-renters-insurance-q1-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -5054,13 +5519,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q1-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Renters Insurance",
+        "headline": "Does the landlord's insurance cover my belongings?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-tiktok",
+      "id": "faq-renters-insurance-q1-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -5078,7 +5548,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-facebook",
+      "id": "faq-renters-insurance-q2-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -5096,7 +5566,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-instagram",
+      "id": "faq-renters-insurance-q2-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -5108,13 +5578,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q2-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Inquilinos",
+        "headline": "¿El seguro de inquilino cubre inundación?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-tiktok",
+      "id": "faq-renters-insurance-q2-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -5132,7 +5607,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-facebook",
+      "id": "faq-renters-insurance-q2-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -5150,7 +5625,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-instagram",
+      "id": "faq-renters-insurance-q2-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -5162,13 +5637,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q2-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Renters Insurance",
+        "headline": "Does renters insurance cover flooding?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-tiktok",
+      "id": "faq-renters-insurance-q2-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -5186,7 +5666,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-facebook",
+      "id": "faq-renters-insurance-q3-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -5204,7 +5684,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-instagram",
+      "id": "faq-renters-insurance-q3-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -5216,13 +5696,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q3-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Inquilinos",
+        "headline": "Mi landlord me pide seguro de inquilino para firmar el lease. ¿Es legal?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-tiktok",
+      "id": "faq-renters-insurance-q3-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -5240,7 +5725,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-facebook",
+      "id": "faq-renters-insurance-q3-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -5258,7 +5743,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-instagram",
+      "id": "faq-renters-insurance-q3-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -5270,13 +5755,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q3-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Renters Insurance",
+        "headline": "My landlord requires renters insurance to sign the lease. Is that legal?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-tiktok",
+      "id": "faq-renters-insurance-q3-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -5294,7 +5784,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-facebook",
+      "id": "faq-renters-insurance-q4-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -5312,7 +5802,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-instagram",
+      "id": "faq-renters-insurance-q4-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -5324,13 +5814,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q4-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Inquilinos",
+        "headline": "¿Puedo tener seguro de inquilino si rento un cuarto o vivo con familia?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-tiktok",
+      "id": "faq-renters-insurance-q4-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -5348,7 +5843,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-facebook",
+      "id": "faq-renters-insurance-q4-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -5366,7 +5861,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-instagram",
+      "id": "faq-renters-insurance-q4-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -5378,13 +5873,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q4-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Renters Insurance",
+        "headline": "Can I get renters insurance if I rent a room or live with family?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-tiktok",
+      "id": "faq-renters-insurance-q4-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -5402,7 +5902,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-facebook",
+      "id": "faq-renters-insurance-q5-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "faq",
@@ -5420,7 +5920,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-instagram",
+      "id": "faq-renters-insurance-q5-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "faq",
@@ -5432,13 +5932,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q5-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Seguro de Inquilinos",
+        "headline": "¿Qué necesito para sacar una aseguranza de inquilinos?",
+        "footnote": "Respuesta completa en el enlace"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-es-tiktok",
+      "id": "faq-renters-insurance-q5-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "faq",
@@ -5456,7 +5961,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-facebook",
+      "id": "faq-renters-insurance-q5-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "faq",
@@ -5474,7 +5979,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-instagram",
+      "id": "faq-renters-insurance-q5-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "faq",
@@ -5486,13 +5991,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Text card: question large on top, short answer below. High contrast, readable on mobile.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/faq-renters-insurance-q5-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "Renters Insurance",
+        "headline": "What do I need to get renters insurance?",
+        "footnote": "Full answer at the link"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "faq-renters-insurance-all-en-tiktok",
+      "id": "faq-renters-insurance-q5-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "faq",
@@ -5510,7 +6020,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-facebook",
+      "id": "fact-nj_hic_cgl-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -5528,7 +6038,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-instagram",
+      "id": "fact-nj_hic_cgl-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -5540,13 +6050,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_hic_cgl-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Para registrarse como Home Improvement Contractor (HIC) en Nueva Jersey, la ley exige una póliza de responsabilidad civil general (CGL) con un mínimo de $500,000 por ocurrencia.",
+        "footnote": "N.J.A.C. 13:45A-17.6"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-tiktok",
+      "id": "fact-nj_hic_cgl-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -5564,7 +6079,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-facebook",
+      "id": "fact-nj_hic_cgl-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -5582,7 +6097,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-instagram",
+      "id": "fact-nj_hic_cgl-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -5594,13 +6109,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_hic_cgl-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "To register as a Home Improvement Contractor (HIC) in New Jersey, the law requires a commercial general liability (CGL) policy with a minimum of $500,000 per occurrence.",
+        "footnote": "N.J.A.C. 13:45A-17.6"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-tiktok",
+      "id": "fact-nj_hic_cgl-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -5618,7 +6138,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-facebook",
+      "id": "fact-nj_hic_2025_additions-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -5636,7 +6156,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-instagram",
+      "id": "fact-nj_hic_2025_additions-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -5648,13 +6168,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_hic_2025_additions-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Desde 2025, el registro de contratista en NJ también exige comprobante de compensación laboral (workers' comp) cuando hay empleados, y una fianza de cumplimiento (compliance bond) de…",
+        "footnote": "N.J.S.A. 56:8-136 et seq. (as amended, effective 2025)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-tiktok",
+      "id": "fact-nj_hic_2025_additions-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -5672,7 +6197,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-facebook",
+      "id": "fact-nj_hic_2025_additions-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -5690,7 +6215,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-instagram",
+      "id": "fact-nj_hic_2025_additions-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -5702,13 +6227,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_hic_2025_additions-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Since 2025, NJ contractor registration also requires proof of workers' compensation when there are employees, plus a compliance bond of $10,000 to $50,000 depending on contract size.",
+        "footnote": "N.J.S.A. 56:8-136 et seq. (as amended, effective 2025)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-tiktok",
+      "id": "fact-nj_hic_2025_additions-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -5726,7 +6256,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-facebook",
+      "id": "fact-nj_hic_renewal-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -5744,7 +6274,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-instagram",
+      "id": "fact-nj_hic_renewal-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -5756,13 +6286,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_hic_renewal-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "El registro de contratista en NJ se renueva cada año y vence el 31 de marzo.",
+        "footnote": "NJ Division of Consumer Affairs, HIC registration renewal"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-tiktok",
+      "id": "fact-nj_hic_renewal-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -5780,7 +6315,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-facebook",
+      "id": "fact-nj_hic_renewal-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -5798,7 +6333,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-instagram",
+      "id": "fact-nj_hic_renewal-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -5810,13 +6345,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_hic_renewal-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "NJ contractor registration renews annually and expires March 31.",
+        "footnote": "NJ Division of Consumer Affairs, HIC registration renewal"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-tiktok",
+      "id": "fact-nj_hic_renewal-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -5834,7 +6374,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-facebook",
+      "id": "fact-nj_wc_mandatory-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -5852,7 +6392,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-instagram",
+      "id": "fact-nj_wc_mandatory-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -5864,13 +6404,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_wc_mandatory-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "En Nueva Jersey, la compensación laboral es obligatoria para cualquier negocio con empleados, sin importar cuántos sean ni si son de tiempo completo.",
+        "footnote": "N.J.S.A. 34:15-1 et seq."
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-tiktok",
+      "id": "fact-nj_wc_mandatory-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -5888,7 +6433,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-facebook",
+      "id": "fact-nj_wc_mandatory-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -5906,7 +6451,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-instagram",
+      "id": "fact-nj_wc_mandatory-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -5918,13 +6463,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_wc_mandatory-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "In New Jersey, workers' compensation is mandatory for any business with employees, regardless of how many or whether they are full-time.",
+        "footnote": "N.J.S.A. 34:15-1 et seq."
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-tiktok",
+      "id": "fact-nj_wc_mandatory-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -5942,7 +6492,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-nj_auto_minimums_2023-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -5960,7 +6510,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-nj_auto_minimums_2023-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -5972,13 +6522,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_minimums_2023-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Los límites mínimos de responsabilidad para autos en NJ son 25/50/25: $25,000 por persona por lesiones, $50,000 por accidente, y $25,000 por daños a la propiedad.",
+        "footnote": "N.J.S.A. 39:6B-1 (2023 limits)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-nj_auto_minimums_2023-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -5996,7 +6551,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-nj_auto_minimums_2023-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6014,7 +6569,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-nj_auto_minimums_2023-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6026,13 +6581,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_minimums_2023-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "New Jersey's minimum auto liability limits are 25/50/25: $25,000 per person for bodily injury, $50,000 per accident, and $25,000 for property damage.",
+        "footnote": "N.J.S.A. 39:6B-1 (2023 limits)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-nj_auto_minimums_2023-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6050,7 +6610,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-nj_auto_minimums_2026-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6068,7 +6628,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-nj_auto_minimums_2026-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6080,13 +6640,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_minimums_2026-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Para pólizas emitidas o renovadas a partir del 1 de enero de 2026, los mínimos de NJ suben a 35/70/25: $35,000 por persona, $70,000 por accidente y $25,000 por daños a la propiedad.",
+        "footnote": "NJ DOBI Bulletin 25-06"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-nj_auto_minimums_2026-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6104,7 +6669,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-nj_auto_minimums_2026-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6122,7 +6687,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-nj_auto_minimums_2026-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6134,13 +6699,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_minimums_2026-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "For policies issued or renewed on or after January 1, 2026, NJ minimums rise to 35/70/25: $35,000 per person, $70,000 per accident, and $25,000 property damage.",
+        "footnote": "NJ DOBI Bulletin 25-06"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-nj_auto_minimums_2026-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6158,7 +6728,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-nj_auto_no_fault_pip-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6176,7 +6746,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-nj_auto_no_fault_pip-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6188,13 +6758,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_no_fault_pip-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Nueva Jersey es un estado \"no-fault\": el PIP (Personal Injury Protection) es obligatorio y paga tus gastos médicos después de un accidente sin importar quién tuvo la culpa.",
+        "footnote": "N.J.S.A. 39:6A-1 et seq."
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-nj_auto_no_fault_pip-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6212,7 +6787,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-nj_auto_no_fault_pip-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6230,7 +6805,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-nj_auto_no_fault_pip-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6242,13 +6817,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_no_fault_pip-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "New Jersey is a no-fault state: PIP (Personal Injury Protection) is mandatory and pays your medical expenses after a crash regardless of who was at fault.",
+        "footnote": "N.J.S.A. 39:6A-1 et seq."
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-nj_auto_no_fault_pip-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6266,7 +6846,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-nj_auto_premium_range-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6284,7 +6864,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-nj_auto_premium_range-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6296,13 +6876,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_premium_range-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Según rangos publicados por U.S.",
+        "footnote": "Rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify (2024–2025)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-nj_auto_premium_range-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6320,7 +6905,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-nj_auto_premium_range-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6338,7 +6923,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-nj_auto_premium_range-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6350,13 +6935,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nj_auto_premium_range-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NJ",
+        "headline": "Per ranges published by U.S.",
+        "footnote": "Rangos publicados por U.S. News, Bankrate, NerdWallet e Insurify (2024–2025)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-nj_auto_premium_range-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6374,7 +6964,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-facebook",
+      "id": "fact-nyc_dob_gl-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6392,7 +6982,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-instagram",
+      "id": "fact-nyc_dob_gl-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6404,13 +6994,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nyc_dob_gl-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "En la ciudad de Nueva York, los contratistas necesitan responsabilidad civil general (GL) para obtener y mantener su licencia con el Department of Buildings (DOB).",
+        "footnote": "NYC Department of Buildings licensing requirements"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-es-tiktok",
+      "id": "fact-nyc_dob_gl-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6428,7 +7023,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-facebook",
+      "id": "fact-nyc_dob_gl-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6446,7 +7041,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-instagram",
+      "id": "fact-nyc_dob_gl-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6458,13 +7053,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-nyc_dob_gl-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "In New York City, contractors need commercial general liability (GL) to obtain and keep their Department of Buildings (DOB) license.",
+        "footnote": "NYC Department of Buildings licensing requirements"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-contractor-insurance-all-en-tiktok",
+      "id": "fact-nyc_dob_gl-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6482,7 +7082,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-ny_auto_minimums-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6500,7 +7100,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-ny_auto_minimums-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6512,13 +7112,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_minimums-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "Los mínimos de responsabilidad en Nueva York son $25,000 por persona y $50,000 por accidente por lesiones corporales, $50,000 y $100,000 si hay fallecimiento, y $10,000 por daños a la…",
+        "footnote": "NY Vehicle & Traffic Law § 311; NY Insurance Law § 3420"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-ny_auto_minimums-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6536,7 +7141,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-ny_auto_minimums-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6554,7 +7159,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-ny_auto_minimums-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6566,13 +7171,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_minimums-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "New York's minimum liability limits are $25,000 per person and $50,000 per accident for bodily injury, $50,000 and $100,000 in the event of death, and $10,000 for property damage.",
+        "footnote": "NY Vehicle & Traffic Law § 311; NY Insurance Law § 3420"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-ny_auto_minimums-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6590,7 +7200,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-ny_auto_no_fault_pip-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6608,7 +7218,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-ny_auto_no_fault_pip-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6620,13 +7230,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_no_fault_pip-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "Nueva York también es un estado no-fault: se exige un mínimo de $50,000 en beneficios de PIP, que pagan gastos médicos y parte del salario perdido sin importar quién causó el accidente.",
+        "footnote": "NY Insurance Law Article 51 (No-Fault)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-ny_auto_no_fault_pip-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6644,7 +7259,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-ny_auto_no_fault_pip-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6662,7 +7277,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-ny_auto_no_fault_pip-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6674,13 +7289,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_no_fault_pip-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "New York is also a no-fault state: a minimum of $50,000 in PIP benefits is required, covering medical costs and part of lost wages regardless of who caused the crash.",
+        "footnote": "NY Insurance Law Article 51 (No-Fault)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-ny_auto_no_fault_pip-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6698,7 +7318,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-ny_auto_uninsured-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6716,7 +7336,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-ny_auto_uninsured-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6728,13 +7348,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_uninsured-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "En Nueva York la cobertura contra conductores sin seguro (uninsured motorist) es obligatoria, no opcional, con límites mínimos de $25,000 por persona y $50,000 por accidente.",
+        "footnote": "NY Insurance Law § 3420(f)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-ny_auto_uninsured-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6752,7 +7377,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-ny_auto_uninsured-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6770,7 +7395,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-ny_auto_uninsured-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6782,13 +7407,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_uninsured-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "In New York, uninsured motorist coverage is mandatory rather than optional, with minimum limits of $25,000 per person and $50,000 per accident.",
+        "footnote": "NY Insurance Law § 3420(f)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-ny_auto_uninsured-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",
@@ -6806,7 +7436,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-facebook",
+      "id": "fact-ny_auto_premium_range-es-facebook",
       "platform": "facebook",
       "lang": "es",
       "kind": "fact",
@@ -6824,7 +7454,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-instagram",
+      "id": "fact-ny_auto_premium_range-es-instagram",
       "platform": "instagram",
       "lang": "es",
       "kind": "fact",
@@ -6836,13 +7466,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_premium_range-es-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "Según rangos publicados por Bankrate, NerdWallet, Insurify y ValuePenguin, la prima anual promedio en Nueva York va de aproximadamente $1,700–$2,200 por cobertura mínima a aproximadamente…",
+        "footnote": "Rangos publicados por Bankrate, NerdWallet, Insurify y ValuePenguin (2024–2025)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-es-tiktok",
+      "id": "fact-ny_auto_premium_range-es-tiktok",
       "platform": "tiktok",
       "lang": "es",
       "kind": "fact",
@@ -6860,7 +7495,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-facebook",
+      "id": "fact-ny_auto_premium_range-en-facebook",
       "platform": "facebook",
       "lang": "en",
       "kind": "fact",
@@ -6878,7 +7513,7 @@
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-instagram",
+      "id": "fact-ny_auto_premium_range-en-instagram",
       "platform": "instagram",
       "lang": "en",
       "kind": "fact",
@@ -6890,13 +7525,18 @@
       "media_required": true,
       "media_kind": "image",
       "media_brief": "Card with the key figure or date large, legal citation small underneath.",
-      "media_url": "",
+      "media_url": "https://example-placeholder.com/social/fact-ny_auto_premium_range-en-instagram.png",
       "video_script": "",
+      "card": {
+        "eyebrow": "NY",
+        "headline": "Per ranges published by Bankrate, NerdWallet, Insurify and ValuePenguin, average annual New York premiums run roughly $1,700–$2,200 for minimum coverage and roughly $3,300–$4,200 for full…",
+        "footnote": "Rangos publicados por Bankrate, NerdWallet, Insurify y ValuePenguin (2024–2025)"
+      },
       "status": "draft",
       "scheduled_for": ""
     },
     {
-      "id": "fact-cheap-auto-insurance-all-en-tiktok",
+      "id": "fact-ny_auto_premium_range-en-tiktok",
       "platform": "tiktok",
       "lang": "en",
       "kind": "fact",

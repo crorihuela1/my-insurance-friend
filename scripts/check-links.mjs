@@ -65,7 +65,30 @@ for (const page of pages) {
   }
 }
 
+// Social cards are referenced from social/queue.json, not from any page, so a
+// failed render would otherwise pass every gate and only surface when a post
+// tried to publish. Astro logs image errors without failing the build.
+let missingCards = 0;
+try {
+  const queue = JSON.parse(await readFile('social/queue.json', 'utf8'));
+  const expected = (queue.posts ?? []).filter((p) => p.media_kind === 'image' && p.card);
+  for (const post of expected) {
+    if (!(await exists(`/social/${post.id}.png`))) {
+      if (missingCards < 5) console.error(`\x1b[31mmissing card\x1b[0m /social/${post.id}.png`);
+      missingCards++;
+    }
+  }
+  console.log(`check-links: ${expected.length} social card(s) expected, ${expected.length - missingCards} present`);
+} catch {
+  console.log('check-links: no social queue to verify');
+}
+
 console.log(`check-links: ${pages.length} page(s), ${checked} internal link(s) checked`);
+
+if (missingCards > 0) {
+  console.error(`\x1b[31m${missingCards} social card(s) failed to generate.\x1b[0m`);
+  process.exit(1);
+}
 
 if (broken.size === 0) {
   console.log('\x1b[32mcheck-links: no broken internal links\x1b[0m');

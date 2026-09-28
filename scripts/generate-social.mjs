@@ -97,6 +97,7 @@ for (const town of towns) {
 
       items.push({
         kind: 'local',
+        key: `${service.slug_en}-${town.slug}`,
         lang,
         town: town.slug,
         service: service.slug_en,
@@ -106,6 +107,11 @@ for (const town of towns) {
           ? `Foto o gráfico con el nombre "${name}, ${town.state}" y el texto "${sname}". Mostrar gente real de oficio, no stock corporativo.`
           : `Photo or graphic reading "${name}, ${town.state}" with "${sname}". Real trade workers, not corporate stock.`,
         script_seed: hook(angle, 200),
+        card: {
+          eyebrow: `${name}, ${town.state}`,
+          headline: hook(angle, 150),
+          footnote: sname,
+        },
         serviceRef: service,
       });
     }
@@ -114,12 +120,13 @@ for (const town of towns) {
 
 // --- faq ---------------------------------------------------------------------
 for (const service of services) {
-  for (const faq of service.faq) {
+  for (const [qi, faq] of service.faq.entries()) {
     for (const lang of ['es', 'en']) {
       const q = lang === 'es' ? faq.q_es : faq.q_en;
       const a = lang === 'es' ? faq.a_es : faq.a_en;
       items.push({
         kind: 'faq',
+        key: `${service.slug_en}-q${qi + 1}`,
         lang,
         town: '',
         service: service.slug_en,
@@ -129,6 +136,11 @@ for (const service of services) {
           ? `Tarjeta de texto: la pregunta grande arriba, la respuesta corta abajo. Alto contraste, legible en móvil.`
           : `Text card: question large on top, short answer below. High contrast, readable on mobile.`,
         script_seed: q,
+        card: {
+          eyebrow: lang === 'es' ? service.name_es : service.name_en,
+          headline: q,
+          footnote: lang === 'es' ? 'Respuesta completa en el enlace' : 'Full answer at the link',
+        },
         serviceRef: service,
       });
     }
@@ -150,6 +162,7 @@ for (const fact of marketableFacts) {
     const svc = services.find((s) => s.legal_facts.includes(fact.id));
     items.push({
       kind: 'fact',
+      key: fact.id,
       lang,
       town: '',
       service: svc?.slug_en ?? '',
@@ -159,6 +172,11 @@ for (const fact of marketableFacts) {
         ? `Tarjeta con la cifra o la fecha clave en grande, y la cita legal pequeña abajo.`
         : `Card with the key figure or date large, legal citation small underneath.`,
       script_seed: hook(text, 200),
+      card: {
+        eyebrow: fact.jurisdiction,
+        headline: hook(text, 190),
+        footnote: fact.citation,
+      },
       serviceRef: svc ?? null,
     });
   }
@@ -186,8 +204,9 @@ for (const item of items.slice(0, LIMIT)) {
       }
     }
 
-    const id = `${item.kind}-${item.service || 'general'}-${item.town || 'all'}-${item.lang}-${platform}`
-      .replace(/-+/g, '-');
+    // `key` is unique per item; kind + service + town was not, because a
+    // service has 5 FAQs and many facts, which collapsed them onto one id.
+    const id = `${item.kind}-${item.key}-${item.lang}-${platform}`.replace(/-+/g, '-');
 
     errors.push(...complianceErrors(caption, id));
 
@@ -206,16 +225,30 @@ for (const item of items.slice(0, LIMIT)) {
       media_brief: cfg.needs_media ? item.media_brief : '',
       // You fill this in. IG and TikTok fetch media from a public URL; the
       // publisher refuses to post a media-required item without one.
-      media_url: '',
+      // Image cards are generated into the site build at /social/<id>.png, so
+      // the URL is known up front. Video platforms stay empty: we can write the
+      // script but not shoot the footage.
+      media_url: cfg.needs_media && cfg.media_kind !== 'video' ? `${DOMAIN}/social/${id}.png` : '',
       video_script: isVideo
         ? (item.lang === 'es'
             ? `GANCHO (0-3s): "${item.script_seed}"\nDESARROLLO (3-25s): explica el punto con un ejemplo concreto de la zona.\nCIERRE (25-30s): "Te conectamos gratis con un agente con licencia. Link en bio."`
             : `HOOK (0-3s): "${item.script_seed}"\nBODY (3-25s): explain the point with one concrete local example.\nCLOSE (25-30s): "We connect you with a licensed agent, free. Link in bio."`)
         : '',
+      card: cfg.needs_media && cfg.media_kind !== 'video' ? item.card : undefined,
       status: 'draft',
       scheduled_for: '',
     });
   }
+}
+
+// Ids key the publish queue's status tracking and the image filenames, so a
+// collision silently merges posts. Fail loudly instead.
+const ids = posts.map((p) => p.id);
+const duplicates = [...new Set(ids.filter((id, i) => ids.indexOf(id) !== i))];
+if (duplicates.length) {
+  console.error(`\x1b[31m${duplicates.length} duplicate post id(s):\x1b[0m`);
+  for (const d of duplicates.slice(0, 10)) console.error(`  ${d}`);
+  process.exit(1);
 }
 
 if (errors.length) {
@@ -244,7 +277,8 @@ let carried = 0;
 for (const p of posts) {
   const prev = previous[p.id];
   if (!prev) continue;
-  if (prev.media_url) { p.media_url = prev.media_url; carried++; }
+  // Only carry a hand-entered URL; never overwrite a generated one.
+  if (prev.media_url && !p.media_url) { p.media_url = prev.media_url; carried++; }
   if (prev.status && prev.status !== 'draft') p.status = prev.status;
   if (prev.scheduled_for) p.scheduled_for = prev.scheduled_for;
 }

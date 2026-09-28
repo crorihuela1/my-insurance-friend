@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npm run lint:compliance && npm run lint:links",
+    "build": "npm run social && astro build && npm run lint:compliance && npm run lint:links",
     "build:only": "astro build",
     "preview": "astro preview",
     "astro": "astro",

@@ -14,7 +14,7 @@ import type { Lang } from './types';
  * different container; they are not shipped to browsers.
  */
 const FONT_DIR = 'node_modules/@fontsource/inter/files';
-const fonts = [
+export const fonts = [
   { name: 'Inter', data: readFileSync(`${FONT_DIR}/inter-latin-400-normal.woff`), weight: 400 as const, style: 'normal' as const },
   { name: 'Inter', data: readFileSync(`${FONT_DIR}/inter-latin-700-normal.woff`), weight: 700 as const, style: 'normal' as const },
   { name: 'Inter', data: readFileSync(`${FONT_DIR}/inter-latin-800-normal.woff`), weight: 800 as const, style: 'normal' as const },
@@ -31,8 +31,8 @@ const rules = JSON.parse(readFileSync('scripts/compliance-rules.json', 'utf8')) 
 };
 const NEGATORS = /\b(no|not|never|nunca|tampoco|ni)\s+$/i;
 
-function assertCompliant(input: OgInput): void {
-  const text = [input.title, input.subtitle, input.cta].filter(Boolean).join(' · ').toLowerCase();
+export function assertCompliantText(parts: Array<string | undefined>, label: string): void {
+  const text = parts.filter(Boolean).join(' · ').toLowerCase();
   for (const rule of rules.forbidden) {
     const needle = rule.pattern.toLowerCase();
     let from = 0;
@@ -41,7 +41,7 @@ function assertCompliant(input: OgInput): void {
       from = i + needle.length;
       if (NEGATORS.test(text.slice(Math.max(0, i - 14), i))) continue;
       throw new Error(
-        `OG image text breaks a compliance rule.\n  card: "${input.title}"\n  phrase: "${rule.pattern}"\n  why: ${rule.why}`,
+        `Image text breaks a compliance rule.\n  card: ${label}\n  phrase: "${rule.pattern}"\n  why: ${rule.why}`,
       );
     }
   }
@@ -191,7 +191,7 @@ function template({ title, subtitle, badge, cta, lang }: OgInput) {
 }
 
 export async function renderOg(input: OgInput): Promise<Buffer> {
-  assertCompliant(input);
+  assertCompliantText([input.title, input.subtitle, input.cta], `"${input.title}"`);
   const svg = await satori(template(input) as never, { width: 1200, height: 630, fonts });
   const png = new Resvg(svg, { fitTo: { mode: 'width', value: 1200 } }).render().asPng();
   return Buffer.from(png);
